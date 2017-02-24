@@ -31,7 +31,7 @@ export class Circle extends Area {
             cx: coords.x,
             cy: coords.y,
             radius: 0
-        };
+        }
 
         this._el = document.createElementNS(Area.SVG_NS, 'circle');
         this._groupEl.appendChild(this._el);
@@ -43,7 +43,7 @@ export class Circle extends Area {
             bottom: new Helper(this._groupEl, coords.x, coords.y, 'editBottom'),
             left: new Helper(this._groupEl, coords.x, coords.y, 'editLeft'),
             right: new Helper(this._groupEl, coords.x, coords.y, 'editRight')
-        };
+        }
         this._helpers.number.setNumber(coords.n);
         this.select().redraw();
 
@@ -63,7 +63,7 @@ export class Circle extends Area {
         this._helpers.left.setCoords(params.cx - params.radius, params.cy);
 
         return this;
-    };
+    }
 
     public setParams(params) {
         this._params.cx = params.cx;
@@ -71,7 +71,7 @@ export class Circle extends Area {
         this._params.radius = params.radius;
 
         return this;
-    };
+    }
 
     public dynamicDraw(x1, y1) {
         var x0 = this._params.cx,
@@ -93,18 +93,18 @@ export class Circle extends Area {
             cx: x0,
             cy: y0,
             radius: radius
-        };
+        }
 
         this.setSVGAttributes(temp_params);
 
         return temp_params;
-    };
+    }
 
     public onProcessDrawing(e) {
         var coords = Utils.getRightCoords(e.pageX, e.pageY);
 
         this.dynamicDraw(coords.x, coords.y);
-    };
+    }
 
     public onStopDrawing(e) {
         var coords = Utils.getRightCoords(e.pageX, e.pageY);
@@ -114,7 +114,7 @@ export class Circle extends Area {
         Area.app.removeAllEvents()
             .setIsDraw(false)
             .resetNewArea();
-    };
+    }
 
     public edit(editingType, dx, dy) {
         var tempParams = Object.assign({}, this._params);
@@ -141,7 +141,7 @@ export class Circle extends Area {
                 break;
         }
         return tempParams;
-    };
+    }
 
     public move(dx, dy) { //offset x and y
         var temp_params = Object.create(this._params);
@@ -150,7 +150,7 @@ export class Circle extends Area {
         temp_params.cy += dy;
 
         return temp_params;
-    };
+    }
 
     public dynamicEdit(temp_params) {
         if (temp_params.radius < 0) {
@@ -159,14 +159,14 @@ export class Circle extends Area {
         this.setSVGAttributes(temp_params);
 
         return temp_params;
-    };
+    }
 
     public onProcessEditing(e) {
         var editType = Area.app.getEditType();
         this.dynamicEdit(
             this.edit(editType, e.pageX - this.delta.x, e.pageY - this.delta.y)
         );
-    };
+    }
 
     public onStopEditing(e) {
         var editType = Area.app.getEditType();
@@ -178,7 +178,7 @@ export class Circle extends Area {
         );
 
         Area.app.removeAllEvents();
-    };
+    }
 
     public toString() { //to html map area code
         return '<area shape="circle" coords="'
@@ -190,7 +190,7 @@ export class Circle extends Area {
             + (this.alt ? ' alt="' + this.alt + '"' : '')
             + (this.title ? ' title="' + this.title + '"' : '')
             + ' />';
-    };
+    }
 
     /**
      * Returns true if coords array is valid for circles and false otherwise
@@ -201,7 +201,7 @@ export class Circle extends Area {
      */
     public static testCoords(coords) {
         return coords.length === 3;
-    };
+    }
 
     public static createFromSaved(params) {
         if (!this.testCoords(params.coords)) {
@@ -224,7 +224,7 @@ export class Circle extends Area {
             .resetNewArea();
 
         area.setInfoAttributes(params);
-    };
+    }
 
     public toJSON(): any {
         return {
@@ -237,8 +237,8 @@ export class Circle extends Area {
             href: this.attributes.href,
             alt: this.attributes.alt,
             title: this.attributes.title
-        };
-    };
+        }
+    }
 
     public redraw(params?: any) {
         this.setSVGAttributes(params ? params : this._params);
@@ -259,5 +259,5 @@ export class Circle extends Area {
             .addEvent(Area.app.domElements.container, 'click', newArea.onStopDrawing.bind(newArea));
 
         return newArea;
-    };
+    }
 }

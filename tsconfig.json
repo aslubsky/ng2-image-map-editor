@@ -3,14 +3,24 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
-    "module": "es6",
+    "module": "commonjs",
     "moduleResolution": "node",
     "removeComments": true,
     "sourceMap": true,
-    "declaration": false,
-    "types": ["es6-shim"]
+    "declaration": true,
+    "skipLibCheck": true,
+    "stripInternal": true,
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "outDir": "./dist"
   },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
   "files": [
-    "src/ng2-image-map-editor.module.ts"
+    "index.ts"
   ]
 }

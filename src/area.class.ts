@@ -1,7 +1,3 @@
-import {Rectangle} from './rectangle.class';
-import {Circle} from './circle.class';
-import {Polygon} from './polygon.class';
-
 export class Area {
     public static app: any;
     public static SVG_NS: string = 'http://www.w3.org/2000/svg';
@@ -9,11 +5,6 @@ export class Area {
     public static CLASS_NAMES: any = {
         SELECTED: 'selected',
         WITH_HREF: 'with_href'
-    };
-    public static CONSTRUCTORS: any = {
-        rectangle: Rectangle,
-        circle: Circle,
-        polygon: Polygon
     };
 
     protected type: any;

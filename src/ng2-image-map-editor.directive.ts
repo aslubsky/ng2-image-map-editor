@@ -3,6 +3,7 @@ import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
 import {EditorApp} from './editor-app.class';
 import {Utils} from './utils.class';
 import {Area} from './area.class';
+import {AreaFactory} from './area-factory.class';
 
 
 @Component({
@@ -11,7 +12,7 @@ import {Area} from './area.class';
     <header id="header">
         <nav id="nav" class="clearfix">
             <ul class="float-left">
-                <li id="to_html" [class.save-button-backlight]="!valid"><a class="btn-success btn" href="#">{{labels.save_answers}}</a></li>
+                <li id="to_html"><a [class.btn-success]="!valid" class="btn-success btn" href="#">{{labels.save_answers}}</a></li>
                 <li><a [class.btn-default]="currentType == 'rectangle'" [class.btn]="currentType != 'rectangle'" id="rectangle" href="#"><img [src]="icons.rectangle"></a></li>
                 <li><a [class.btn-default]="currentType == 'circle'" [class.btn]="currentType != 'circle'" href="#" id="circle"><img [src]="icons.circle"></a></li>
                 <li><a [class.btn-default]="currentType == 'polygon'" [class.btn]="currentType != 'polygon'" href="#" id="polygon"><img [src]="icons.polygon"></a></li>
@@ -78,16 +79,21 @@ import {Area} from './area.class';
             provide: NG_VALUE_ACCESSOR,
             useExisting: forwardRef(() => Ng2ImageMapEditorDirective),
             multi: true
-        }
+        },
+        // {
+        //     provide: NG_VALIDATORS,
+        //     useExisting: forwardRef(() => DaterangePickerValidator),
+        //     multi: true
+        // }
     ]
 })
-export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChanges,OnInit {
+export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChanges, OnInit {
     @Input('answers') answers: any[] = [];
     @Input('src') mainImageSrc: string;
     @Input('width') mainImageWidth: number;
 
     public valid: boolean = true;
-    public isEditMode: boolean = true;
+    public isEditMode: boolean = false;
     public currentType: string = '';
 
     public icons: any = {
@@ -137,7 +143,7 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
     writeValue(value: string) {
         this._value = value;
 
-        if (this._value) {
+        if (this._value && this.mainImageWidth && this.app) {
             this.app.loadJSON(this._value, this.mainImageWidth);
         }
     }
@@ -173,13 +179,13 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
                     scale = 1.03;
                 }
                 Utils.foreach(obj.areas, function (x, i, arr) {
-                    if (x.type in Area.CONSTRUCTORS) {
+                    if (x.type in AreaFactory.CONSTRUCTORS) {
                         //adaptation coordinates in screen resolution
                         x.coords.forEach(function (item, i, arr) {
                             x.coords[i] = Math.round(item / scale);
                         });
 
-                        Area.CONSTRUCTORS[x.type].createFromSaved({
+                        AreaFactory.CONSTRUCTORS[x.type].createFromSaved({
                             coords: x.coords,
                             href: x.href,
                             alt: (this.answers[i] != undefined && this[i].is_right) ? '1' : '0',//x.alt,
@@ -190,10 +196,14 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
                 });
             }
         };
+
+        if (this.mainImageSrc && this.mainImageWidth) {
+            this.app.loadImage(this.mainImageSrc, this.mainImageWidth);
+        }
     }
 
     public ngOnChanges(changes: SimpleChanges) {
-        if (this.mainImageSrc) {
+        if (this.mainImageSrc && this.mainImageWidth && this.app) {
             this.app.loadImage(this.mainImageSrc, this.mainImageWidth);
         }
     }

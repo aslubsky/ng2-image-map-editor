@@ -1,20 +1,17 @@
-import {Utils} from './utils.class';
-import {Area} from './area.class';
-import {EditorApp} from './editor-app.class';
-
-/* Buttons and actions */
-export class Buttons {
-    public all = Utils.id('nav').getElementsByTagName('li');
-    public rectangle = Utils.id('rectangle');
-    public circle = Utils.id('circle');
-    public polygon = Utils.id('polygon');
-    public edit = Utils.id('edit');
-    public clear = Utils.id('clear');
-    public to_html = Utils.id('to_html');
-    public show_help = Utils.id('show_help');
-
-
-    constructor(private app: EditorApp) {
+"use strict";
+var utils_class_1 = require('./utils.class');
+var area_class_1 = require('./area.class');
+var Buttons = (function () {
+    function Buttons(app) {
+        this.app = app;
+        this.all = utils_class_1.Utils.id('nav').getElementsByTagName('li');
+        this.rectangle = utils_class_1.Utils.id('rectangle');
+        this.circle = utils_class_1.Utils.id('circle');
+        this.polygon = utils_class_1.Utils.id('polygon');
+        this.edit = utils_class_1.Utils.id('edit');
+        this.clear = utils_class_1.Utils.id('clear');
+        this.to_html = utils_class_1.Utils.id('to_html');
+        this.show_help = utils_class_1.Utils.id('show_help');
         this.rectangle.addEventListener('click', this.onShapeButtonClick.bind(this), false);
         this.circle.addEventListener('click', this.onShapeButtonClick.bind(this), false);
         this.polygon.addEventListener('click', this.onShapeButtonClick.bind(this), false);
@@ -23,43 +20,31 @@ export class Buttons {
         this.edit.addEventListener('click', this.onEditButtonClick.bind(this), false);
         this.show_help.addEventListener('click', this.onShowHelpButtonClick.bind(this), false);
     }
-
-    public deselectAll() {
-        Utils.foreach(this.all, function (x) {
-            x.classList.remove(Area.CLASS_NAMES.SELECTED);
+    Buttons.prototype.deselectAll = function () {
+        utils_class_1.Utils.foreach(this.all, function (x) {
+            x.classList.remove(area_class_1.Area.CLASS_NAMES.SELECTED);
         });
-    }
-
-    public selectOne(button: any) {
+    };
+    Buttons.prototype.selectOne = function (button) {
         this.deselectAll();
-        button.classList.add(Area.CLASS_NAMES.SELECTED);
-    }
-
-    public onShapeButtonClick(e) {
+        button.classList.add(area_class_1.Area.CLASS_NAMES.SELECTED);
+    };
+    Buttons.prototype.onShapeButtonClick = function (e) {
         e.preventDefault();
         var target = e.target.id ? e.target : e.target.parentNode;
-
         console.log('onShapeButtonClick', e, this, target, target.id);
-
         this.onSetInvalid();
-
         this.app.setMode('drawing')
             .setDrawClass()
             .setShape(target.id)
             .deselectAll()
             .hidePreview();
-        // this.app.info.unload();
         this.selectOne(target);
-    }
-
-    public onClearButtonClick(e) {
+    };
+    Buttons.prototype.onClearButtonClick = function (e) {
         e.preventDefault();
-        // console.log('onClearButtonClick', e, this);
-
-        // Clear all
         if (confirm('Clear all?')) {
             this.onSetInvalid();
-
             this.app.setMode(null)
                 .setDefaultClass()
                 .setShape(null)
@@ -67,18 +52,17 @@ export class Buttons {
                 .hidePreview();
             this.deselectAll();
         }
-    }
-
-
-    public onToHtmlButtonClick(e) {
+    };
+    Buttons.prototype.onToHtmlButtonClick = function (e) {
         var answers = this.app.getAreas();
         var scale = 1;
         if (this.app.img.width > this.app.domElements.img.clientWidth) {
             scale = Number((this.app.img.width / this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
-        } else {
+        }
+        else {
             scale = 1.03;
         }
-        var resultsAnswers: any[] = [];
+        var resultsAnswers = [];
         answers.forEach(function (item, i, arr) {
             var imgMapData = item.toJSON();
             imgMapData.coords.forEach(function (item, i, arr) {
@@ -90,44 +74,36 @@ export class Buttons {
                 img_map: JSON.stringify(imgMapData)
             });
         });
-
         this.onData(resultsAnswers, this.app.getAreasJSON(scale));
-
-        // Generate html code only
         e.preventDefault();
-    }
-
-
-    public onEditButtonClick(e) {
+    };
+    Buttons.prototype.onEditButtonClick = function (e) {
         e.preventDefault();
-
         this.onSetInvalid();
-
         if (this.app.getMode() === 'editing') {
             this.app.setMode(null)
                 .setDefaultClass()
                 .deselectAll();
             this.deselectAll();
-            Utils.show(this.app.domElements.svg);
-        } else {
+            utils_class_1.Utils.show(this.app.domElements.svg);
+        }
+        else {
             this.app.setShape(null)
                 .setMode('editing')
                 .setEditClass();
             this.selectOne(this.edit);
         }
         this.app.hidePreview();
-    }
-
-    public onData(answers: any[], areas: any) {
-
-    }
-
-    public onSetInvalid() {
-
-    }
-
-    public onShowHelpButtonClick(e) {
+    };
+    Buttons.prototype.onData = function (answers, areas) {
+    };
+    Buttons.prototype.onSetInvalid = function () {
+    };
+    Buttons.prototype.onShowHelpButtonClick = function (e) {
         this.app.help.show();
         e.preventDefault();
-    }
-}
+    };
+    return Buttons;
+}());
+exports.Buttons = Buttons;
+//# sourceMappingURL=buttons.class.js.map

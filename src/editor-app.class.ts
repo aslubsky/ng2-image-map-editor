@@ -2,7 +2,7 @@ import {Utils} from './utils.class';
 // import {Info} from './info.class';
 // import {Code} from './code.class';
 import {Help} from './help.class';
-import {Area} from './area.class';
+import {AreaFactory} from './area-factory.class';
 import {AppEvent} from './app-event.class';
 import {Buttons} from './buttons.class';
 
@@ -98,11 +98,11 @@ export class EditorApp {
         }, false);
 
 
-        this.domElements.container.addEventListener('mousedown', this.onSvgMousedown, false);
-        this.domElements.container.addEventListener('click', this.onSvgClick, false);
-        this.domElements.container.addEventListener('dblclick', this.onAreaDblClick, false);
+        this.domElements.container.addEventListener('mousedown', this.onSvgMousedown.bind(this), false);
+        this.domElements.container.addEventListener('click', this.onSvgClick.bind(this), false);
+        this.domElements.container.addEventListener('dblclick', this.onAreaDblClick.bind(this), false);
 
-        this.domElements.editor.addEventListener('keydown', this.onDocumentKeyDown, false);
+        this.domElements.editor.addEventListener('keydown', this.onDocumentKeyDown.bind(this), false);
 
         this.buttons = new Buttons(this);
     }
@@ -160,7 +160,7 @@ export class EditorApp {
             // this.code.hide();
             this.setIsDraw(true);
 
-            this.state.newArea = Area.CONSTRUCTORS[this.state.currentType].createAndStartDrawing(
+            this.state.newArea = AreaFactory.CONSTRUCTORS[this.state.currentType].createAndStartDrawing(
                 Utils.getRightCoords(e.pageX, e.pageY)
             );
         }
@@ -262,7 +262,7 @@ export class EditorApp {
 
             case EditorApp.KEYS.C:
                 if (this.state.appMode === 'editing' && this.state.selectedArea && ctrlDown) {
-                    var Constructor = Area.CONSTRUCTORS[area_params.type],
+                    var Constructor = AreaFactory.CONSTRUCTORS[area_params.type],
                         area_params = this.state.selectedArea.toJSON();
 
                     if (Constructor) {
@@ -315,15 +315,20 @@ export class EditorApp {
 
         this.setFilename(this.filename);
 
+        this.preview();
+
         return this;
     }
 
-//     preview: (function () {
-//     domElements.img.setAttribute('usemap', '#map');
-//     domElements.map = document.createElement('map');
-//     domElements.map.setAttribute('name', 'map');
-//     domElements.container.appendChild(domElements.map);
-//
+    public preview() {
+        this.domElements.img.setAttribute('usemap', '#map');
+        this.domElements.map = document.createElement('map');
+        this.domElements.map.setAttribute('name', 'map');
+        this.domElements.container.appendChild(this.domElements.map);
+
+        // Utils.hide(this.domElements.svg);
+        // this.map.innerHTML = this.app.getHTMLCode();
+
 //     return function () {
 //         info.unload();
 //         app.onEditingProcesshape(null);
@@ -332,7 +337,7 @@ export class EditorApp {
 //         code.print();
 //         return this;
 //     };
-// })(),
+    }
 
     public hidePreview() {
         Utils.show(this.domElements.svg);
@@ -427,6 +432,7 @@ export class EditorApp {
     }
 
     public setShape(arg) {
+        this.state.currentType = arg;
         this.onCurrentType(arg);
         return this;
     }

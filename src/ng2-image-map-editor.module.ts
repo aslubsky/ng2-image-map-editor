@@ -6,7 +6,9 @@ import {Ng2ImageMapEditorDirective} from './ng2-image-map-editor.directive';
     declarations: [
         Ng2ImageMapEditorDirective
     ],
-    exports: []
+    exports: [
+        Ng2ImageMapEditorDirective
+    ]
 })
 export class Ng2ImageMapEditorModule {
 }
