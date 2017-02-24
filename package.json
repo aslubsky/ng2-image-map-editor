@@ -1,0 +1,42 @@
+{
+  "name": "ng2-image-map-editor",
+  "version": "1.0.0",
+  "description": "angular2 port for image-map-editor",
+  "main": "./dist/ng2-image-map-editor.module.js",
+  "scripts": {
+    "ngc": "ngc --project tsconfig.def.json",
+    "tsc": "tsc --project tsconfig.def.json",
+    "compile": "npm run ngc && npm run tsc && rollup -c && rollup -c rollup.config.prod.js"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "image-map",
+    "editor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aslubsky/ng2-image-map-editor.git"
+  },
+  "author": "Alex Slubsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aslubsky/ng2-image-map-editor/issues"
+  },
+  "homepage": "https://github.com/aslubsky/ng2-image-map-editor#readme",
+  "devDependencies": {
+    "@angular/common": "2.4.0",
+    "@angular/compiler": "2.4.0",
+    "@angular/compiler-cli": "2.4.0",
+    "@angular/core": "2.4.0",
+    "@angular/forms": "2.4.0",
+    "@angular/platform-browser": "2.4.0",
+    "@angular/platform-server": "2.4.0",
+    "@types/es6-shim": "^0.31.32",
+    "es6-shim": "^0.35.1",
+    "reflect-metadata": "0.1.8",
+    "rxjs": "~5.1.1",
+    "typescript": "~2.0.6",
+    "zone.js": "0.6.25"
+  }
+}

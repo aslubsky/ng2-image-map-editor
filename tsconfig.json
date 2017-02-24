@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "module": "es6",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "sourceMap": true,
+    "declaration": false,
+    "types": ["es6-shim"]
+  },
+  "files": [
+    "src/ng2-image-map-editor.module.ts"
+  ]
+}
