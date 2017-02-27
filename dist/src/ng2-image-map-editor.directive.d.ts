@@ -1,5 +1,5 @@
 import { OnInit, OnChanges, SimpleChanges, EventEmitter } from '@angular/core';
-import { ControlValueAccessor } from '@angular/forms';
+import { ControlValueAccessor, FormControl } from '@angular/forms';
 import { EditorApp } from './editor-app.class';
 export declare class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChanges, OnInit {
     answers: any[];
@@ -14,6 +14,9 @@ export declare class Ng2ImageMapEditorDirective implements ControlValueAccessor,
     _value: string;
     onAnswersUpdated: EventEmitter<{}>;
     constructor();
+    validate(c: FormControl): {
+        required: boolean;
+    };
     propagateChange: (_: any) => void;
     registerOnChange(fn: any): void;
     registerOnTouched(): void;

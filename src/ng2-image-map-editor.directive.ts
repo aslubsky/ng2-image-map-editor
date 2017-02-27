@@ -1,5 +1,5 @@
 import {Component, Input, OnInit, Output, OnChanges, SimpleChanges, EventEmitter, forwardRef} from '@angular/core';
-import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
+import {ControlValueAccessor, NG_VALUE_ACCESSOR, NG_VALIDATORS, FormControl} from '@angular/forms';
 import {EditorApp} from './editor-app.class';
 import {Utils} from './utils.class';
 import {Area} from './area.class';
@@ -80,11 +80,11 @@ import {AreaFactory} from './area-factory.class';
             useExisting: forwardRef(() => Ng2ImageMapEditorDirective),
             multi: true
         },
-        // {
-        //     provide: NG_VALIDATORS,
-        //     useExisting: forwardRef(() => DaterangePickerValidator),
-        //     multi: true
-        // }
+        {
+            provide: NG_VALIDATORS,
+            useExisting: forwardRef(() => Ng2ImageMapEditorDirective),
+            multi: true
+        }
     ]
 })
 export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChanges, OnInit {
@@ -127,6 +127,17 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
     @Output() onAnswersUpdated = new EventEmitter();
 
     constructor() {
+    }
+
+    validate(c: FormControl) {
+        // console.log('Ng2ImageMapEditorDirective NG_VALIDATORS', c.value, this.valid);
+        if (this.valid) {
+            return null;
+        }
+
+        return {
+            required: true
+        };
     }
 
     propagateChange = (_: any) => {
