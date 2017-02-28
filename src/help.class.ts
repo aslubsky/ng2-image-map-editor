@@ -7,7 +7,7 @@ export class Help {
 
     constructor() {
         this.block = Utils.id('help');
-        console.log('this.block', this.block);
+        // console.log('this.block', this.block);
         this.overlay = Utils.id('overlay');
         this.close_button = this.block.querySelector('.close_button');
 

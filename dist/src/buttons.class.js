@@ -32,7 +32,6 @@ var Buttons = (function () {
     Buttons.prototype.onShapeButtonClick = function (e) {
         e.preventDefault();
         var target = e.target.id ? e.target : e.target.parentNode;
-        console.log('onShapeButtonClick', e, this, target, target.id);
         this.onSetInvalid();
         this.app.setMode('drawing')
             .setDrawClass()

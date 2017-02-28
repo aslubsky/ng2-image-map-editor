@@ -39,7 +39,7 @@ export class Buttons {
         e.preventDefault();
         var target = e.target.id ? e.target : e.target.parentNode;
 
-        console.log('onShapeButtonClick', e, this, target, target.id);
+        // console.log('onShapeButtonClick', e, this, target, target.id);
 
         this.onSetInvalid();
 

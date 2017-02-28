@@ -10,6 +10,7 @@ export declare class Ng2ImageMapEditorDirective implements ControlValueAccessor,
     currentType: string;
     icons: any;
     labels: any;
+    static globalLabels: any;
     app: EditorApp;
     _value: string;
     onAnswersUpdated: EventEmitter<{}>;

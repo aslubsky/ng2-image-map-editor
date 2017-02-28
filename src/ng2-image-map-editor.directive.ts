@@ -102,7 +102,9 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
         polygon: '/themes/default/assets/img/test/pol.png'
     };
 
-    public labels: any = {
+    public labels: any = {};
+
+    public static globalLabels: any = {
         save_answers: 'Save answers',
         edit: 'Edit',
         clear: 'Clear',
@@ -160,6 +162,7 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
     }
 
     public ngOnInit() {
+        this.labels = Ng2ImageMapEditorDirective.globalLabels;
         this.app = new EditorApp();
         Utils.app = this.app;
         Area.app = this.app;
@@ -168,11 +171,10 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
             this.valid = false;
         };
         this.app.buttons.onData = (answers: any[], areas: any) => {
+            this.valid = true;
             this.propagateChange(areas);
             this.answers = answers;
             this.onAnswersUpdated.emit(answers);
-
-            this.valid = true;
         };
         this.app.onCurrentType = (type: string) => {
             this.currentType = type;
@@ -189,17 +191,20 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
                 } else {
                     scale = 1.03;
                 }
-                Utils.foreach(obj.areas, function (x, i, arr) {
+
+                // console.log('this.answers', this.answers);
+
+                Utils.foreach(obj.areas, (x, i, arr) => {
                     if (x.type in AreaFactory.CONSTRUCTORS) {
                         //adaptation coordinates in screen resolution
-                        x.coords.forEach(function (item, i, arr) {
+                        x.coords.forEach((item, i, arr) => {
                             x.coords[i] = Math.round(item / scale);
                         });
 
                         AreaFactory.CONSTRUCTORS[x.type].createFromSaved({
                             coords: x.coords,
                             href: x.href,
-                            alt: (this.answers[i] != undefined && this[i].is_right) ? '1' : '0',//x.alt,
+                            alt: (this.answers[i] != undefined && this.answers[i].is_right) ? '1' : '0',//x.alt,
                             title: (this.answers[i] != undefined) ? this.answers[i].body : x.title,
                             number: i
                         });

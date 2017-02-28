@@ -25,23 +25,7 @@ var Ng2ImageMapEditorDirective = (function () {
             circle: '/themes/default/assets/img/test/cir.png',
             polygon: '/themes/default/assets/img/test/pol.png'
         };
-        this.labels = {
-            save_answers: 'Save answers',
-            edit: 'Edit',
-            clear: 'Clear',
-            drawing_mode: 'Drawing mode (rectangle / circle / polygon)',
-            drawing_mode_enter: 'stop polygon drawing (or click on first helper)',
-            drawing_mode_esc: 'cancel drawing of a new area',
-            drawing_mode_shift: 'square drawing in case of a rectangle and right angle drawing in case of a polygon',
-            editing_mode: 'Editing mode',
-            editing_mode_delete: 'remove a selected area',
-            editing_mode_esc: 'cancel editing of a selected area',
-            editing_mode_shift: 'edit and save proportions for rectangle',
-            editing_mode_up: 'move a selected area up',
-            editing_mode_down: 'move a selected area down',
-            editing_mode_left: 'move a selected area to the left',
-            editing_mode_right: 'move a selected area to the right'
-        };
+        this.labels = {};
         this.onAnswersUpdated = new core_1.EventEmitter();
         this.propagateChange = function (_) {
         };
@@ -67,6 +51,7 @@ var Ng2ImageMapEditorDirective = (function () {
     };
     Ng2ImageMapEditorDirective.prototype.ngOnInit = function () {
         var _this = this;
+        this.labels = Ng2ImageMapEditorDirective.globalLabels;
         this.app = new editor_app_class_1.EditorApp();
         utils_class_1.Utils.app = this.app;
         area_class_1.Area.app = this.app;
@@ -74,10 +59,10 @@ var Ng2ImageMapEditorDirective = (function () {
             _this.valid = false;
         };
         this.app.buttons.onData = function (answers, areas) {
+            _this.valid = true;
             _this.propagateChange(areas);
             _this.answers = answers;
             _this.onAnswersUpdated.emit(answers);
-            _this.valid = true;
         };
         this.app.onCurrentType = function (type) {
             _this.currentType = type;
@@ -103,8 +88,8 @@ var Ng2ImageMapEditorDirective = (function () {
                         area_factory_class_1.AreaFactory.CONSTRUCTORS[x.type].createFromSaved({
                             coords: x.coords,
                             href: x.href,
-                            alt: (this.answers[i] != undefined && this[i].is_right) ? '1' : '0',
-                            title: (this.answers[i] != undefined) ? this.answers[i].body : x.title,
+                            alt: (_this.answers[i] != undefined && _this.answers[i].is_right) ? '1' : '0',
+                            title: (_this.answers[i] != undefined) ? _this.answers[i].body : x.title,
                             number: i
                         });
                     }
@@ -119,6 +104,23 @@ var Ng2ImageMapEditorDirective = (function () {
         if (this.mainImageSrc && this.mainImageWidth && this.app) {
             this.app.loadImage(this.mainImageSrc, this.mainImageWidth);
         }
+    };
+    Ng2ImageMapEditorDirective.globalLabels = {
+        save_answers: 'Save answers',
+        edit: 'Edit',
+        clear: 'Clear',
+        drawing_mode: 'Drawing mode (rectangle / circle / polygon)',
+        drawing_mode_enter: 'stop polygon drawing (or click on first helper)',
+        drawing_mode_esc: 'cancel drawing of a new area',
+        drawing_mode_shift: 'square drawing in case of a rectangle and right angle drawing in case of a polygon',
+        editing_mode: 'Editing mode',
+        editing_mode_delete: 'remove a selected area',
+        editing_mode_esc: 'cancel editing of a selected area',
+        editing_mode_shift: 'edit and save proportions for rectangle',
+        editing_mode_up: 'move a selected area up',
+        editing_mode_down: 'move a selected area down',
+        editing_mode_left: 'move a selected area to the left',
+        editing_mode_right: 'move a selected area to the right'
     };
     __decorate([
         core_1.Input('answers'), 
