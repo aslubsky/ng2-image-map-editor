@@ -1,13 +1,4 @@
 "use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
 var editor_app_class_1 = require('./editor-app.class');
@@ -122,41 +113,31 @@ var Ng2ImageMapEditorDirective = (function () {
         editing_mode_left: 'move a selected area to the left',
         editing_mode_right: 'move a selected area to the right'
     };
-    __decorate([
-        core_1.Input('answers'), 
-        __metadata('design:type', Array)
-    ], Ng2ImageMapEditorDirective.prototype, "answers", void 0);
-    __decorate([
-        core_1.Input('src'), 
-        __metadata('design:type', String)
-    ], Ng2ImageMapEditorDirective.prototype, "mainImageSrc", void 0);
-    __decorate([
-        core_1.Input('width'), 
-        __metadata('design:type', Number)
-    ], Ng2ImageMapEditorDirective.prototype, "mainImageWidth", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], Ng2ImageMapEditorDirective.prototype, "onAnswersUpdated", void 0);
-    Ng2ImageMapEditorDirective = __decorate([
-        core_1.Component({
-            selector: '[ng2-image-map-editor]',
-            template: "<div id=\"wrapper\">\n    <header id=\"header\">\n        <nav id=\"nav\" class=\"clearfix\">\n            <ul class=\"float-left\">\n                <li id=\"to_html\"><a [class.btn-success]=\"!valid\" class=\"btn-success btn\" href=\"#\">{{labels.save_answers}}</a></li>\n                <li><a [class.btn-default]=\"currentType == 'rectangle'\" [class.btn]=\"currentType != 'rectangle'\" id=\"rectangle\" href=\"#\"><img [src]=\"icons.rectangle\"></a></li>\n                <li><a [class.btn-default]=\"currentType == 'circle'\" [class.btn]=\"currentType != 'circle'\" href=\"#\" id=\"circle\"><img [src]=\"icons.circle\"></a></li>\n                <li><a [class.btn-default]=\"currentType == 'polygon'\" [class.btn]=\"currentType != 'polygon'\" href=\"#\" id=\"polygon\"><img [src]=\"icons.polygon\"></a></li>\n            </ul>\n            <ul class=\"float-right\">\n                <li class=\"btn\" id=\"edit\">\n                    <a [class.btn-primary]=\"isEditMode\" [class.btn-default]=\"!isEditMode\" class=\"btn\" href=\"#\">\n                    <i [class.fa-toggle-on]=\"isEditMode\" [class.fa-toggle-off]=\"!isEditMode\" class=\"fa\" aria-hidden=\"true\"></i> {{labels.edit}}</a>\n                </li>\n                <li class=\"btn\" id=\"clear\"><a class=\"btn btn-default\" href=\"#\"><i class=\"fa fa-eraser\" aria-hidden=\"true\"></i> {{labels.clear}}</a></li>\n                <li class=\"btn\" id=\"show_help\"><a href=\"#\"><i class=\"fa fa-question-circle\" aria-hidden=\"true\"></i></a></li>\n            </ul>\n        </nav>\n        <div id=\"coords\"></div>\n        <div id=\"debug\"></div>\n    </header>\n    <div id=\"image_wrapper\">\n        <div id=\"image\">\n            <img src=\"\" alt=\"#\" id=\"img\" />\n            <svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.2\" baseProfile=\"tiny\" id=\"svg\"></svg>\n        </div>\n    </div>\n</div>\n\n<!-- From html block -->\n<div id=\"from_html_wrapper\">\n    <form id=\"from_html_form\">\n        <h5>Loading areas</h5>\n        <span class=\"close_button\" title=\"close\"></span>\n        <p>\n            <label for=\"code_input\">Enter your html code:</label>\n            <textarea id=\"code_input\"></textarea>\n        </p>\n        <button id=\"load_code_button\">Load</button>\n    </form>\n</div>\n<!-- Get image form -->\n\n<!-- Help block    {{''|translate}} -->\n<div id=\"overlay\"></div>\n<div id=\"help\">\n    <span class=\"close_button\" title=\"close\"></span>\n    <div class=\"txt\">\n        <section>\n            <h2>{{labels.drawing_mode}}</h2>\n            <p><span class=\"key\">ENTER</span> &mdash; {{labels.drawing_mode_enter}}</p>\n            <p><span class=\"key\">ESC</span> &mdash; {{labels.drawing_mode_esc}}</p>\n            <p><span class=\"key\">SHIFT</span> &mdash; {{labels.drawing_mode_shift}}</p>\n        </section>\n        <section>\n            <h2>{{labels.editing_mode}}</h2>\n            <p><span class=\"key\">DELETE</span> &mdash; {{labels.editing_mode_delete}}</p>\n            <p><span class=\"key\">ESC</span> &mdash; {{labels.editing_mode_esc}}</p>\n            <p><span class=\"key\">SHIFT</span> &mdash; {{labels.editing_mode_shift}}</p>\n            <p><span class=\"key\">&uarr;</span> &mdash; {{labels.editing_mode_up}}</p>\n            <p><span class=\"key\">&darr;</span> &mdash; {{labels.editing_mode_down}}</p>\n            <p><span class=\"key\">&larr;</span> &mdash; {{labels.editing_mode_left}}</p>\n            <p><span class=\"key\">&rarr;</span> &mdash; {{labels.editing_mode_right}}</p>\n        </section>\n    </div>\n</div>",
-            providers: [
-                {
-                    provide: forms_1.NG_VALUE_ACCESSOR,
-                    useExisting: core_1.forwardRef(function () { return Ng2ImageMapEditorDirective; }),
-                    multi: true
-                },
-                {
-                    provide: forms_1.NG_VALIDATORS,
-                    useExisting: core_1.forwardRef(function () { return Ng2ImageMapEditorDirective; }),
-                    multi: true
-                }
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], Ng2ImageMapEditorDirective);
+    Ng2ImageMapEditorDirective.decorators = [
+        { type: core_1.Component, args: [{
+                    selector: '[ng2-image-map-editor]',
+                    template: "<div id=\"wrapper\">\n    <header id=\"header\">\n        <nav id=\"nav\" class=\"clearfix\">\n            <ul class=\"float-left\">\n                <li id=\"to_html\"><a [class.btn-success]=\"!valid\" class=\"btn-success btn\" href=\"#\">{{labels.save_answers}}</a></li>\n                <li><a [class.btn-default]=\"currentType == 'rectangle'\" [class.btn]=\"currentType != 'rectangle'\" id=\"rectangle\" href=\"#\"><img [src]=\"icons.rectangle\"></a></li>\n                <li><a [class.btn-default]=\"currentType == 'circle'\" [class.btn]=\"currentType != 'circle'\" href=\"#\" id=\"circle\"><img [src]=\"icons.circle\"></a></li>\n                <li><a [class.btn-default]=\"currentType == 'polygon'\" [class.btn]=\"currentType != 'polygon'\" href=\"#\" id=\"polygon\"><img [src]=\"icons.polygon\"></a></li>\n            </ul>\n            <ul class=\"float-right\">\n                <li class=\"btn\" id=\"edit\">\n                    <a [class.btn-primary]=\"isEditMode\" [class.btn-default]=\"!isEditMode\" class=\"btn\" href=\"#\">\n                    <i [class.fa-toggle-on]=\"isEditMode\" [class.fa-toggle-off]=\"!isEditMode\" class=\"fa\" aria-hidden=\"true\"></i> {{labels.edit}}</a>\n                </li>\n                <li class=\"btn\" id=\"clear\"><a class=\"btn btn-default\" href=\"#\"><i class=\"fa fa-eraser\" aria-hidden=\"true\"></i> {{labels.clear}}</a></li>\n                <li class=\"btn\" id=\"show_help\"><a href=\"#\"><i class=\"fa fa-question-circle\" aria-hidden=\"true\"></i></a></li>\n            </ul>\n        </nav>\n        <div id=\"coords\"></div>\n        <div id=\"debug\"></div>\n    </header>\n    <div id=\"image_wrapper\">\n        <div id=\"image\">\n            <img src=\"\" alt=\"#\" id=\"img\" />\n            <svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.2\" baseProfile=\"tiny\" id=\"svg\"></svg>\n        </div>\n    </div>\n</div>\n\n<!-- From html block -->\n<div id=\"from_html_wrapper\">\n    <form id=\"from_html_form\">\n        <h5>Loading areas</h5>\n        <span class=\"close_button\" title=\"close\"></span>\n        <p>\n            <label for=\"code_input\">Enter your html code:</label>\n            <textarea id=\"code_input\"></textarea>\n        </p>\n        <button id=\"load_code_button\">Load</button>\n    </form>\n</div>\n<!-- Get image form -->\n\n<!-- Help block    {{''|translate}} -->\n<div id=\"overlay\"></div>\n<div id=\"help\">\n    <span class=\"close_button\" title=\"close\"></span>\n    <div class=\"txt\">\n        <section>\n            <h2>{{labels.drawing_mode}}</h2>\n            <p><span class=\"key\">ENTER</span> &mdash; {{labels.drawing_mode_enter}}</p>\n            <p><span class=\"key\">ESC</span> &mdash; {{labels.drawing_mode_esc}}</p>\n            <p><span class=\"key\">SHIFT</span> &mdash; {{labels.drawing_mode_shift}}</p>\n        </section>\n        <section>\n            <h2>{{labels.editing_mode}}</h2>\n            <p><span class=\"key\">DELETE</span> &mdash; {{labels.editing_mode_delete}}</p>\n            <p><span class=\"key\">ESC</span> &mdash; {{labels.editing_mode_esc}}</p>\n            <p><span class=\"key\">SHIFT</span> &mdash; {{labels.editing_mode_shift}}</p>\n            <p><span class=\"key\">&uarr;</span> &mdash; {{labels.editing_mode_up}}</p>\n            <p><span class=\"key\">&darr;</span> &mdash; {{labels.editing_mode_down}}</p>\n            <p><span class=\"key\">&larr;</span> &mdash; {{labels.editing_mode_left}}</p>\n            <p><span class=\"key\">&rarr;</span> &mdash; {{labels.editing_mode_right}}</p>\n        </section>\n    </div>\n</div>",
+                    providers: [
+                        {
+                            provide: forms_1.NG_VALUE_ACCESSOR,
+                            useExisting: core_1.forwardRef(function () { return Ng2ImageMapEditorDirective; }),
+                            multi: true
+                        },
+                        {
+                            provide: forms_1.NG_VALIDATORS,
+                            useExisting: core_1.forwardRef(function () { return Ng2ImageMapEditorDirective; }),
+                            multi: true
+                        }
+                    ]
+                },] },
+    ];
+    Ng2ImageMapEditorDirective.ctorParameters = function () { return []; };
+    Ng2ImageMapEditorDirective.propDecorators = {
+        'answers': [{ type: core_1.Input, args: ['answers',] },],
+        'mainImageSrc': [{ type: core_1.Input, args: ['src',] },],
+        'mainImageWidth': [{ type: core_1.Input, args: ['width',] },],
+        'onAnswersUpdated': [{ type: core_1.Output },],
+    };
     return Ng2ImageMapEditorDirective;
 }());
 exports.Ng2ImageMapEditorDirective = Ng2ImageMapEditorDirective;
