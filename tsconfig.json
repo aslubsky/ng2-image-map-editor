@@ -21,6 +21,7 @@
     "dist"
   ],
   "files": [
-    "index.ts"
+    "./src/ng2-image-map-editor.module.ts",
+    "./src/ng2-image-map-editor.directive.ts"
   ]
 }

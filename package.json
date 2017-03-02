@@ -4,9 +4,9 @@
   "description": "angular2 port for image-map-editor",
   "main": "./dist/ng2-image-map-editor.module.js",
   "scripts": {
-    "ngc": "ngc --project tsconfig.def.json",
-    "tsc": "tsc --project tsconfig.def.json",
-    "compile": "npm run ngc && npm run tsc && rollup -c && rollup -c rollup.config.prod.js"
+    "ngc": "ngc --project tsconfig.json",
+    "tsc": "tsc --project tsconfig.json",
+    "compile": "npm run ngc && npm run tsc"
   },
   "keywords": [
     "angular",
