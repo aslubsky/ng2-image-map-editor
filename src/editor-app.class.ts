@@ -75,7 +75,7 @@ export class EditorApp {
 
     constructor() {
         /* Get offset value */
-        window.addEventListener('resize', this.recalcOffsetValues, false);
+        window.addEventListener('resize', this.recalcOffsetValues.bind(this), false);
 
         /* Disable selection */
         this.domElements.container.addEventListener('mousedown', (e) => {

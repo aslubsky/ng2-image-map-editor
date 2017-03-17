@@ -51,7 +51,7 @@ var EditorApp = (function () {
         };
         this.help = new help_class_1.Help();
         this.filename = null;
-        window.addEventListener('resize', this.recalcOffsetValues, false);
+        window.addEventListener('resize', this.recalcOffsetValues.bind(this), false);
         this.domElements.container.addEventListener('mousedown', function (e) {
             e.preventDefault();
         }, false);
