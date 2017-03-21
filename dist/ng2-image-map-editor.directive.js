@@ -26,6 +26,7 @@ var Ng2ImageMapEditorDirective = (function () {
             polygon: '/themes/default/assets/img/test/pol.png'
         };
         this.labels = {};
+        this._loadedImage = '';
         this.onAnswersUpdated = new core_1.EventEmitter();
         this.propagateChange = function (_) {
         };
@@ -45,8 +46,14 @@ var Ng2ImageMapEditorDirective = (function () {
     };
     Ng2ImageMapEditorDirective.prototype.writeValue = function (value) {
         this._value = value;
+        if (this._value) {
+            this._parsedValue = JSON.parse(this._value);
+        }
         if (this._value && this.mainImageWidth && this.app) {
-            this.app.loadJSON(this._value, this.mainImageWidth);
+            if (this._loadedImage != this._parsedValue.img) {
+                this._loadedImage = this._parsedValue.img;
+                this.app.loadImage(this._parsedValue.img, this.mainImageWidth);
+            }
         }
     };
     Ng2ImageMapEditorDirective.prototype.ngOnInit = function () {
@@ -72,7 +79,6 @@ var Ng2ImageMapEditorDirective = (function () {
         };
         this.app.onImageLoaded = function () {
             if (_this._value) {
-                var obj = JSON.parse(_this._value);
                 var scale = 1;
                 if (_this.app.img.width > _this.app.domElements.img.clientWidth) {
                     scale = Number((_this.app.img.width / _this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
@@ -80,7 +86,7 @@ var Ng2ImageMapEditorDirective = (function () {
                 else {
                     scale = 1.03;
                 }
-                utils_class_1.Utils.foreach(obj.areas, function (x, i, arr) {
+                utils_class_1.Utils.foreach(_this._parsedValue.areas, function (x, i, arr) {
                     if (x.type in area_factory_class_1.AreaFactory.CONSTRUCTORS) {
                         x.coords.forEach(function (item, i, arr) {
                             x.coords[i] = Math.round(item / scale);
@@ -96,12 +102,14 @@ var Ng2ImageMapEditorDirective = (function () {
                 });
             }
         };
-        if (this.mainImageSrc && this.mainImageWidth) {
+        if (this.mainImageSrc && this.mainImageWidth && this._loadedImage != this.mainImageSrc) {
+            this._loadedImage = this.mainImageSrc;
             this.app.loadImage(this.mainImageSrc, this.mainImageWidth);
         }
     };
     Ng2ImageMapEditorDirective.prototype.ngOnChanges = function (changes) {
-        if (this.mainImageSrc && this.mainImageWidth && this.app) {
+        if (this.mainImageSrc && this.mainImageWidth && this.app && this._loadedImage != this.mainImageSrc) {
+            this._loadedImage = this.mainImageSrc;
             this.app.loadImage(this.mainImageSrc, this.mainImageWidth);
         }
     };

@@ -53,7 +53,6 @@ export declare class EditorApp {
     setDefaultClass(): this;
     addEvent(target: any, eventType: any, func: any): this;
     removeAllEvents(): this;
-    loadJSON(str: any, width: any): void;
     getAreas(): any;
     getAreasJSON(scale: any): string;
     getHTMLCode(arg: any): string;

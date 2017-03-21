@@ -507,11 +507,11 @@ export class EditorApp {
         return this;
     }
 
-    public loadJSON(str, width) {
-        var obj = JSON.parse(str);
-        this.loadImage(obj.img, width);
-        return
-    }
+    // public loadJSON(str, width) {
+    //     var obj = JSON.parse(str);
+    //     this.loadImage(obj.img, width);
+    //     return
+    // }
 
     public getAreas() {
         return this.state.areas;

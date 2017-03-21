@@ -125,6 +125,9 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
     public app: EditorApp;
 
     public _value: string;
+    private _parsedValue: any;
+
+    private _loadedImage: string = '';
 
     @Output() onAnswersUpdated = new EventEmitter();
 
@@ -156,8 +159,15 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
     writeValue(value: string) {
         this._value = value;
 
+        if (this._value) {
+            this._parsedValue = JSON.parse(this._value);
+        }
         if (this._value && this.mainImageWidth && this.app) {
-            this.app.loadJSON(this._value, this.mainImageWidth);
+            if(this._loadedImage != this._parsedValue.img) {
+                this._loadedImage = this._parsedValue.img;
+                this.app.loadImage(this._parsedValue.img, this.mainImageWidth);
+                // console.log('writeValue loadImage', this._parsedValue.img, this.mainImageWidth);
+            }
         }
     }
 
@@ -183,18 +193,21 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
             this.isEditMode = mode == 'editing';
         };
         this.app.onImageLoaded = () => {
+            // console.log('onImageLoaded');
+
             if (this._value) {
-                var obj = JSON.parse(this._value);
                 var scale = 1;
                 if (this.app.img.width > this.app.domElements.img.clientWidth) {
                     scale = Number((this.app.img.width / this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
                 } else {
                     scale = 1.03;
                 }
+                // console.log('onImageLoaded', this._parsedValue, this.app.img.width, this.app.domElements.img.clientWidth);
+                // console.log('scale', scale);
 
                 // console.log('this.answers', this.answers);
 
-                Utils.foreach(obj.areas, (x, i, arr) => {
+                Utils.foreach(this._parsedValue.areas, (x, i, arr) => {
                     if (x.type in AreaFactory.CONSTRUCTORS) {
                         //adaptation coordinates in screen resolution
                         x.coords.forEach((item, i, arr) => {
@@ -213,14 +226,18 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
             }
         };
 
-        if (this.mainImageSrc && this.mainImageWidth) {
+        if (this.mainImageSrc && this.mainImageWidth && this._loadedImage != this.mainImageSrc) {
+            this._loadedImage = this.mainImageSrc;
             this.app.loadImage(this.mainImageSrc, this.mainImageWidth);
+            // console.log('ngOnInit loadImage', this.mainImageSrc, this.mainImageWidth);
         }
     }
 
     public ngOnChanges(changes: SimpleChanges) {
-        if (this.mainImageSrc && this.mainImageWidth && this.app) {
+        if (this.mainImageSrc && this.mainImageWidth && this.app && this._loadedImage != this.mainImageSrc) {
+            this._loadedImage = this.mainImageSrc;
             this.app.loadImage(this.mainImageSrc, this.mainImageWidth);
+            // console.log('ngOnChanges loadImage', this.mainImageSrc, this.mainImageWidth);
         }
     }
 }

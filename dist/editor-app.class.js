@@ -357,11 +357,6 @@ var EditorApp = (function () {
         this.state.events.length = 0;
         return this;
     };
-    EditorApp.prototype.loadJSON = function (str, width) {
-        var obj = JSON.parse(str);
-        this.loadImage(obj.img, width);
-        return;
-    };
     EditorApp.prototype.getAreas = function () {
         return this.state.areas;
     };

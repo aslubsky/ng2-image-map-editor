@@ -13,6 +13,8 @@ export declare class Ng2ImageMapEditorDirective implements ControlValueAccessor,
     static globalLabels: any;
     app: EditorApp;
     _value: string;
+    private _parsedValue;
+    private _loadedImage;
     onAnswersUpdated: EventEmitter<{}>;
     constructor();
     validate(c: FormControl): {
