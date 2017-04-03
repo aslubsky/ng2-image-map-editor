@@ -199,7 +199,7 @@ var EditorApp = (function () {
         this.domElements.container.style.height = height + 'px';
         return this;
     };
-    EditorApp.prototype.onImageLoaded = function () {
+    EditorApp.prototype.onImageLoaded = function (state) {
     };
     EditorApp.prototype.loadImage = function (url, width) {
         var _this = this;
@@ -212,7 +212,7 @@ var EditorApp = (function () {
             _this.show()
                 .setDimensions(_this.domElements.img.width, _this.domElements.img.height)
                 .recalcOffsetValues();
-            _this.onImageLoaded();
+            _this.onImageLoaded(_this.state);
         };
         this.setFilename(this.filename);
         this.preview();

@@ -295,7 +295,7 @@ export class EditorApp {
         return this;
     }
 
-    public onImageLoaded() {
+    public onImageLoaded(state: any) {
 
     }
 
@@ -310,7 +310,7 @@ export class EditorApp {
                 .setDimensions(this.domElements.img.width, this.domElements.img.height)
                 .recalcOffsetValues();
 
-            this.onImageLoaded();
+            this.onImageLoaded(this.state);
         };
 
         this.setFilename(this.filename);

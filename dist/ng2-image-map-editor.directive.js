@@ -77,11 +77,11 @@ var Ng2ImageMapEditorDirective = (function () {
         this.app.onSetMode = function (mode) {
             _this.isEditMode = mode == 'editing';
         };
-        this.app.onImageLoaded = function () {
+        this.app.onImageLoaded = function (state) {
             if (_this._value) {
                 var scale = 1;
-                if (_this.app.img.width > _this.app.domElements.img.clientWidth) {
-                    scale = Number((_this.app.img.width / _this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
+                if (state.image.width > _this.app.domElements.img.clientWidth) {
+                    scale = Number((state.image.width / _this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
                 }
                 else {
                     scale = 1.03;

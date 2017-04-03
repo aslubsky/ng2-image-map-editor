@@ -192,18 +192,19 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
         this.app.onSetMode = (mode: string) => {
             this.isEditMode = mode == 'editing';
         };
-        this.app.onImageLoaded = () => {
+        this.app.onImageLoaded = (state: any) => {
             // console.log('onImageLoaded');
 
             if (this._value) {
                 var scale = 1;
-                if (this.app.img.width > this.app.domElements.img.clientWidth) {
-                    scale = Number((this.app.img.width / this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
+                if (state.image.width > this.app.domElements.img.clientWidth) {
+                    //this.app.img.width
+                    scale = Number((state.image.width / this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
                 } else {
                     scale = 1.03;
                 }
                 // console.log('onImageLoaded', this._parsedValue, this.app.img.width, this.app.domElements.img.clientWidth);
-                // console.log('scale', scale);
+                // console.log('scale', scale );
 
                 // console.log('this.answers', this.answers);
 

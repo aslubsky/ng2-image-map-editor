@@ -55,12 +55,13 @@ var Buttons = (function () {
     Buttons.prototype.onToHtmlButtonClick = function (e) {
         var answers = this.app.getAreas();
         var scale = 1;
-        if (this.app.img.width > this.app.domElements.img.clientWidth) {
-            scale = Number((this.app.img.width / this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
+        if (this.app.state.image.width > this.app.domElements.img.clientWidth) {
+            scale = Number((this.app.state.image.width / this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
         }
         else {
             scale = 1.03;
         }
+        console.log('****onToHtmlButtonClick: ', scale);
         var resultsAnswers = [];
         answers.forEach(function (item, i, arr) {
             var imgMapData = item.toJSON();

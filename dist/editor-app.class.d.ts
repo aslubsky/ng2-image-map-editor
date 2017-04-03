@@ -23,7 +23,7 @@ export declare class EditorApp {
     hide(): this;
     show(): this;
     setDimensions(width: any, height: any): this;
-    onImageLoaded(): void;
+    onImageLoaded(state: any): void;
     loadImage(url: any, width: any): this;
     preview(): void;
     hidePreview(): this;
