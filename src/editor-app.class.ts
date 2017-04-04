@@ -375,7 +375,7 @@ export class EditorApp {
     }
 
     public removeObject(obj) {
-        Utils.foreach(this.state.areas, function (x, i) {
+        Utils.foreach(this.state.areas, (x, i) => {
             if (x === obj) {
                 this.state.areas.splice(i, 1);
             }

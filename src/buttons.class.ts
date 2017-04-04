@@ -74,9 +74,9 @@ export class Buttons {
         var answers = this.app.getAreas();
         var scale = 1;
         if (this.app.state.image.width > this.app.domElements.img.clientWidth) {
-            scale = Number((this.app.state.image.width / this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
+            scale = Number((this.app.state.image.width / this.app.domElements.img.clientWidth).toFixed(3));
         } else {
-            scale = 1.03;
+            scale = 1;
         }
         var resultsAnswers: any[] = [];
         answers.forEach(function (item, i, arr) {

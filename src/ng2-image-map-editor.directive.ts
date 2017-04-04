@@ -198,10 +198,9 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
             if (this._value) {
                 var scale = 1;
                 if (state.image.width > this.app.domElements.img.clientWidth) {
-                    //this.app.img.width
-                    scale = Number((state.image.width / this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
+                    scale = Number((state.image.width / this.app.domElements.img.clientWidth).toFixed(3));
                 } else {
-                    scale = 1.03;
+                    scale = 1;
                 }
                 // console.log('onImageLoaded', this._parsedValue, this.app.img.width, this.app.domElements.img.clientWidth);
                 // console.log('scale', scale );

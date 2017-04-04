@@ -252,9 +252,10 @@ var EditorApp = (function () {
         return this;
     };
     EditorApp.prototype.removeObject = function (obj) {
+        var _this = this;
         utils_class_1.Utils.foreach(this.state.areas, function (x, i) {
             if (x === obj) {
-                this.state.areas.splice(i, 1);
+                _this.state.areas.splice(i, 1);
             }
         });
         obj.remove();

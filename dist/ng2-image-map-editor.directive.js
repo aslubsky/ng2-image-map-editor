@@ -81,10 +81,10 @@ var Ng2ImageMapEditorDirective = (function () {
             if (_this._value) {
                 var scale = 1;
                 if (state.image.width > _this.app.domElements.img.clientWidth) {
-                    scale = Number((state.image.width / _this.app.domElements.img.clientWidth).toFixed(3)) + 0.03;
+                    scale = Number((state.image.width / _this.app.domElements.img.clientWidth).toFixed(3));
                 }
                 else {
-                    scale = 1.03;
+                    scale = 1;
                 }
                 utils_class_1.Utils.foreach(_this._parsedValue.areas, function (x, i, arr) {
                     if (x.type in area_factory_class_1.AreaFactory.CONSTRUCTORS) {
