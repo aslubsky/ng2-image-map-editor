@@ -390,7 +390,7 @@ export class EditorApp {
                     x._helpers[0].setNumber(i);
                     break;
                 case 'circle':
-                    x.helpers.number.setNumber(i);
+                    x._helpers.number.setNumber(i);
                     break;
             }
         })
