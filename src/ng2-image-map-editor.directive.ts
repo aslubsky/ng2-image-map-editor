@@ -135,11 +135,9 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
     }
 
     validate(c: FormControl) {
-        // console.log('Ng2ImageMapEditorDirective NG_VALIDATORS', c.value, this.valid);
         if (this.valid) {
             return null;
         }
-
         return {
             required: true
         };
@@ -179,6 +177,7 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
 
         this.app.buttons.onSetInvalid = () => {
             this.valid = false;
+            this.propagateChange([]);
         };
         this.app.buttons.onData = (answers: any[], areas: any) => {
             this.valid = true;

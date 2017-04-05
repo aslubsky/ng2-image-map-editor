@@ -64,6 +64,7 @@ var Ng2ImageMapEditorDirective = (function () {
         area_class_1.Area.app = this.app;
         this.app.buttons.onSetInvalid = function () {
             _this.valid = false;
+            _this.propagateChange([]);
         };
         this.app.buttons.onData = function (answers, areas) {
             _this.valid = true;
