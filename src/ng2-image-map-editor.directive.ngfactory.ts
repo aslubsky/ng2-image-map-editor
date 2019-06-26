@@ -143,47 +143,47 @@ export class View_Ng2ImageMapEditorDirective0 extends import2.AppView<import0.Ng
   _el_6:any;
   _text_7:any;
   _el_8:any;
-  _el_9:any;
-  _text_10:any;
+  _text_9:any;
+  _el_10:any;
   _text_11:any;
   _el_12:any;
-  _el_13:any;
+  _text_13:any;
   _el_14:any;
   _text_15:any;
   _el_16:any;
-  _el_17:any;
+  _text_17:any;
   _el_18:any;
   _text_19:any;
   _el_20:any;
-  _el_21:any;
+  _text_21:any;
   _el_22:any;
   _text_23:any;
   _text_24:any;
-  _el_25:any;
+  _text_25:any;
   _text_26:any;
-  _el_27:any;
+  _text_27:any;
   _text_28:any;
-  _el_29:any;
-  _text_30:any;
+  _text_29:any;
+  _el_30:any;
   _el_31:any;
-  _text_32:any;
+  _el_32:any;
   _text_33:any;
-  _text_34:any;
+  _el_34:any;
   _el_35:any;
   _el_36:any;
-  _el_37:any;
-  _text_38:any;
-  _text_39:any;
+  _text_37:any;
+  _el_38:any;
+  _el_39:any;
   _el_40:any;
-  _el_41:any;
-  _el_42:any;
-  _text_43:any;
+  _text_41:any;
+  _text_42:any;
+  _el_43:any;
   _text_44:any;
-  _text_45:any;
-  _el_46:any;
-  _text_47:any;
-  _el_48:any;
-  _text_49:any;
+  _el_45:any;
+  _text_46:any;
+  _el_47:any;
+  _text_48:any;
+  _el_49:any;
   _text_50:any;
   _el_51:any;
   _text_52:any;
@@ -191,36 +191,36 @@ export class View_Ng2ImageMapEditorDirective0 extends import2.AppView<import0.Ng
   _text_54:any;
   _el_55:any;
   _text_56:any;
-  _el_57:any;
+  _text_57:any;
   _text_58:any;
   _text_59:any;
   _text_60:any;
   _text_61:any;
-  _text_62:any;
+  _el_62:any;
   _el_63:any;
   _text_64:any;
   _el_65:any;
   _text_66:any;
   _el_67:any;
   _text_68:any;
-  _text_69:any;
-  _el_70:any;
-  _text_71:any;
-  _el_72:any;
-  _text_73:any;
-  _el_74:any;
-  _text_75:any;
+  _el_69:any;
+  _text_70:any;
+  _el_71:any;
+  _text_72:any;
+  _el_73:any;
+  _text_74:any;
+  _el_75:any;
   _text_76:any;
   _el_77:any;
   _text_78:any;
-  _text_79:any;
-  _el_80:any;
+  _el_79:any;
+  _text_80:any;
   _text_81:any;
   _text_82:any;
   _text_83:any;
   _text_84:any;
   _text_85:any;
-  _text_86:any;
+  _el_86:any;
   _el_87:any;
   _text_88:any;
   _el_89:any;
@@ -233,125 +233,185 @@ export class View_Ng2ImageMapEditorDirective0 extends import2.AppView<import0.Ng
   _text_96:any;
   _el_97:any;
   _text_98:any;
-  _text_99:any;
-  _el_100:any;
+  _el_99:any;
+  _text_100:any;
   _el_101:any;
   _text_102:any;
   _text_103:any;
   _text_104:any;
-  _el_105:any;
-  _el_106:any;
+  _text_105:any;
+  _text_106:any;
   _text_107:any;
   _text_108:any;
   _text_109:any;
   _el_110:any;
-  _el_111:any;
-  _text_112:any;
+  _text_111:any;
+  _el_112:any;
   _text_113:any;
   _text_114:any;
-  _text_115:any;
-  _el_116:any;
-  _text_117:any;
-  _el_118:any;
-  _text_119:any;
+  _el_115:any;
+  _text_116:any;
+  _el_117:any;
+  _text_118:any;
+  _el_119:any;
   _text_120:any;
   _el_121:any;
-  _el_122:any;
+  _text_122:any;
   _text_123:any;
   _text_124:any;
   _text_125:any;
-  _el_126:any;
+  _text_126:any;
   _el_127:any;
   _text_128:any;
-  _text_129:any;
+  _el_129:any;
   _text_130:any;
   _el_131:any;
-  _el_132:any;
+  _text_132:any;
   _text_133:any;
-  _text_134:any;
+  _el_134:any;
   _text_135:any;
   _el_136:any;
-  _el_137:any;
-  _text_138:any;
+  _text_137:any;
+  _el_138:any;
   _text_139:any;
   _text_140:any;
   _el_141:any;
-  _el_142:any;
+  _text_142:any;
   _text_143:any;
-  _text_144:any;
+  _el_144:any;
   _text_145:any;
-  _el_146:any;
-  _el_147:any;
+  _text_146:any;
+  _text_147:any;
   _text_148:any;
   _text_149:any;
   _text_150:any;
   _el_151:any;
-  _el_152:any;
-  _text_153:any;
+  _text_152:any;
+  _el_153:any;
   _text_154:any;
-  _text_155:any;
+  _el_155:any;
   _text_156:any;
-  _text_157:any;
-  /*private*/ _expr_158:any;
-  /*private*/ _expr_159:any;
-  /*private*/ _expr_160:any;
-  /*private*/ _expr_161:any;
-  /*private*/ _expr_162:any;
-  /*private*/ _expr_163:any;
-  /*private*/ _expr_164:any;
-  /*private*/ _expr_165:any;
-  /*private*/ _expr_166:any;
-  /*private*/ _expr_167:any;
-  /*private*/ _expr_168:any;
-  /*private*/ _expr_169:any;
-  /*private*/ _expr_170:any;
-  /*private*/ _expr_171:any;
-  /*private*/ _expr_172:any;
-  /*private*/ _expr_173:any;
-  /*private*/ _expr_174:any;
-  /*private*/ _expr_175:any;
-  /*private*/ _expr_176:any;
-  /*private*/ _expr_177:any;
-  /*private*/ _expr_178:any;
-  /*private*/ _expr_179:any;
-  /*private*/ _expr_180:any;
-  /*private*/ _expr_181:any;
-  /*private*/ _expr_182:any;
-  /*private*/ _expr_183:any;
-  /*private*/ _expr_184:any;
-  /*private*/ _expr_185:any;
-  /*private*/ _expr_186:any;
+  _el_157:any;
+  _text_158:any;
+  _el_159:any;
+  _text_160:any;
+  _el_161:any;
+  _text_162:any;
+  _text_163:any;
+  _el_164:any;
+  _el_165:any;
+  _text_166:any;
+  _text_167:any;
+  _text_168:any;
+  _el_169:any;
+  _el_170:any;
+  _text_171:any;
+  _text_172:any;
+  _text_173:any;
+  _el_174:any;
+  _el_175:any;
+  _text_176:any;
+  _text_177:any;
+  _text_178:any;
+  _text_179:any;
+  _el_180:any;
+  _text_181:any;
+  _el_182:any;
+  _text_183:any;
+  _text_184:any;
+  _el_185:any;
+  _el_186:any;
+  _text_187:any;
+  _text_188:any;
+  _text_189:any;
+  _el_190:any;
+  _el_191:any;
+  _text_192:any;
+  _text_193:any;
+  _text_194:any;
+  _el_195:any;
+  _el_196:any;
+  _text_197:any;
+  _text_198:any;
+  _text_199:any;
+  _el_200:any;
+  _el_201:any;
+  _text_202:any;
+  _text_203:any;
+  _text_204:any;
+  _el_205:any;
+  _el_206:any;
+  _text_207:any;
+  _text_208:any;
+  _text_209:any;
+  _el_210:any;
+  _el_211:any;
+  _text_212:any;
+  _text_213:any;
+  _text_214:any;
+  _el_215:any;
+  _el_216:any;
+  _text_217:any;
+  _text_218:any;
+  _text_219:any;
+  _text_220:any;
+  _text_221:any;
+  /*private*/ _expr_222:any;
+  /*private*/ _expr_223:any;
+  /*private*/ _expr_224:any;
+  /*private*/ _expr_225:any;
+  /*private*/ _expr_226:any;
+  /*private*/ _expr_227:any;
+  /*private*/ _expr_228:any;
+  /*private*/ _expr_229:any;
+  /*private*/ _expr_230:any;
+  /*private*/ _expr_231:any;
+  /*private*/ _expr_232:any;
+  /*private*/ _expr_233:any;
+  /*private*/ _expr_234:any;
+  /*private*/ _expr_235:any;
+  /*private*/ _expr_236:any;
+  /*private*/ _expr_237:any;
+  /*private*/ _expr_238:any;
+  /*private*/ _expr_239:any;
+  /*private*/ _expr_240:any;
+  /*private*/ _expr_241:any;
+  /*private*/ _expr_242:any;
+  /*private*/ _expr_243:any;
+  /*private*/ _expr_244:any;
+  /*private*/ _expr_245:any;
+  /*private*/ _expr_246:any;
+  /*private*/ _expr_247:any;
+  /*private*/ _expr_248:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import2.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_Ng2ImageMapEditorDirective0,renderType_Ng2ImageMapEditorDirective,import6.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import7.ChangeDetectorStatus.CheckAlways);
-    this._expr_158 = import1.UNINITIALIZED;
-    this._expr_159 = import1.UNINITIALIZED;
-    this._expr_160 = import1.UNINITIALIZED;
-    this._expr_161 = import1.UNINITIALIZED;
-    this._expr_162 = import1.UNINITIALIZED;
-    this._expr_163 = import1.UNINITIALIZED;
-    this._expr_164 = import1.UNINITIALIZED;
-    this._expr_165 = import1.UNINITIALIZED;
-    this._expr_166 = import1.UNINITIALIZED;
-    this._expr_167 = import1.UNINITIALIZED;
-    this._expr_168 = import1.UNINITIALIZED;
-    this._expr_169 = import1.UNINITIALIZED;
-    this._expr_170 = import1.UNINITIALIZED;
-    this._expr_171 = import1.UNINITIALIZED;
-    this._expr_172 = import1.UNINITIALIZED;
-    this._expr_173 = import1.UNINITIALIZED;
-    this._expr_174 = import1.UNINITIALIZED;
-    this._expr_175 = import1.UNINITIALIZED;
-    this._expr_176 = import1.UNINITIALIZED;
-    this._expr_177 = import1.UNINITIALIZED;
-    this._expr_178 = import1.UNINITIALIZED;
-    this._expr_179 = import1.UNINITIALIZED;
-    this._expr_180 = import1.UNINITIALIZED;
-    this._expr_181 = import1.UNINITIALIZED;
-    this._expr_182 = import1.UNINITIALIZED;
-    this._expr_183 = import1.UNINITIALIZED;
-    this._expr_184 = import1.UNINITIALIZED;
-    this._expr_185 = import1.UNINITIALIZED;
-    this._expr_186 = import1.UNINITIALIZED;
+    this._expr_222 = import1.UNINITIALIZED;
+    this._expr_223 = import1.UNINITIALIZED;
+    this._expr_224 = import1.UNINITIALIZED;
+    this._expr_225 = import1.UNINITIALIZED;
+    this._expr_226 = import1.UNINITIALIZED;
+    this._expr_227 = import1.UNINITIALIZED;
+    this._expr_228 = import1.UNINITIALIZED;
+    this._expr_229 = import1.UNINITIALIZED;
+    this._expr_230 = import1.UNINITIALIZED;
+    this._expr_231 = import1.UNINITIALIZED;
+    this._expr_232 = import1.UNINITIALIZED;
+    this._expr_233 = import1.UNINITIALIZED;
+    this._expr_234 = import1.UNINITIALIZED;
+    this._expr_235 = import1.UNINITIALIZED;
+    this._expr_236 = import1.UNINITIALIZED;
+    this._expr_237 = import1.UNINITIALIZED;
+    this._expr_238 = import1.UNINITIALIZED;
+    this._expr_239 = import1.UNINITIALIZED;
+    this._expr_240 = import1.UNINITIALIZED;
+    this._expr_241 = import1.UNINITIALIZED;
+    this._expr_242 = import1.UNINITIALIZED;
+    this._expr_243 = import1.UNINITIALIZED;
+    this._expr_244 = import1.UNINITIALIZED;
+    this._expr_245 = import1.UNINITIALIZED;
+    this._expr_246 = import1.UNINITIALIZED;
+    this._expr_247 = import1.UNINITIALIZED;
+    this._expr_248 = import1.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import8.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
@@ -364,155 +424,219 @@ export class View_Ng2ImageMapEditorDirective0 extends import2.AppView<import0.Ng
     this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'ul',new import3.InlineArray2(2,'class','float-left'),(null as any));
     this._text_7 = this.renderer.createText(this._el_6,'\n                ',(null as any));
     this._el_8 = import3.createRenderElement(this.renderer,this._el_6,'li',new import3.InlineArray2(2,'id','to_html'),(null as any));
-    this._el_9 = import3.createRenderElement(this.renderer,this._el_8,'a',new import3.InlineArray4(4,'class','btn-success btn','href','#'),(null as any));
-    this._text_10 = this.renderer.createText(this._el_9,'',(null as any));
-    this._text_11 = this.renderer.createText(this._el_6,'\n                ',(null as any));
-    this._el_12 = import3.createRenderElement(this.renderer,this._el_6,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_13 = import3.createRenderElement(this.renderer,this._el_12,'a',new import3.InlineArray4(4,'href','#','id','rectangle'),(null as any));
-    this._el_14 = import3.createRenderElement(this.renderer,this._el_13,'img',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_15 = this.renderer.createText(this._el_6,'\n                ',(null as any));
-    this._el_16 = import3.createRenderElement(this.renderer,this._el_6,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_17 = import3.createRenderElement(this.renderer,this._el_16,'a',new import3.InlineArray4(4,'href','#','id','circle'),(null as any));
-    this._el_18 = import3.createRenderElement(this.renderer,this._el_17,'img',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_19 = this.renderer.createText(this._el_6,'\n                ',(null as any));
-    this._el_20 = import3.createRenderElement(this.renderer,this._el_6,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_21 = import3.createRenderElement(this.renderer,this._el_20,'a',new import3.InlineArray4(4,'href','#','id','polygon'),(null as any));
-    this._el_22 = import3.createRenderElement(this.renderer,this._el_21,'img',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_23 = this.renderer.createText(this._el_6,'\n            ',(null as any));
-    this._text_24 = this.renderer.createText(this._el_4,'\n            ',(null as any));
-    this._el_25 = import3.createRenderElement(this.renderer,this._el_4,'ul',new import3.InlineArray2(2,'class','float-right'),(null as any));
-    this._text_26 = this.renderer.createText(this._el_25,'\n                ',(null as any));
-    this._el_27 = import3.createRenderElement(this.renderer,this._el_25,'li',new import3.InlineArray4(4,'class','btn','id','edit'),(null as any));
-    this._text_28 = this.renderer.createText(this._el_27,'\n                    ',(null as any));
-    this._el_29 = import3.createRenderElement(this.renderer,this._el_27,'a',new import3.InlineArray4(4,'class','btn','href','#'),(null as any));
-    this._text_30 = this.renderer.createText(this._el_29,'\n                    ',(null as any));
-    this._el_31 = import3.createRenderElement(this.renderer,this._el_29,'i',new import3.InlineArray4(4,'aria-hidden','true','class','fa'),(null as any));
-    this._text_32 = this.renderer.createText(this._el_29,'',(null as any));
-    this._text_33 = this.renderer.createText(this._el_27,'\n                ',(null as any));
-    this._text_34 = this.renderer.createText(this._el_25,'\n                ',(null as any));
-    this._el_35 = import3.createRenderElement(this.renderer,this._el_25,'li',new import3.InlineArray4(4,'class','btn','id','clear'),(null as any));
-    this._el_36 = import3.createRenderElement(this.renderer,this._el_35,'a',new import3.InlineArray4(4,'class','btn btn-default','href','#'),(null as any));
-    this._el_37 = import3.createRenderElement(this.renderer,this._el_36,'i',new import3.InlineArray4(4,'aria-hidden','true','class','fa fa-eraser'),(null as any));
-    this._text_38 = this.renderer.createText(this._el_36,'',(null as any));
-    this._text_39 = this.renderer.createText(this._el_25,'\n                ',(null as any));
-    this._el_40 = import3.createRenderElement(this.renderer,this._el_25,'li',new import3.InlineArray4(4,'class','btn','id','show_help'),(null as any));
-    this._el_41 = import3.createRenderElement(this.renderer,this._el_40,'a',new import3.InlineArray2(2,'href','#'),(null as any));
-    this._el_42 = import3.createRenderElement(this.renderer,this._el_41,'i',new import3.InlineArray4(4,'aria-hidden','true','class','fa fa-question-circle'),(null as any));
-    this._text_43 = this.renderer.createText(this._el_25,'\n            ',(null as any));
-    this._text_44 = this.renderer.createText(this._el_4,'\n        ',(null as any));
-    this._text_45 = this.renderer.createText(this._el_2,'\n        ',(null as any));
-    this._el_46 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'id','coords'),(null as any));
-    this._text_47 = this.renderer.createText(this._el_2,'\n        ',(null as any));
-    this._el_48 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'id','debug'),(null as any));
-    this._text_49 = this.renderer.createText(this._el_2,'\n    ',(null as any));
-    this._text_50 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._el_51 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'id','image_wrapper'),(null as any));
-    this._text_52 = this.renderer.createText(this._el_51,'\n        ',(null as any));
-    this._el_53 = import3.createRenderElement(this.renderer,this._el_51,'div',new import3.InlineArray2(2,'id','image'),(null as any));
-    this._text_54 = this.renderer.createText(this._el_53,'\n            ',(null as any));
-    this._el_55 = import3.createRenderElement(this.renderer,this._el_53,'img',new import3.InlineArray8(6,'alt','#','id','img','src',''),(null as any));
-    this._text_56 = this.renderer.createText(this._el_53,'\n            ',(null as any));
-    this._el_57 = import3.createRenderElement(this.renderer,this._el_53,':svg:svg',new import3.InlineArray8(8,'baseProfile','tiny','id','svg','version','1.2','xmlns','http://www.w3.org/2000/svg'),(null as any));
-    this._text_58 = this.renderer.createText(this._el_53,'\n        ',(null as any));
-    this._text_59 = this.renderer.createText(this._el_51,'\n    ',(null as any));
-    this._text_60 = this.renderer.createText(this._el_0,'\n',(null as any));
-    this._text_61 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
-    this._text_62 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_63 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'id','from_html_wrapper'),(null as any));
-    this._text_64 = this.renderer.createText(this._el_63,'\n    ',(null as any));
-    this._el_65 = import3.createRenderElement(this.renderer,this._el_63,'form',new import3.InlineArray2(2,'id','from_html_form'),(null as any));
-    this._text_66 = this.renderer.createText(this._el_65,'\n        ',(null as any));
-    this._el_67 = import3.createRenderElement(this.renderer,this._el_65,'h5',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_68 = this.renderer.createText(this._el_67,'Loading areas',(null as any));
-    this._text_69 = this.renderer.createText(this._el_65,'\n        ',(null as any));
-    this._el_70 = import3.createRenderElement(this.renderer,this._el_65,'span',new import3.InlineArray4(4,'class','close_button','title','close'),(null as any));
-    this._text_71 = this.renderer.createText(this._el_65,'\n        ',(null as any));
-    this._el_72 = import3.createRenderElement(this.renderer,this._el_65,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_73 = this.renderer.createText(this._el_72,'\n            ',(null as any));
-    this._el_74 = import3.createRenderElement(this.renderer,this._el_72,'label',new import3.InlineArray2(2,'for','code_input'),(null as any));
-    this._text_75 = this.renderer.createText(this._el_74,'Enter your html code:',(null as any));
-    this._text_76 = this.renderer.createText(this._el_72,'\n            ',(null as any));
-    this._el_77 = import3.createRenderElement(this.renderer,this._el_72,'textarea',new import3.InlineArray2(2,'id','code_input'),(null as any));
-    this._text_78 = this.renderer.createText(this._el_72,'\n        ',(null as any));
-    this._text_79 = this.renderer.createText(this._el_65,'\n        ',(null as any));
-    this._el_80 = import3.createRenderElement(this.renderer,this._el_65,'button',new import3.InlineArray2(2,'id','load_code_button'),(null as any));
-    this._text_81 = this.renderer.createText(this._el_80,'Load',(null as any));
-    this._text_82 = this.renderer.createText(this._el_65,'\n    ',(null as any));
-    this._text_83 = this.renderer.createText(this._el_63,'\n',(null as any));
-    this._text_84 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._text_85 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
-    this._text_86 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_87 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'id','overlay'),(null as any));
-    this._text_88 = this.renderer.createText(parentRenderNode,'\n',(null as any));
-    this._el_89 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'id','help'),(null as any));
-    this._text_90 = this.renderer.createText(this._el_89,'\n    ',(null as any));
-    this._el_91 = import3.createRenderElement(this.renderer,this._el_89,'span',new import3.InlineArray4(4,'class','close_button','title','close'),(null as any));
-    this._text_92 = this.renderer.createText(this._el_89,'\n    ',(null as any));
-    this._el_93 = import3.createRenderElement(this.renderer,this._el_89,'div',new import3.InlineArray2(2,'class','txt'),(null as any));
-    this._text_94 = this.renderer.createText(this._el_93,'\n        ',(null as any));
-    this._el_95 = import3.createRenderElement(this.renderer,this._el_93,'section',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_96 = this.renderer.createText(this._el_95,'\n            ',(null as any));
-    this._el_97 = import3.createRenderElement(this.renderer,this._el_95,'h2',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_98 = this.renderer.createText(this._el_97,'',(null as any));
-    this._text_99 = this.renderer.createText(this._el_95,'\n            ',(null as any));
-    this._el_100 = import3.createRenderElement(this.renderer,this._el_95,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_101 = import3.createRenderElement(this.renderer,this._el_100,'span',new import3.InlineArray2(2,'class','key'),(null as any));
-    this._text_102 = this.renderer.createText(this._el_101,'ENTER',(null as any));
-    this._text_103 = this.renderer.createText(this._el_100,'',(null as any));
-    this._text_104 = this.renderer.createText(this._el_95,'\n            ',(null as any));
-    this._el_105 = import3.createRenderElement(this.renderer,this._el_95,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_106 = import3.createRenderElement(this.renderer,this._el_105,'span',new import3.InlineArray2(2,'class','key'),(null as any));
-    this._text_107 = this.renderer.createText(this._el_106,'ESC',(null as any));
-    this._text_108 = this.renderer.createText(this._el_105,'',(null as any));
-    this._text_109 = this.renderer.createText(this._el_95,'\n            ',(null as any));
-    this._el_110 = import3.createRenderElement(this.renderer,this._el_95,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_111 = import3.createRenderElement(this.renderer,this._el_110,'span',new import3.InlineArray2(2,'class','key'),(null as any));
-    this._text_112 = this.renderer.createText(this._el_111,'SHIFT',(null as any));
-    this._text_113 = this.renderer.createText(this._el_110,'',(null as any));
-    this._text_114 = this.renderer.createText(this._el_95,'\n        ',(null as any));
-    this._text_115 = this.renderer.createText(this._el_93,'\n        ',(null as any));
-    this._el_116 = import3.createRenderElement(this.renderer,this._el_93,'section',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_117 = this.renderer.createText(this._el_116,'\n            ',(null as any));
-    this._el_118 = import3.createRenderElement(this.renderer,this._el_116,'h2',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_119 = this.renderer.createText(this._el_118,'',(null as any));
-    this._text_120 = this.renderer.createText(this._el_116,'\n            ',(null as any));
-    this._el_121 = import3.createRenderElement(this.renderer,this._el_116,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_122 = import3.createRenderElement(this.renderer,this._el_121,'span',new import3.InlineArray2(2,'class','key'),(null as any));
-    this._text_123 = this.renderer.createText(this._el_122,'DELETE',(null as any));
-    this._text_124 = this.renderer.createText(this._el_121,'',(null as any));
-    this._text_125 = this.renderer.createText(this._el_116,'\n            ',(null as any));
-    this._el_126 = import3.createRenderElement(this.renderer,this._el_116,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_127 = import3.createRenderElement(this.renderer,this._el_126,'span',new import3.InlineArray2(2,'class','key'),(null as any));
-    this._text_128 = this.renderer.createText(this._el_127,'ESC',(null as any));
-    this._text_129 = this.renderer.createText(this._el_126,'',(null as any));
-    this._text_130 = this.renderer.createText(this._el_116,'\n            ',(null as any));
-    this._el_131 = import3.createRenderElement(this.renderer,this._el_116,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_132 = import3.createRenderElement(this.renderer,this._el_131,'span',new import3.InlineArray2(2,'class','key'),(null as any));
-    this._text_133 = this.renderer.createText(this._el_132,'SHIFT',(null as any));
-    this._text_134 = this.renderer.createText(this._el_131,'',(null as any));
-    this._text_135 = this.renderer.createText(this._el_116,'\n            ',(null as any));
-    this._el_136 = import3.createRenderElement(this.renderer,this._el_116,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_137 = import3.createRenderElement(this.renderer,this._el_136,'span',new import3.InlineArray2(2,'class','key'),(null as any));
-    this._text_138 = this.renderer.createText(this._el_137,'↑',(null as any));
-    this._text_139 = this.renderer.createText(this._el_136,'',(null as any));
-    this._text_140 = this.renderer.createText(this._el_116,'\n            ',(null as any));
-    this._el_141 = import3.createRenderElement(this.renderer,this._el_116,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_142 = import3.createRenderElement(this.renderer,this._el_141,'span',new import3.InlineArray2(2,'class','key'),(null as any));
-    this._text_143 = this.renderer.createText(this._el_142,'↓',(null as any));
-    this._text_144 = this.renderer.createText(this._el_141,'',(null as any));
-    this._text_145 = this.renderer.createText(this._el_116,'\n            ',(null as any));
-    this._el_146 = import3.createRenderElement(this.renderer,this._el_116,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_147 = import3.createRenderElement(this.renderer,this._el_146,'span',new import3.InlineArray2(2,'class','key'),(null as any));
-    this._text_148 = this.renderer.createText(this._el_147,'←',(null as any));
-    this._text_149 = this.renderer.createText(this._el_146,'',(null as any));
-    this._text_150 = this.renderer.createText(this._el_116,'\n            ',(null as any));
-    this._el_151 = import3.createRenderElement(this.renderer,this._el_116,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._el_152 = import3.createRenderElement(this.renderer,this._el_151,'span',new import3.InlineArray2(2,'class','key'),(null as any));
-    this._text_153 = this.renderer.createText(this._el_152,'→',(null as any));
-    this._text_154 = this.renderer.createText(this._el_151,'',(null as any));
-    this._text_155 = this.renderer.createText(this._el_116,'\n        ',(null as any));
-    this._text_156 = this.renderer.createText(this._el_93,'\n    ',(null as any));
-    this._text_157 = this.renderer.createText(this._el_89,'\n',(null as any));
+    this._text_9 = this.renderer.createText(this._el_8,'\n                    ',(null as any));
+    this._el_10 = import3.createRenderElement(this.renderer,this._el_8,'a',new import3.InlineArray4(4,'class','btn-round-sm-default','href','#'),(null as any));
+    this._text_11 = this.renderer.createText(this._el_10,'\n                        ',(null as any));
+    this._el_12 = import3.createRenderElement(this.renderer,this._el_10,':svg:svg',new import3.InlineArray4(4,'viewBox','0 0 512 512','xmlns','http://www.w3.org/2000/svg'),(null as any));
+    this._text_13 = this.renderer.createText(this._el_12,'\n                            ',(null as any));
+    this._el_14 = import3.createRenderElement(this.renderer,this._el_12,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_15 = this.renderer.createText(this._el_14,'\n                                ',(null as any));
+    this._el_16 = import3.createRenderElement(this.renderer,this._el_14,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_17 = this.renderer.createText(this._el_16,'\n                                    ',(null as any));
+    this._el_18 = import3.createRenderElement(this.renderer,this._el_16,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_19 = this.renderer.createText(this._el_18,'\n                                        ',(null as any));
+    this._el_20 = import3.createRenderElement(this.renderer,this._el_18,':svg:path',new import3.InlineArray2(2,'d','M305,148c11.046,0,20-8.954,20-20V90c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v38\n                                                    C285,139.046,293.954,148,305,148z'),(null as any));
+    this._text_21 = this.renderer.createText(this._el_18,'\n                                        ',(null as any));
+    this._el_22 = import3.createRenderElement(this.renderer,this._el_18,':svg:path',new import3.InlineArray2(2,'d','M492,352c11.046,0,20-8.954,20-20V102c0-5.304-2.107-10.392-5.858-14.142l-82-82C420.392,2.107,415.304,0,410,0H80\n                                                    C35.888,0,0,35.888,0,80v352c0,44.112,35.888,80,80,80h352c44.112,0,80-35.888,80-80c0-11.046-8.954-20-20-20\n                                                    c-11.046,0-20,8.954-20,20c0,22.056-17.944,40-40,40V312c0-11.046-8.954-20-20-20H100c-11.046,0-20,8.954-20,20v160\n                                                    c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40v118c0,33.084,26.916,60,60,60h201c33.084,0,60-26.916,60-60V40h0.716\n                                                    L472,110.284V332C472,343.046,480.954,352,492,352z M120,332h272v140H120V332z M361,158c0,11.028-8.972,20-20,20H140\n                                                    c-11.028,0-20-8.972-20-20V40h241V158z'),(null as any));
+    this._text_23 = this.renderer.createText(this._el_18,'\n                                    ',(null as any));
+    this._text_24 = this.renderer.createText(this._el_16,'\n                                ',(null as any));
+    this._text_25 = this.renderer.createText(this._el_14,'\n                            ',(null as any));
+    this._text_26 = this.renderer.createText(this._el_12,'\n                        ',(null as any));
+    this._text_27 = this.renderer.createText(this._el_10,'\n                    ',(null as any));
+    this._text_28 = this.renderer.createText(this._el_8,'\n                ',(null as any));
+    this._text_29 = this.renderer.createText(this._el_6,'\n                ',(null as any));
+    this._el_30 = import3.createRenderElement(this.renderer,this._el_6,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_31 = import3.createRenderElement(this.renderer,this._el_30,'a',new import3.InlineArray4(4,'href','#','id','rectangle'),(null as any));
+    this._el_32 = import3.createRenderElement(this.renderer,this._el_31,'img',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_33 = this.renderer.createText(this._el_6,'\n                ',(null as any));
+    this._el_34 = import3.createRenderElement(this.renderer,this._el_6,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_35 = import3.createRenderElement(this.renderer,this._el_34,'a',new import3.InlineArray4(4,'href','#','id','circle'),(null as any));
+    this._el_36 = import3.createRenderElement(this.renderer,this._el_35,'img',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_37 = this.renderer.createText(this._el_6,'\n                ',(null as any));
+    this._el_38 = import3.createRenderElement(this.renderer,this._el_6,'li',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_39 = import3.createRenderElement(this.renderer,this._el_38,'a',new import3.InlineArray4(4,'href','#','id','polygon'),(null as any));
+    this._el_40 = import3.createRenderElement(this.renderer,this._el_39,'img',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_41 = this.renderer.createText(this._el_6,'\n            ',(null as any));
+    this._text_42 = this.renderer.createText(this._el_4,'\n            ',(null as any));
+    this._el_43 = import3.createRenderElement(this.renderer,this._el_4,'ul',new import3.InlineArray2(2,'class','float-right'),(null as any));
+    this._text_44 = this.renderer.createText(this._el_43,'\n                ',(null as any));
+    this._el_45 = import3.createRenderElement(this.renderer,this._el_43,'li',new import3.InlineArray4(4,'class','btn','id','edit'),(null as any));
+    this._text_46 = this.renderer.createText(this._el_45,'\n                    ',(null as any));
+    this._el_47 = import3.createRenderElement(this.renderer,this._el_45,'a',new import3.InlineArray4(4,'class','btn-round-sm-default','href','#'),(null as any));
+    this._text_48 = this.renderer.createText(this._el_47,'\n                        ',(null as any));
+    this._el_49 = import3.createRenderElement(this.renderer,this._el_47,':svg:svg',new import3.InlineArray4(4,'viewBox','0 0 512 512','xmlns','http://www.w3.org/2000/svg'),(null as any));
+    this._text_50 = this.renderer.createText(this._el_49,'\n                            ',(null as any));
+    this._el_51 = import3.createRenderElement(this.renderer,this._el_49,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_52 = this.renderer.createText(this._el_51,'\n                                ',(null as any));
+    this._el_53 = import3.createRenderElement(this.renderer,this._el_51,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_54 = this.renderer.createText(this._el_53,'\n                                    ',(null as any));
+    this._el_55 = import3.createRenderElement(this.renderer,this._el_53,':svg:path',new import3.InlineArray2(2,'d','M481.996,30.006C462.647,10.656,436.922,0,409.559,0c-27.363,0-53.089,10.656-72.438,30.005L50.826,316.301\n                                            c-2.436,2.436-4.201,5.46-5.125,8.779L0.733,486.637c-1.939,6.968,0.034,14.441,5.163,19.542c3.8,3.78,8.892,5.821,14.106,5.821\n                                            c1.822,0,3.66-0.25,5.463-0.762l161.557-45.891c6.816-1.936,12.1-7.335,13.888-14.192c1.788-6.857-0.186-14.148-5.189-19.167\n                                            L93.869,329.827L331.184,92.511l88.258,88.258L237.768,361.948c-7.821,7.8-7.838,20.463-0.038,28.284\n                                            c7.799,7.822,20.464,7.838,28.284,0.039l215.98-215.392C501.344,155.53,512,129.805,512,102.442\n                                            C512,75.079,501.344,49.354,481.996,30.006z M143.395,436.158L48.827,463.02l26.485-95.152L143.395,436.158z M453.73,146.575\n                                            l-5.965,5.949l-88.296-88.297l5.938-5.938C377.2,46.495,392.88,40,409.559,40c16.679,0,32.358,6.495,44.152,18.29\n                                            C465.505,70.083,472,85.763,472,102.442C472,119.121,465.505,134.801,453.73,146.575z'),(null as any));
+    this._text_56 = this.renderer.createText(this._el_53,'\n                                ',(null as any));
+    this._text_57 = this.renderer.createText(this._el_51,'\n                            ',(null as any));
+    this._text_58 = this.renderer.createText(this._el_49,'\n                        ',(null as any));
+    this._text_59 = this.renderer.createText(this._el_47,'\n                     ',(null as any));
+    this._text_60 = this.renderer.createText(this._el_45,'\n                ',(null as any));
+    this._text_61 = this.renderer.createText(this._el_43,'\n                ',(null as any));
+    this._el_62 = import3.createRenderElement(this.renderer,this._el_43,'li',new import3.InlineArray4(4,'class','btn-round-sm-default','id','clear'),(null as any));
+    this._el_63 = import3.createRenderElement(this.renderer,this._el_62,'a',new import3.InlineArray4(4,'class','btn-round-sm-default','href','#'),(null as any));
+    this._text_64 = this.renderer.createText(this._el_63,'\n                    ',(null as any));
+    this._el_65 = import3.createRenderElement(this.renderer,this._el_63,':svg:svg',new import3.InlineArray4(4,'viewBox','0 0 512 512','xmlns','http://www.w3.org/2000/svg'),(null as any));
+    this._text_66 = this.renderer.createText(this._el_65,'\n                        ',(null as any));
+    this._el_67 = import3.createRenderElement(this.renderer,this._el_65,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_68 = this.renderer.createText(this._el_67,'\n                            ',(null as any));
+    this._el_69 = import3.createRenderElement(this.renderer,this._el_67,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_70 = this.renderer.createText(this._el_69,'\n                                ',(null as any));
+    this._el_71 = import3.createRenderElement(this.renderer,this._el_69,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_72 = this.renderer.createText(this._el_71,'\n                                    ',(null as any));
+    this._el_73 = import3.createRenderElement(this.renderer,this._el_71,':svg:path',new import3.InlineArray2(2,'d','M472,83H351V60c0-33.084-26.916-60-60-60h-70c-33.084,0-60,26.916-60,60v23H40c-11.046,0-20,8.954-20,20s8.954,20,20,20\n                                                h20.712l24.374,315.987c0.007,0.092,0.015,0.185,0.023,0.278c1.816,19.924,10.954,38.326,25.73,51.816\n                                                C125.615,504.571,144.771,512,164.778,512h182.444c41.667,0,75.917-31.032,79.669-72.183\n                                                c1.003-11.001-7.101-20.731-18.101-21.734c-11.011-1.003-20.731,7.101-21.734,18.101C385.195,456.603,368.07,472,347.222,472\n                                                H164.778c-20.777,0-37.875-15.571-39.823-36.242L100.831,123h310.338l-17.082,221.462c-0.849,11.013,7.39,20.629,18.403,21.479\n                                                c0.524,0.04,1.043,0.06,1.56,0.06c10.347,0,19.11-7.974,19.919-18.463L451.288,123H472c11.046,0,20-8.954,20-20\n                                                S483.046,83,472,83z M311,83H201V60c0-11.028,8.972-20,20-20h70c11.028,0,20,8.972,20,20V83z'),(null as any));
+    this._text_74 = this.renderer.createText(this._el_71,'\n                                    ',(null as any));
+    this._el_75 = import3.createRenderElement(this.renderer,this._el_71,':svg:path',new import3.InlineArray2(2,'d','M165.127,163.019c-11.035,0.482-19.59,9.818-19.108,20.854l10,228.933c0.469,10.738,9.322,19.128,19.966,19.128\n                                                c0.294,0,0.591-0.006,0.888-0.02c11.035-0.482,19.59-9.818,19.108-20.854l-10-228.934\n                                                C185.499,171.092,176.145,162.523,165.127,163.019z'),(null as any));
+    this._text_76 = this.renderer.createText(this._el_71,'\n                                    ',(null as any));
+    this._el_77 = import3.createRenderElement(this.renderer,this._el_71,':svg:path',new import3.InlineArray2(2,'d','M326.019,182.127l-10,228.934c-0.482,11.035,8.073,20.372,19.108,20.854c0.297,0.013,0.593,0.02,0.888,0.02\n                                                c10.643,0,19.497-8.39,19.966-19.128l10-228.933c0.482-11.035-8.073-20.372-19.108-20.854\n                                                C335.856,162.527,326.501,171.092,326.019,182.127z'),(null as any));
+    this._text_78 = this.renderer.createText(this._el_71,'\n                                    ',(null as any));
+    this._el_79 = import3.createRenderElement(this.renderer,this._el_71,':svg:path',new import3.InlineArray2(2,'d','M236,183v228.933c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V183c0-11.046-8.954-20-20-20S236,171.954,236,183z'),(null as any));
+    this._text_80 = this.renderer.createText(this._el_71,'\n                                ',(null as any));
+    this._text_81 = this.renderer.createText(this._el_69,'\n                            ',(null as any));
+    this._text_82 = this.renderer.createText(this._el_67,'\n                        ',(null as any));
+    this._text_83 = this.renderer.createText(this._el_65,'\n                    ',(null as any));
+    this._text_84 = this.renderer.createText(this._el_63,'\n                ',(null as any));
+    this._text_85 = this.renderer.createText(this._el_43,'\n                ',(null as any));
+    this._el_86 = import3.createRenderElement(this.renderer,this._el_43,'li',new import3.InlineArray2(2,'id','show_help'),(null as any));
+    this._el_87 = import3.createRenderElement(this.renderer,this._el_86,'a',new import3.InlineArray4(4,'class','btn-round-sm-default','href','#'),(null as any));
+    this._text_88 = this.renderer.createText(this._el_87,'\n                    ',(null as any));
+    this._el_89 = import3.createRenderElement(this.renderer,this._el_87,':svg:svg',new import3.InlineArray16(16,':xml:space','preserve','id','Capa_1','style','enable-background:new 0 0 512 512;','version','1.1','viewBox','0 0 512 512','x','0px','xmlns','http://www.w3.org/2000/svg','y','0px'),(null as any));
+    this._text_90 = this.renderer.createText(this._el_89,'\n                        ',(null as any));
+    this._el_91 = import3.createRenderElement(this.renderer,this._el_89,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_92 = this.renderer.createText(this._el_91,'\n                            ',(null as any));
+    this._el_93 = import3.createRenderElement(this.renderer,this._el_91,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_94 = this.renderer.createText(this._el_93,'\n                                ',(null as any));
+    this._el_95 = import3.createRenderElement(this.renderer,this._el_93,':svg:g',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_96 = this.renderer.createText(this._el_95,'\n                                    ',(null as any));
+    this._el_97 = import3.createRenderElement(this.renderer,this._el_95,':svg:circle',new import3.InlineArray8(6,'cx','256','cy','127','r','20'),(null as any));
+    this._text_98 = this.renderer.createText(this._el_95,'\n                                    ',(null as any));
+    this._el_99 = import3.createRenderElement(this.renderer,this._el_95,':svg:path',new import3.InlineArray2(2,'d','M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256\n                                    s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512c46.813,0,92.618-12.758,132.461-36.893\n                                    c9.448-5.724,12.467-18.022,6.744-27.469c-5.723-9.448-18.021-12.467-27.468-6.744C334.144,461.244,295.506,472,256,472\n                                    c-119.103,0-216-96.897-216-216S136.897,40,256,40s216,96.897,216,216c0,42.589-12.665,84.044-36.627,119.884\n                                    c-6.139,9.182-3.672,21.603,5.511,27.742c9.183,6.138,21.603,3.673,27.742-5.51C497.001,355.674,512,306.53,512,256\n                                    C512,187.62,485.371,123.333,437.02,74.98z'),(null as any));
+    this._text_100 = this.renderer.createText(this._el_95,'\n                                    ',(null as any));
+    this._el_101 = import3.createRenderElement(this.renderer,this._el_95,':svg:path',new import3.InlineArray2(2,'d','M256,187c-11.046,0-20,8.954-20,20v178c0,11.046,8.954,20,20,20s20-8.954,20-20V207C276,195.954,267.046,187,256,187z'),(null as any));
+    this._text_102 = this.renderer.createText(this._el_95,'\n                                ',(null as any));
+    this._text_103 = this.renderer.createText(this._el_93,'\n                            ',(null as any));
+    this._text_104 = this.renderer.createText(this._el_91,'\n                        ',(null as any));
+    this._text_105 = this.renderer.createText(this._el_89,'\n                    ',(null as any));
+    this._text_106 = this.renderer.createText(this._el_87,'\n                ',(null as any));
+    this._text_107 = this.renderer.createText(this._el_43,'\n            ',(null as any));
+    this._text_108 = this.renderer.createText(this._el_4,'\n        ',(null as any));
+    this._text_109 = this.renderer.createText(this._el_2,'\n        ',(null as any));
+    this._el_110 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'id','coords'),(null as any));
+    this._text_111 = this.renderer.createText(this._el_2,'\n        ',(null as any));
+    this._el_112 = import3.createRenderElement(this.renderer,this._el_2,'div',new import3.InlineArray2(2,'id','debug'),(null as any));
+    this._text_113 = this.renderer.createText(this._el_2,'\n    ',(null as any));
+    this._text_114 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._el_115 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'id','image_wrapper'),(null as any));
+    this._text_116 = this.renderer.createText(this._el_115,'\n        ',(null as any));
+    this._el_117 = import3.createRenderElement(this.renderer,this._el_115,'div',new import3.InlineArray2(2,'id','image'),(null as any));
+    this._text_118 = this.renderer.createText(this._el_117,'\n            ',(null as any));
+    this._el_119 = import3.createRenderElement(this.renderer,this._el_117,'img',new import3.InlineArray8(6,'alt','#','id','img','src',''),(null as any));
+    this._text_120 = this.renderer.createText(this._el_117,'\n            ',(null as any));
+    this._el_121 = import3.createRenderElement(this.renderer,this._el_117,':svg:svg',new import3.InlineArray8(8,'baseProfile','tiny','id','svg','version','1.2','xmlns','http://www.w3.org/2000/svg'),(null as any));
+    this._text_122 = this.renderer.createText(this._el_117,'\n        ',(null as any));
+    this._text_123 = this.renderer.createText(this._el_115,'\n    ',(null as any));
+    this._text_124 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._text_125 = this.renderer.createText(parentRenderNode,'\n\n        ',(null as any));
+    this._text_126 = this.renderer.createText(parentRenderNode,'\n        ',(null as any));
+    this._el_127 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'id','from_html_wrapper'),(null as any));
+    this._text_128 = this.renderer.createText(this._el_127,'\n            ',(null as any));
+    this._el_129 = import3.createRenderElement(this.renderer,this._el_127,'form',new import3.InlineArray2(2,'id','from_html_form'),(null as any));
+    this._text_130 = this.renderer.createText(this._el_129,'\n                ',(null as any));
+    this._el_131 = import3.createRenderElement(this.renderer,this._el_129,'h5',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_132 = this.renderer.createText(this._el_131,'Loading areas',(null as any));
+    this._text_133 = this.renderer.createText(this._el_129,'\n                ',(null as any));
+    this._el_134 = import3.createRenderElement(this.renderer,this._el_129,'span',new import3.InlineArray4(4,'class','close_button','title','close'),(null as any));
+    this._text_135 = this.renderer.createText(this._el_129,'\n                ',(null as any));
+    this._el_136 = import3.createRenderElement(this.renderer,this._el_129,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_137 = this.renderer.createText(this._el_136,'\n                    ',(null as any));
+    this._el_138 = import3.createRenderElement(this.renderer,this._el_136,'label',new import3.InlineArray2(2,'for','code_input'),(null as any));
+    this._text_139 = this.renderer.createText(this._el_138,'Enter your html code:',(null as any));
+    this._text_140 = this.renderer.createText(this._el_136,'\n                    ',(null as any));
+    this._el_141 = import3.createRenderElement(this.renderer,this._el_136,'textarea',new import3.InlineArray2(2,'id','code_input'),(null as any));
+    this._text_142 = this.renderer.createText(this._el_136,'\n                ',(null as any));
+    this._text_143 = this.renderer.createText(this._el_129,'\n                ',(null as any));
+    this._el_144 = import3.createRenderElement(this.renderer,this._el_129,'button',new import3.InlineArray2(2,'id','load_code_button'),(null as any));
+    this._text_145 = this.renderer.createText(this._el_144,'Load',(null as any));
+    this._text_146 = this.renderer.createText(this._el_129,'\n            ',(null as any));
+    this._text_147 = this.renderer.createText(this._el_127,'\n        ',(null as any));
+    this._text_148 = this.renderer.createText(parentRenderNode,'\n        ',(null as any));
+    this._text_149 = this.renderer.createText(parentRenderNode,'\n\n        ',(null as any));
+    this._text_150 = this.renderer.createText(parentRenderNode,'\n        ',(null as any));
+    this._el_151 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'id','overlay'),(null as any));
+    this._text_152 = this.renderer.createText(parentRenderNode,'\n        ',(null as any));
+    this._el_153 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'id','help'),(null as any));
+    this._text_154 = this.renderer.createText(this._el_153,'\n            ',(null as any));
+    this._el_155 = import3.createRenderElement(this.renderer,this._el_153,'span',new import3.InlineArray4(4,'class','close_button','title','close'),(null as any));
+    this._text_156 = this.renderer.createText(this._el_153,'\n            ',(null as any));
+    this._el_157 = import3.createRenderElement(this.renderer,this._el_153,'div',new import3.InlineArray2(2,'class','txt'),(null as any));
+    this._text_158 = this.renderer.createText(this._el_157,'\n                ',(null as any));
+    this._el_159 = import3.createRenderElement(this.renderer,this._el_157,'section',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_160 = this.renderer.createText(this._el_159,'\n                    ',(null as any));
+    this._el_161 = import3.createRenderElement(this.renderer,this._el_159,'h2',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_162 = this.renderer.createText(this._el_161,'',(null as any));
+    this._text_163 = this.renderer.createText(this._el_159,'\n                    ',(null as any));
+    this._el_164 = import3.createRenderElement(this.renderer,this._el_159,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_165 = import3.createRenderElement(this.renderer,this._el_164,'span',new import3.InlineArray2(2,'class','key'),(null as any));
+    this._text_166 = this.renderer.createText(this._el_165,'ENTER',(null as any));
+    this._text_167 = this.renderer.createText(this._el_164,'',(null as any));
+    this._text_168 = this.renderer.createText(this._el_159,'\n                    ',(null as any));
+    this._el_169 = import3.createRenderElement(this.renderer,this._el_159,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_170 = import3.createRenderElement(this.renderer,this._el_169,'span',new import3.InlineArray2(2,'class','key'),(null as any));
+    this._text_171 = this.renderer.createText(this._el_170,'ESC',(null as any));
+    this._text_172 = this.renderer.createText(this._el_169,'',(null as any));
+    this._text_173 = this.renderer.createText(this._el_159,'\n                    ',(null as any));
+    this._el_174 = import3.createRenderElement(this.renderer,this._el_159,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_175 = import3.createRenderElement(this.renderer,this._el_174,'span',new import3.InlineArray2(2,'class','key'),(null as any));
+    this._text_176 = this.renderer.createText(this._el_175,'SHIFT',(null as any));
+    this._text_177 = this.renderer.createText(this._el_174,'',(null as any));
+    this._text_178 = this.renderer.createText(this._el_159,'\n                ',(null as any));
+    this._text_179 = this.renderer.createText(this._el_157,'\n                ',(null as any));
+    this._el_180 = import3.createRenderElement(this.renderer,this._el_157,'section',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_181 = this.renderer.createText(this._el_180,'\n                    ',(null as any));
+    this._el_182 = import3.createRenderElement(this.renderer,this._el_180,'h2',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_183 = this.renderer.createText(this._el_182,'',(null as any));
+    this._text_184 = this.renderer.createText(this._el_180,'\n                    ',(null as any));
+    this._el_185 = import3.createRenderElement(this.renderer,this._el_180,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_186 = import3.createRenderElement(this.renderer,this._el_185,'span',new import3.InlineArray2(2,'class','key'),(null as any));
+    this._text_187 = this.renderer.createText(this._el_186,'DELETE',(null as any));
+    this._text_188 = this.renderer.createText(this._el_185,'',(null as any));
+    this._text_189 = this.renderer.createText(this._el_180,'\n                    ',(null as any));
+    this._el_190 = import3.createRenderElement(this.renderer,this._el_180,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_191 = import3.createRenderElement(this.renderer,this._el_190,'span',new import3.InlineArray2(2,'class','key'),(null as any));
+    this._text_192 = this.renderer.createText(this._el_191,'ESC',(null as any));
+    this._text_193 = this.renderer.createText(this._el_190,'',(null as any));
+    this._text_194 = this.renderer.createText(this._el_180,'\n                    ',(null as any));
+    this._el_195 = import3.createRenderElement(this.renderer,this._el_180,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_196 = import3.createRenderElement(this.renderer,this._el_195,'span',new import3.InlineArray2(2,'class','key'),(null as any));
+    this._text_197 = this.renderer.createText(this._el_196,'SHIFT',(null as any));
+    this._text_198 = this.renderer.createText(this._el_195,'',(null as any));
+    this._text_199 = this.renderer.createText(this._el_180,'\n                    ',(null as any));
+    this._el_200 = import3.createRenderElement(this.renderer,this._el_180,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_201 = import3.createRenderElement(this.renderer,this._el_200,'span',new import3.InlineArray2(2,'class','key'),(null as any));
+    this._text_202 = this.renderer.createText(this._el_201,'↑',(null as any));
+    this._text_203 = this.renderer.createText(this._el_200,'',(null as any));
+    this._text_204 = this.renderer.createText(this._el_180,'\n                    ',(null as any));
+    this._el_205 = import3.createRenderElement(this.renderer,this._el_180,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_206 = import3.createRenderElement(this.renderer,this._el_205,'span',new import3.InlineArray2(2,'class','key'),(null as any));
+    this._text_207 = this.renderer.createText(this._el_206,'↓',(null as any));
+    this._text_208 = this.renderer.createText(this._el_205,'',(null as any));
+    this._text_209 = this.renderer.createText(this._el_180,'\n                    ',(null as any));
+    this._el_210 = import3.createRenderElement(this.renderer,this._el_180,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_211 = import3.createRenderElement(this.renderer,this._el_210,'span',new import3.InlineArray2(2,'class','key'),(null as any));
+    this._text_212 = this.renderer.createText(this._el_211,'←',(null as any));
+    this._text_213 = this.renderer.createText(this._el_210,'',(null as any));
+    this._text_214 = this.renderer.createText(this._el_180,'\n                    ',(null as any));
+    this._el_215 = import3.createRenderElement(this.renderer,this._el_180,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._el_216 = import3.createRenderElement(this.renderer,this._el_215,'span',new import3.InlineArray2(2,'class','key'),(null as any));
+    this._text_217 = this.renderer.createText(this._el_216,'→',(null as any));
+    this._text_218 = this.renderer.createText(this._el_215,'',(null as any));
+    this._text_219 = this.renderer.createText(this._el_180,'\n                ',(null as any));
+    this._text_220 = this.renderer.createText(this._el_157,'\n            ',(null as any));
+    this._text_221 = this.renderer.createText(this._el_153,'\n        ',(null as any));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -523,47 +647,47 @@ export class View_Ng2ImageMapEditorDirective0 extends import2.AppView<import0.Ng
       this._el_6,
       this._text_7,
       this._el_8,
-      this._el_9,
-      this._text_10,
+      this._text_9,
+      this._el_10,
       this._text_11,
       this._el_12,
-      this._el_13,
+      this._text_13,
       this._el_14,
       this._text_15,
       this._el_16,
-      this._el_17,
+      this._text_17,
       this._el_18,
       this._text_19,
       this._el_20,
-      this._el_21,
+      this._text_21,
       this._el_22,
       this._text_23,
       this._text_24,
-      this._el_25,
+      this._text_25,
       this._text_26,
-      this._el_27,
+      this._text_27,
       this._text_28,
-      this._el_29,
-      this._text_30,
+      this._text_29,
+      this._el_30,
       this._el_31,
-      this._text_32,
+      this._el_32,
       this._text_33,
-      this._text_34,
+      this._el_34,
       this._el_35,
       this._el_36,
-      this._el_37,
-      this._text_38,
-      this._text_39,
+      this._text_37,
+      this._el_38,
+      this._el_39,
       this._el_40,
-      this._el_41,
-      this._el_42,
-      this._text_43,
+      this._text_41,
+      this._text_42,
+      this._el_43,
       this._text_44,
-      this._text_45,
-      this._el_46,
-      this._text_47,
-      this._el_48,
-      this._text_49,
+      this._el_45,
+      this._text_46,
+      this._el_47,
+      this._text_48,
+      this._el_49,
       this._text_50,
       this._el_51,
       this._text_52,
@@ -571,36 +695,36 @@ export class View_Ng2ImageMapEditorDirective0 extends import2.AppView<import0.Ng
       this._text_54,
       this._el_55,
       this._text_56,
-      this._el_57,
+      this._text_57,
       this._text_58,
       this._text_59,
       this._text_60,
       this._text_61,
-      this._text_62,
+      this._el_62,
       this._el_63,
       this._text_64,
       this._el_65,
       this._text_66,
       this._el_67,
       this._text_68,
-      this._text_69,
-      this._el_70,
-      this._text_71,
-      this._el_72,
-      this._text_73,
-      this._el_74,
-      this._text_75,
+      this._el_69,
+      this._text_70,
+      this._el_71,
+      this._text_72,
+      this._el_73,
+      this._text_74,
+      this._el_75,
       this._text_76,
       this._el_77,
       this._text_78,
-      this._text_79,
-      this._el_80,
+      this._el_79,
+      this._text_80,
       this._text_81,
       this._text_82,
       this._text_83,
       this._text_84,
       this._text_85,
-      this._text_86,
+      this._el_86,
       this._el_87,
       this._text_88,
       this._el_89,
@@ -613,214 +737,268 @@ export class View_Ng2ImageMapEditorDirective0 extends import2.AppView<import0.Ng
       this._text_96,
       this._el_97,
       this._text_98,
-      this._text_99,
-      this._el_100,
+      this._el_99,
+      this._text_100,
       this._el_101,
       this._text_102,
       this._text_103,
       this._text_104,
-      this._el_105,
-      this._el_106,
+      this._text_105,
+      this._text_106,
       this._text_107,
       this._text_108,
       this._text_109,
       this._el_110,
-      this._el_111,
-      this._text_112,
+      this._text_111,
+      this._el_112,
       this._text_113,
       this._text_114,
-      this._text_115,
-      this._el_116,
-      this._text_117,
-      this._el_118,
-      this._text_119,
+      this._el_115,
+      this._text_116,
+      this._el_117,
+      this._text_118,
+      this._el_119,
       this._text_120,
       this._el_121,
-      this._el_122,
+      this._text_122,
       this._text_123,
       this._text_124,
       this._text_125,
-      this._el_126,
+      this._text_126,
       this._el_127,
       this._text_128,
-      this._text_129,
+      this._el_129,
       this._text_130,
       this._el_131,
-      this._el_132,
+      this._text_132,
       this._text_133,
-      this._text_134,
+      this._el_134,
       this._text_135,
       this._el_136,
-      this._el_137,
-      this._text_138,
+      this._text_137,
+      this._el_138,
       this._text_139,
       this._text_140,
       this._el_141,
-      this._el_142,
+      this._text_142,
       this._text_143,
-      this._text_144,
+      this._el_144,
       this._text_145,
-      this._el_146,
-      this._el_147,
+      this._text_146,
+      this._text_147,
       this._text_148,
       this._text_149,
       this._text_150,
       this._el_151,
-      this._el_152,
-      this._text_153,
+      this._text_152,
+      this._el_153,
       this._text_154,
-      this._text_155,
+      this._el_155,
       this._text_156,
-      this._text_157
+      this._el_157,
+      this._text_158,
+      this._el_159,
+      this._text_160,
+      this._el_161,
+      this._text_162,
+      this._text_163,
+      this._el_164,
+      this._el_165,
+      this._text_166,
+      this._text_167,
+      this._text_168,
+      this._el_169,
+      this._el_170,
+      this._text_171,
+      this._text_172,
+      this._text_173,
+      this._el_174,
+      this._el_175,
+      this._text_176,
+      this._text_177,
+      this._text_178,
+      this._text_179,
+      this._el_180,
+      this._text_181,
+      this._el_182,
+      this._text_183,
+      this._text_184,
+      this._el_185,
+      this._el_186,
+      this._text_187,
+      this._text_188,
+      this._text_189,
+      this._el_190,
+      this._el_191,
+      this._text_192,
+      this._text_193,
+      this._text_194,
+      this._el_195,
+      this._el_196,
+      this._text_197,
+      this._text_198,
+      this._text_199,
+      this._el_200,
+      this._el_201,
+      this._text_202,
+      this._text_203,
+      this._text_204,
+      this._el_205,
+      this._el_206,
+      this._text_207,
+      this._text_208,
+      this._text_209,
+      this._el_210,
+      this._el_211,
+      this._text_212,
+      this._text_213,
+      this._text_214,
+      this._el_215,
+      this._el_216,
+      this._text_217,
+      this._text_218,
+      this._text_219,
+      this._text_220,
+      this._text_221
     ]
     ),(null as any));
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_158:boolean = !this.context.valid;
-    if (import3.checkBinding(throwOnChange,this._expr_158,currVal_158)) {
-      this.renderer.setElementClass(this._el_9,'btn-success',currVal_158);
-      this._expr_158 = currVal_158;
+    const currVal_222:boolean = !this.context.valid;
+    if (import3.checkBinding(throwOnChange,this._expr_222,currVal_222)) {
+      this.renderer.setElementClass(this._el_10,'btn-round-sm-primary',currVal_222);
+      this._expr_222 = currVal_222;
     }
-    const currVal_159:any = import3.inlineInterpolate(1,'',this.context.labels.save_answers,'');
-    if (import3.checkBinding(throwOnChange,this._expr_159,currVal_159)) {
-      this.renderer.setText(this._text_10,currVal_159);
-      this._expr_159 = currVal_159;
+    const currVal_223:any = import3.inlineInterpolate(1,'',this.context.labels.save_answers,'');
+    if (import3.checkBinding(throwOnChange,this._expr_223,currVal_223)) {
+      this.renderer.setElementProperty(this._el_10,'title',currVal_223);
+      this._expr_223 = currVal_223;
     }
-    const currVal_160:any = (this.context.currentType == 'rectangle');
-    if (import3.checkBinding(throwOnChange,this._expr_160,currVal_160)) {
-      this.renderer.setElementClass(this._el_13,'btn-default',currVal_160);
-      this._expr_160 = currVal_160;
+    const currVal_224:any = (this.context.currentType != 'rectangle');
+    if (import3.checkBinding(throwOnChange,this._expr_224,currVal_224)) {
+      this.renderer.setElementClass(this._el_31,'btn-round-sm-default',currVal_224);
+      this._expr_224 = currVal_224;
     }
-    const currVal_161:any = (this.context.currentType != 'rectangle');
-    if (import3.checkBinding(throwOnChange,this._expr_161,currVal_161)) {
-      this.renderer.setElementClass(this._el_13,'btn',currVal_161);
-      this._expr_161 = currVal_161;
+    const currVal_225:any = (this.context.currentType == 'rectangle');
+    if (import3.checkBinding(throwOnChange,this._expr_225,currVal_225)) {
+      this.renderer.setElementClass(this._el_31,'btn-round-sm-primary',currVal_225);
+      this._expr_225 = currVal_225;
     }
-    const currVal_162:any = this.context.icons.rectangle;
-    if (import3.checkBinding(throwOnChange,this._expr_162,currVal_162)) {
-      this.renderer.setElementProperty(this._el_14,'src',this.viewUtils.sanitizer.sanitize(import11.SecurityContext.URL,currVal_162));
-      this._expr_162 = currVal_162;
+    const currVal_226:any = this.context.icons.rectangle;
+    if (import3.checkBinding(throwOnChange,this._expr_226,currVal_226)) {
+      this.renderer.setElementProperty(this._el_32,'src',this.viewUtils.sanitizer.sanitize(import11.SecurityContext.URL,currVal_226));
+      this._expr_226 = currVal_226;
     }
-    const currVal_163:any = (this.context.currentType == 'circle');
-    if (import3.checkBinding(throwOnChange,this._expr_163,currVal_163)) {
-      this.renderer.setElementClass(this._el_17,'btn-default',currVal_163);
-      this._expr_163 = currVal_163;
+    const currVal_227:any = (this.context.currentType != 'circle');
+    if (import3.checkBinding(throwOnChange,this._expr_227,currVal_227)) {
+      this.renderer.setElementClass(this._el_35,'btn-round-sm-default',currVal_227);
+      this._expr_227 = currVal_227;
     }
-    const currVal_164:any = (this.context.currentType != 'circle');
-    if (import3.checkBinding(throwOnChange,this._expr_164,currVal_164)) {
-      this.renderer.setElementClass(this._el_17,'btn',currVal_164);
-      this._expr_164 = currVal_164;
+    const currVal_228:any = (this.context.currentType == 'circle');
+    if (import3.checkBinding(throwOnChange,this._expr_228,currVal_228)) {
+      this.renderer.setElementClass(this._el_35,'btn-round-sm-primary',currVal_228);
+      this._expr_228 = currVal_228;
     }
-    const currVal_165:any = this.context.icons.circle;
-    if (import3.checkBinding(throwOnChange,this._expr_165,currVal_165)) {
-      this.renderer.setElementProperty(this._el_18,'src',this.viewUtils.sanitizer.sanitize(import11.SecurityContext.URL,currVal_165));
-      this._expr_165 = currVal_165;
+    const currVal_229:any = this.context.icons.circle;
+    if (import3.checkBinding(throwOnChange,this._expr_229,currVal_229)) {
+      this.renderer.setElementProperty(this._el_36,'src',this.viewUtils.sanitizer.sanitize(import11.SecurityContext.URL,currVal_229));
+      this._expr_229 = currVal_229;
     }
-    const currVal_166:any = (this.context.currentType == 'polygon');
-    if (import3.checkBinding(throwOnChange,this._expr_166,currVal_166)) {
-      this.renderer.setElementClass(this._el_21,'btn-default',currVal_166);
-      this._expr_166 = currVal_166;
+    const currVal_230:any = (this.context.currentType != 'polygon');
+    if (import3.checkBinding(throwOnChange,this._expr_230,currVal_230)) {
+      this.renderer.setElementClass(this._el_39,'btn-round-sm-default',currVal_230);
+      this._expr_230 = currVal_230;
     }
-    const currVal_167:any = (this.context.currentType != 'polygon');
-    if (import3.checkBinding(throwOnChange,this._expr_167,currVal_167)) {
-      this.renderer.setElementClass(this._el_21,'btn',currVal_167);
-      this._expr_167 = currVal_167;
+    const currVal_231:any = (this.context.currentType == 'polygon');
+    if (import3.checkBinding(throwOnChange,this._expr_231,currVal_231)) {
+      this.renderer.setElementClass(this._el_39,'btn-round-sm-primary',currVal_231);
+      this._expr_231 = currVal_231;
     }
-    const currVal_168:any = this.context.icons.polygon;
-    if (import3.checkBinding(throwOnChange,this._expr_168,currVal_168)) {
-      this.renderer.setElementProperty(this._el_22,'src',this.viewUtils.sanitizer.sanitize(import11.SecurityContext.URL,currVal_168));
-      this._expr_168 = currVal_168;
+    const currVal_232:any = this.context.icons.polygon;
+    if (import3.checkBinding(throwOnChange,this._expr_232,currVal_232)) {
+      this.renderer.setElementProperty(this._el_40,'src',this.viewUtils.sanitizer.sanitize(import11.SecurityContext.URL,currVal_232));
+      this._expr_232 = currVal_232;
     }
-    const currVal_169:any = this.context.isEditMode;
-    if (import3.checkBinding(throwOnChange,this._expr_169,currVal_169)) {
-      this.renderer.setElementClass(this._el_29,'btn-primary',currVal_169);
-      this._expr_169 = currVal_169;
+    const currVal_233:any = this.context.isEditMode;
+    if (import3.checkBinding(throwOnChange,this._expr_233,currVal_233)) {
+      this.renderer.setElementClass(this._el_47,'btn-primary',currVal_233);
+      this._expr_233 = currVal_233;
     }
-    const currVal_170:boolean = !this.context.isEditMode;
-    if (import3.checkBinding(throwOnChange,this._expr_170,currVal_170)) {
-      this.renderer.setElementClass(this._el_29,'btn-default',currVal_170);
-      this._expr_170 = currVal_170;
+    const currVal_234:any = import3.inlineInterpolate(1,'',this.context.labels.edit,'');
+    if (import3.checkBinding(throwOnChange,this._expr_234,currVal_234)) {
+      this.renderer.setElementProperty(this._el_47,'title',currVal_234);
+      this._expr_234 = currVal_234;
     }
-    const currVal_171:any = this.context.isEditMode;
-    if (import3.checkBinding(throwOnChange,this._expr_171,currVal_171)) {
-      this.renderer.setElementClass(this._el_31,'fa-toggle-on',currVal_171);
-      this._expr_171 = currVal_171;
+    const currVal_235:any = this.context.isEditMode;
+    if (import3.checkBinding(throwOnChange,this._expr_235,currVal_235)) {
+      this.renderer.setElementClass(this._el_47,'btn-round-sm-primary',currVal_235);
+      this._expr_235 = currVal_235;
     }
-    const currVal_172:boolean = !this.context.isEditMode;
-    if (import3.checkBinding(throwOnChange,this._expr_172,currVal_172)) {
-      this.renderer.setElementClass(this._el_31,'fa-toggle-off',currVal_172);
-      this._expr_172 = currVal_172;
+    const currVal_236:any = import3.inlineInterpolate(1,'',this.context.labels.clear,'');
+    if (import3.checkBinding(throwOnChange,this._expr_236,currVal_236)) {
+      this.renderer.setElementProperty(this._el_63,'title',currVal_236);
+      this._expr_236 = currVal_236;
     }
-    const currVal_173:any = import3.inlineInterpolate(1,' ',this.context.labels.edit,'');
-    if (import3.checkBinding(throwOnChange,this._expr_173,currVal_173)) {
-      this.renderer.setText(this._text_32,currVal_173);
-      this._expr_173 = currVal_173;
+    const currVal_237:any = import3.inlineInterpolate(1,'',this.context.labels.drawing_mode,'');
+    if (import3.checkBinding(throwOnChange,this._expr_237,currVal_237)) {
+      this.renderer.setText(this._text_162,currVal_237);
+      this._expr_237 = currVal_237;
     }
-    const currVal_174:any = import3.inlineInterpolate(1,' ',this.context.labels.clear,'');
-    if (import3.checkBinding(throwOnChange,this._expr_174,currVal_174)) {
-      this.renderer.setText(this._text_38,currVal_174);
-      this._expr_174 = currVal_174;
+    const currVal_238:any = import3.inlineInterpolate(1,' — ',this.context.labels.drawing_mode_enter,'');
+    if (import3.checkBinding(throwOnChange,this._expr_238,currVal_238)) {
+      this.renderer.setText(this._text_167,currVal_238);
+      this._expr_238 = currVal_238;
     }
-    const currVal_175:any = import3.inlineInterpolate(1,'',this.context.labels.drawing_mode,'');
-    if (import3.checkBinding(throwOnChange,this._expr_175,currVal_175)) {
-      this.renderer.setText(this._text_98,currVal_175);
-      this._expr_175 = currVal_175;
+    const currVal_239:any = import3.inlineInterpolate(1,' — ',this.context.labels.drawing_mode_esc,'');
+    if (import3.checkBinding(throwOnChange,this._expr_239,currVal_239)) {
+      this.renderer.setText(this._text_172,currVal_239);
+      this._expr_239 = currVal_239;
     }
-    const currVal_176:any = import3.inlineInterpolate(1,' — ',this.context.labels.drawing_mode_enter,'');
-    if (import3.checkBinding(throwOnChange,this._expr_176,currVal_176)) {
-      this.renderer.setText(this._text_103,currVal_176);
-      this._expr_176 = currVal_176;
+    const currVal_240:any = import3.inlineInterpolate(1,' — ',this.context.labels.drawing_mode_shift,'');
+    if (import3.checkBinding(throwOnChange,this._expr_240,currVal_240)) {
+      this.renderer.setText(this._text_177,currVal_240);
+      this._expr_240 = currVal_240;
     }
-    const currVal_177:any = import3.inlineInterpolate(1,' — ',this.context.labels.drawing_mode_esc,'');
-    if (import3.checkBinding(throwOnChange,this._expr_177,currVal_177)) {
-      this.renderer.setText(this._text_108,currVal_177);
-      this._expr_177 = currVal_177;
+    const currVal_241:any = import3.inlineInterpolate(1,'',this.context.labels.editing_mode,'');
+    if (import3.checkBinding(throwOnChange,this._expr_241,currVal_241)) {
+      this.renderer.setText(this._text_183,currVal_241);
+      this._expr_241 = currVal_241;
     }
-    const currVal_178:any = import3.inlineInterpolate(1,' — ',this.context.labels.drawing_mode_shift,'');
-    if (import3.checkBinding(throwOnChange,this._expr_178,currVal_178)) {
-      this.renderer.setText(this._text_113,currVal_178);
-      this._expr_178 = currVal_178;
+    const currVal_242:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_delete,'');
+    if (import3.checkBinding(throwOnChange,this._expr_242,currVal_242)) {
+      this.renderer.setText(this._text_188,currVal_242);
+      this._expr_242 = currVal_242;
     }
-    const currVal_179:any = import3.inlineInterpolate(1,'',this.context.labels.editing_mode,'');
-    if (import3.checkBinding(throwOnChange,this._expr_179,currVal_179)) {
-      this.renderer.setText(this._text_119,currVal_179);
-      this._expr_179 = currVal_179;
+    const currVal_243:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_esc,'');
+    if (import3.checkBinding(throwOnChange,this._expr_243,currVal_243)) {
+      this.renderer.setText(this._text_193,currVal_243);
+      this._expr_243 = currVal_243;
     }
-    const currVal_180:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_delete,'');
-    if (import3.checkBinding(throwOnChange,this._expr_180,currVal_180)) {
-      this.renderer.setText(this._text_124,currVal_180);
-      this._expr_180 = currVal_180;
+    const currVal_244:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_shift,'');
+    if (import3.checkBinding(throwOnChange,this._expr_244,currVal_244)) {
+      this.renderer.setText(this._text_198,currVal_244);
+      this._expr_244 = currVal_244;
     }
-    const currVal_181:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_esc,'');
-    if (import3.checkBinding(throwOnChange,this._expr_181,currVal_181)) {
-      this.renderer.setText(this._text_129,currVal_181);
-      this._expr_181 = currVal_181;
+    const currVal_245:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_up,'');
+    if (import3.checkBinding(throwOnChange,this._expr_245,currVal_245)) {
+      this.renderer.setText(this._text_203,currVal_245);
+      this._expr_245 = currVal_245;
     }
-    const currVal_182:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_shift,'');
-    if (import3.checkBinding(throwOnChange,this._expr_182,currVal_182)) {
-      this.renderer.setText(this._text_134,currVal_182);
-      this._expr_182 = currVal_182;
+    const currVal_246:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_down,'');
+    if (import3.checkBinding(throwOnChange,this._expr_246,currVal_246)) {
+      this.renderer.setText(this._text_208,currVal_246);
+      this._expr_246 = currVal_246;
     }
-    const currVal_183:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_up,'');
-    if (import3.checkBinding(throwOnChange,this._expr_183,currVal_183)) {
-      this.renderer.setText(this._text_139,currVal_183);
-      this._expr_183 = currVal_183;
+    const currVal_247:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_left,'');
+    if (import3.checkBinding(throwOnChange,this._expr_247,currVal_247)) {
+      this.renderer.setText(this._text_213,currVal_247);
+      this._expr_247 = currVal_247;
     }
-    const currVal_184:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_down,'');
-    if (import3.checkBinding(throwOnChange,this._expr_184,currVal_184)) {
-      this.renderer.setText(this._text_144,currVal_184);
-      this._expr_184 = currVal_184;
-    }
-    const currVal_185:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_left,'');
-    if (import3.checkBinding(throwOnChange,this._expr_185,currVal_185)) {
-      this.renderer.setText(this._text_149,currVal_185);
-      this._expr_185 = currVal_185;
-    }
-    const currVal_186:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_right,'');
-    if (import3.checkBinding(throwOnChange,this._expr_186,currVal_186)) {
-      this.renderer.setText(this._text_154,currVal_186);
-      this._expr_186 = currVal_186;
+    const currVal_248:any = import3.inlineInterpolate(1,' — ',this.context.labels.editing_mode_right,'');
+    if (import3.checkBinding(throwOnChange,this._expr_248,currVal_248)) {
+      this.renderer.setText(this._text_218,currVal_248);
+      this._expr_248 = currVal_248;
     }
   }
 }
