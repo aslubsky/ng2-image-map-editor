@@ -1,0 +1,34 @@
+{
+  "name": "ng2-image-map-editor",
+  "version": "1.0.0",
+  "description": "angular2 port for image-map-editor",
+  "keywords": [
+    "angular",
+    "angular2",
+    "image-map",
+    "editor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aslubsky/ng2-image-map-editor.git"
+  },
+  "author": "Alex Slubsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aslubsky/ng2-image-map-editor/issues"
+  },
+  "homepage": "https://github.com/aslubsky/ng2-image-map-editor#readme",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "main": "bundles/ng2-image-map-editor.umd.js",
+  "module": "fesm2015/ng2-image-map-editor.js",
+  "es2015": "fesm2015/ng2-image-map-editor.js",
+  "esm2015": "esm2015/ng2-image-map-editor.js",
+  "fesm2015": "fesm2015/ng2-image-map-editor.js",
+  "typings": "ng2-image-map-editor.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  }
+}

@@ -1,7 +1,7 @@
 import { EditorApp } from './editor-app.class';
 export declare class Buttons {
     private app;
-    all: NodeListOf<HTMLLIElement>;
+    all: HTMLCollectionOf<HTMLLIElement>;
     rectangle: HTMLElement;
     circle: HTMLElement;
     polygon: HTMLElement;

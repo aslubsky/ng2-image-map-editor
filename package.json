@@ -2,11 +2,9 @@
   "name": "ng2-image-map-editor",
   "version": "1.0.0",
   "description": "angular2 port for image-map-editor",
-  "main": "./dist/ng2-image-map-editor.module.js",
   "scripts": {
-    "ngc": "ngc --project tsconfig.json",
-    "tsc": "tsc --project tsconfig.json",
-    "compile": "npm run ngc && npm run tsc"
+    "ng": "ng",
+    "build": "ng build ng2-image-map-editor --prod"
   },
   "keywords": [
     "angular",
@@ -25,16 +23,20 @@
   },
   "homepage": "https://github.com/aslubsky/ng2-image-map-editor#readme",
   "devDependencies": {
-    "@angular/common": "2.4.0",
-    "@angular/compiler": "2.4.0",
-    "@angular/compiler-cli": "2.4.0",
-    "@angular/core": "2.4.0",
-    "@angular/forms": "2.4.0",
-    "@angular/platform-browser": "2.4.0",
-    "@angular/platform-server": "2.4.0",
-    "reflect-metadata": "0.1.8",
-    "rxjs": "~5.1.1",
-    "typescript": "~2.0.6",
-    "zone.js": "0.6.25"
+    "@angular-devkit/build-angular": "~0.901.12",
+    "@angular-devkit/build-ng-packagr": "~0.901.12",
+    "@angular/compiler": "~10.0.8",
+    "@angular/compiler-cli": "~10.0.8",
+    "@angular/cli": "~10.0.5",
+    "@angular/core": "~10.0.8",
+    "@angular/forms": "^10.0.9",
+    "@angular/common": "~10.0.8",
+    "@angular/platform-server": "~10.0.8",
+    "ng-packagr": "^10.0.3",
+    "rxjs": "~6.6.2",
+    "typescript": "~3.9.7",
+    "typings": "^1.4.0"
+  },
+  "dependencies": {
   }
 }
