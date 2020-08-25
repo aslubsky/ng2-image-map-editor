@@ -172,9 +172,9 @@ export class Ng2ImageMapEditorDirective implements ControlValueAccessor, OnChang
     public currentType: string = '';
 
     public icons: any = {
-        rectangle: '/themes/default/assets/img/test/rec.svg',
-        circle: '/themes/default/assets/img/test/cir.svg',
-        polygon: '/themes/default/assets/img/test/pol.svg'
+        rectangle: '/src/assets/img/test/rec.svg',
+        circle: '/src/assets/img/test/cir.svg',
+        polygon: '/src/assets/img/test/pol.svg'
     };
 
     public labels: any = {};

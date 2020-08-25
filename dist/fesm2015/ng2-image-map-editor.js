@@ -1595,9 +1595,9 @@ class Ng2ImageMapEditorDirective {
         this.isEditMode = false;
         this.currentType = '';
         this.icons = {
-            rectangle: '/themes/default/assets/img/test/rec.svg',
-            circle: '/themes/default/assets/img/test/cir.svg',
-            polygon: '/themes/default/assets/img/test/pol.svg'
+            rectangle: '/src/assets/img/test/rec.svg',
+            circle: '/src/assets/img/test/cir.svg',
+            polygon: '/src/assets/img/test/pol.svg'
         };
         this.labels = {};
         this._loadedImage = '';

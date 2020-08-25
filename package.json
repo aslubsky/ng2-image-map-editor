@@ -37,6 +37,5 @@
     "typescript": "~3.9.7",
     "typings": "^1.4.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
