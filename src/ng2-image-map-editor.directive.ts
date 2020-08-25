@@ -38,7 +38,7 @@ import {AreaFactory} from './area-factory.class';
             </ul>
             <ul class="float-right">
                 <li class="btn" id="edit">
-                    <a [class.btn-round-sm-default]="isEditMode" title="{{labels.edit}}" [class.btn-round-sm-primary]="isEditMode" class="btn-round-sm-default" href="#">
+                    <a [class.btn-round-sm-default]="!isEditMode" title="{{labels.edit}}" [class.btn-round-sm-primary]="isEditMode" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <g>
@@ -55,8 +55,9 @@ import {AreaFactory} from './area-factory.class';
                         </svg>
                      </a>
                 </li>
-                <li class="btn-round-sm-default" id="clear"><a class="btn-round-sm-default" href="#" title="{{labels.clear}}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <li class="btn-round-sm-default" id="clear">
+                    <a class="btn-round-sm-default" href="#" title="{{labels.clear}}">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <g>
                             <g>
                                 <g>
@@ -78,8 +79,10 @@ import {AreaFactory} from './area-factory.class';
                             </g>
                         </g>
                     </svg>
-                </a></li>
-                <li  id="show_help"><a class="btn-round-sm-default" href="#">
+                    </a>
+                </li>
+                <li  id="show_help">
+                    <a class="btn-round-sm-default" href="#">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
                          xml:space="preserve">
@@ -98,7 +101,8 @@ import {AreaFactory} from './area-factory.class';
                             </g>
                         </g>
                     </svg>
-                </a></li>
+                </a>
+                </li>
             </ul>
         </nav>
         <div id="coords"></div>

@@ -1726,7 +1726,7 @@ Ng2ImageMapEditorDirective.ɵcmp = ɵɵdefineComponent({ type: Ng2ImageMapEditor
                 useExisting: forwardRef(() => Ng2ImageMapEditorDirective),
                 multi: true
             }
-        ]), ɵɵNgOnChangesFeature], attrs: _c0, decls: 114, vars: 36, consts: [["id", "wrapper"], ["id", "header"], ["id", "nav", 1, "clearfix"], [1, "float-left"], ["id", "to_html"], ["href", "#", 1, "btn-round-sm-default", 3, "title"], ["xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 512 512"], ["d", "M305,148c11.046,0,20-8.954,20-20V90c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v38\n                                                    C285,139.046,293.954,148,305,148z"], ["d", "M492,352c11.046,0,20-8.954,20-20V102c0-5.304-2.107-10.392-5.858-14.142l-82-82C420.392,2.107,415.304,0,410,0H80\n                                                    C35.888,0,0,35.888,0,80v352c0,44.112,35.888,80,80,80h352c44.112,0,80-35.888,80-80c0-11.046-8.954-20-20-20\n                                                    c-11.046,0-20,8.954-20,20c0,22.056-17.944,40-40,40V312c0-11.046-8.954-20-20-20H100c-11.046,0-20,8.954-20,20v160\n                                                    c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40v118c0,33.084,26.916,60,60,60h201c33.084,0,60-26.916,60-60V40h0.716\n                                                    L472,110.284V332C472,343.046,480.954,352,492,352z M120,332h272v140H120V332z M361,158c0,11.028-8.972,20-20,20H140\n                                                    c-11.028,0-20-8.972-20-20V40h241V158z"], ["id", "rectangle", "href", "#"], [3, "src"], ["href", "#", "id", "circle"], ["href", "#", "id", "polygon"], [1, "float-right"], ["id", "edit", 1, "btn"], ["d", "M481.996,30.006C462.647,10.656,436.922,0,409.559,0c-27.363,0-53.089,10.656-72.438,30.005L50.826,316.301\n                                            c-2.436,2.436-4.201,5.46-5.125,8.779L0.733,486.637c-1.939,6.968,0.034,14.441,5.163,19.542c3.8,3.78,8.892,5.821,14.106,5.821\n                                            c1.822,0,3.66-0.25,5.463-0.762l161.557-45.891c6.816-1.936,12.1-7.335,13.888-14.192c1.788-6.857-0.186-14.148-5.189-19.167\n                                            L93.869,329.827L331.184,92.511l88.258,88.258L237.768,361.948c-7.821,7.8-7.838,20.463-0.038,28.284\n                                            c7.799,7.822,20.464,7.838,28.284,0.039l215.98-215.392C501.344,155.53,512,129.805,512,102.442\n                                            C512,75.079,501.344,49.354,481.996,30.006z M143.395,436.158L48.827,463.02l26.485-95.152L143.395,436.158z M453.73,146.575\n                                            l-5.965,5.949l-88.296-88.297l5.938-5.938C377.2,46.495,392.88,40,409.559,40c16.679,0,32.358,6.495,44.152,18.29\n                                            C465.505,70.083,472,85.763,472,102.442C472,119.121,465.505,134.801,453.73,146.575z"], ["id", "clear", 1, "btn-round-sm-default"], ["d", "M472,83H351V60c0-33.084-26.916-60-60-60h-70c-33.084,0-60,26.916-60,60v23H40c-11.046,0-20,8.954-20,20s8.954,20,20,20\n                                                h20.712l24.374,315.987c0.007,0.092,0.015,0.185,0.023,0.278c1.816,19.924,10.954,38.326,25.73,51.816\n                                                C125.615,504.571,144.771,512,164.778,512h182.444c41.667,0,75.917-31.032,79.669-72.183\n                                                c1.003-11.001-7.101-20.731-18.101-21.734c-11.011-1.003-20.731,7.101-21.734,18.101C385.195,456.603,368.07,472,347.222,472\n                                                H164.778c-20.777,0-37.875-15.571-39.823-36.242L100.831,123h310.338l-17.082,221.462c-0.849,11.013,7.39,20.629,18.403,21.479\n                                                c0.524,0.04,1.043,0.06,1.56,0.06c10.347,0,19.11-7.974,19.919-18.463L451.288,123H472c11.046,0,20-8.954,20-20\n                                                S483.046,83,472,83z M311,83H201V60c0-11.028,8.972-20,20-20h70c11.028,0,20,8.972,20,20V83z"], ["d", "M165.127,163.019c-11.035,0.482-19.59,9.818-19.108,20.854l10,228.933c0.469,10.738,9.322,19.128,19.966,19.128\n                                                c0.294,0,0.591-0.006,0.888-0.02c11.035-0.482,19.59-9.818,19.108-20.854l-10-228.934\n                                                C185.499,171.092,176.145,162.523,165.127,163.019z"], ["d", "M326.019,182.127l-10,228.934c-0.482,11.035,8.073,20.372,19.108,20.854c0.297,0.013,0.593,0.02,0.888,0.02\n                                                c10.643,0,19.497-8.39,19.966-19.128l10-228.933c0.482-11.035-8.073-20.372-19.108-20.854\n                                                C335.856,162.527,326.501,171.092,326.019,182.127z"], ["d", "M236,183v228.933c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V183c0-11.046-8.954-20-20-20S236,171.954,236,183z"], ["id", "show_help"], ["href", "#", 1, "btn-round-sm-default"], ["version", "1.1", "id", "Capa_1", "xmlns", "http://www.w3.org/2000/svg", "x", "0px", "y", "0px", "viewBox", "0 0 512 512", 0, "xml", "space", "preserve", 2, "enable-background", "new 0 0 512 512"], ["cx", "256", "cy", "127", "r", "20"], ["d", "M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256\n                                    s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512c46.813,0,92.618-12.758,132.461-36.893\n                                    c9.448-5.724,12.467-18.022,6.744-27.469c-5.723-9.448-18.021-12.467-27.468-6.744C334.144,461.244,295.506,472,256,472\n                                    c-119.103,0-216-96.897-216-216S136.897,40,256,40s216,96.897,216,216c0,42.589-12.665,84.044-36.627,119.884\n                                    c-6.139,9.182-3.672,21.603,5.511,27.742c9.183,6.138,21.603,3.673,27.742-5.51C497.001,355.674,512,306.53,512,256\n                                    C512,187.62,485.371,123.333,437.02,74.98z"], ["d", "M256,187c-11.046,0-20,8.954-20,20v178c0,11.046,8.954,20,20,20s20-8.954,20-20V207C276,195.954,267.046,187,256,187z"], ["id", "coords"], ["id", "debug"], ["id", "image_wrapper"], ["id", "image"], ["src", "", "alt", "#", "id", "img"], ["xmlns", "http://www.w3.org/2000/svg", "version", "1.2", "baseProfile", "tiny", "id", "svg"], ["id", "from_html_wrapper"], ["id", "from_html_form"], ["title", "close", 1, "close_button"], ["for", "code_input"], ["id", "code_input"], ["id", "load_code_button"], ["id", "overlay"], ["id", "help"], [1, "txt"], [1, "key"]], template: function Ng2ImageMapEditorDirective_Template(rf, ctx) { if (rf & 1) {
+        ]), ɵɵNgOnChangesFeature], attrs: _c0, decls: 114, vars: 36, consts: [["id", "wrapper"], ["id", "header"], ["id", "nav", 1, "clearfix"], [1, "float-left"], ["id", "to_html"], ["href", "#", 1, "btn-round-sm-default", 3, "title"], ["xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 512 512"], ["d", "M305,148c11.046,0,20-8.954,20-20V90c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v38\n                                                    C285,139.046,293.954,148,305,148z"], ["d", "M492,352c11.046,0,20-8.954,20-20V102c0-5.304-2.107-10.392-5.858-14.142l-82-82C420.392,2.107,415.304,0,410,0H80\n                                                    C35.888,0,0,35.888,0,80v352c0,44.112,35.888,80,80,80h352c44.112,0,80-35.888,80-80c0-11.046-8.954-20-20-20\n                                                    c-11.046,0-20,8.954-20,20c0,22.056-17.944,40-40,40V312c0-11.046-8.954-20-20-20H100c-11.046,0-20,8.954-20,20v160\n                                                    c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40v118c0,33.084,26.916,60,60,60h201c33.084,0,60-26.916,60-60V40h0.716\n                                                    L472,110.284V332C472,343.046,480.954,352,492,352z M120,332h272v140H120V332z M361,158c0,11.028-8.972,20-20,20H140\n                                                    c-11.028,0-20-8.972-20-20V40h241V158z"], ["id", "rectangle", "href", "#"], [3, "src"], ["href", "#", "id", "circle"], ["href", "#", "id", "polygon"], [1, "float-right"], ["id", "edit", 1, "btn"], ["href", "#", 3, "title"], ["d", "M481.996,30.006C462.647,10.656,436.922,0,409.559,0c-27.363,0-53.089,10.656-72.438,30.005L50.826,316.301\n                                            c-2.436,2.436-4.201,5.46-5.125,8.779L0.733,486.637c-1.939,6.968,0.034,14.441,5.163,19.542c3.8,3.78,8.892,5.821,14.106,5.821\n                                            c1.822,0,3.66-0.25,5.463-0.762l161.557-45.891c6.816-1.936,12.1-7.335,13.888-14.192c1.788-6.857-0.186-14.148-5.189-19.167\n                                            L93.869,329.827L331.184,92.511l88.258,88.258L237.768,361.948c-7.821,7.8-7.838,20.463-0.038,28.284\n                                            c7.799,7.822,20.464,7.838,28.284,0.039l215.98-215.392C501.344,155.53,512,129.805,512,102.442\n                                            C512,75.079,501.344,49.354,481.996,30.006z M143.395,436.158L48.827,463.02l26.485-95.152L143.395,436.158z M453.73,146.575\n                                            l-5.965,5.949l-88.296-88.297l5.938-5.938C377.2,46.495,392.88,40,409.559,40c16.679,0,32.358,6.495,44.152,18.29\n                                            C465.505,70.083,472,85.763,472,102.442C472,119.121,465.505,134.801,453.73,146.575z"], ["id", "clear", 1, "btn-round-sm-default"], ["d", "M472,83H351V60c0-33.084-26.916-60-60-60h-70c-33.084,0-60,26.916-60,60v23H40c-11.046,0-20,8.954-20,20s8.954,20,20,20\n                                                h20.712l24.374,315.987c0.007,0.092,0.015,0.185,0.023,0.278c1.816,19.924,10.954,38.326,25.73,51.816\n                                                C125.615,504.571,144.771,512,164.778,512h182.444c41.667,0,75.917-31.032,79.669-72.183\n                                                c1.003-11.001-7.101-20.731-18.101-21.734c-11.011-1.003-20.731,7.101-21.734,18.101C385.195,456.603,368.07,472,347.222,472\n                                                H164.778c-20.777,0-37.875-15.571-39.823-36.242L100.831,123h310.338l-17.082,221.462c-0.849,11.013,7.39,20.629,18.403,21.479\n                                                c0.524,0.04,1.043,0.06,1.56,0.06c10.347,0,19.11-7.974,19.919-18.463L451.288,123H472c11.046,0,20-8.954,20-20\n                                                S483.046,83,472,83z M311,83H201V60c0-11.028,8.972-20,20-20h70c11.028,0,20,8.972,20,20V83z"], ["d", "M165.127,163.019c-11.035,0.482-19.59,9.818-19.108,20.854l10,228.933c0.469,10.738,9.322,19.128,19.966,19.128\n                                                c0.294,0,0.591-0.006,0.888-0.02c11.035-0.482,19.59-9.818,19.108-20.854l-10-228.934\n                                                C185.499,171.092,176.145,162.523,165.127,163.019z"], ["d", "M326.019,182.127l-10,228.934c-0.482,11.035,8.073,20.372,19.108,20.854c0.297,0.013,0.593,0.02,0.888,0.02\n                                                c10.643,0,19.497-8.39,19.966-19.128l10-228.933c0.482-11.035-8.073-20.372-19.108-20.854\n                                                C335.856,162.527,326.501,171.092,326.019,182.127z"], ["d", "M236,183v228.933c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V183c0-11.046-8.954-20-20-20S236,171.954,236,183z"], ["id", "show_help"], ["href", "#", 1, "btn-round-sm-default"], ["version", "1.1", "id", "Capa_1", "xmlns", "http://www.w3.org/2000/svg", "x", "0px", "y", "0px", "viewBox", "0 0 512 512", 0, "xml", "space", "preserve", 2, "enable-background", "new 0 0 512 512"], ["cx", "256", "cy", "127", "r", "20"], ["d", "M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256\n                                    s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512c46.813,0,92.618-12.758,132.461-36.893\n                                    c9.448-5.724,12.467-18.022,6.744-27.469c-5.723-9.448-18.021-12.467-27.468-6.744C334.144,461.244,295.506,472,256,472\n                                    c-119.103,0-216-96.897-216-216S136.897,40,256,40s216,96.897,216,216c0,42.589-12.665,84.044-36.627,119.884\n                                    c-6.139,9.182-3.672,21.603,5.511,27.742c9.183,6.138,21.603,3.673,27.742-5.51C497.001,355.674,512,306.53,512,256\n                                    C512,187.62,485.371,123.333,437.02,74.98z"], ["d", "M256,187c-11.046,0-20,8.954-20,20v178c0,11.046,8.954,20,20,20s20-8.954,20-20V207C276,195.954,267.046,187,256,187z"], ["id", "coords"], ["id", "debug"], ["id", "image_wrapper"], ["id", "image"], ["src", "", "alt", "#", "id", "img"], ["xmlns", "http://www.w3.org/2000/svg", "version", "1.2", "baseProfile", "tiny", "id", "svg"], ["id", "from_html_wrapper"], ["id", "from_html_form"], ["title", "close", 1, "close_button"], ["for", "code_input"], ["id", "code_input"], ["id", "load_code_button"], ["id", "overlay"], ["id", "help"], [1, "txt"], [1, "key"]], template: function Ng2ImageMapEditorDirective_Template(rf, ctx) { if (rf & 1) {
         ɵɵelementStart(0, "div", 0);
         ɵɵelementStart(1, "header", 1);
         ɵɵelementStart(2, "nav", 2);
@@ -1765,29 +1765,29 @@ Ng2ImageMapEditorDirective.ɵcmp = ɵɵdefineComponent({ type: Ng2ImageMapEditor
         ɵɵelementEnd();
         ɵɵelementStart(21, "ul", 13);
         ɵɵelementStart(22, "li", 14);
-        ɵɵelementStart(23, "a", 5);
+        ɵɵelementStart(23, "a", 15);
         ɵɵnamespaceSVG();
         ɵɵelementStart(24, "svg", 6);
         ɵɵelementStart(25, "g");
         ɵɵelementStart(26, "g");
-        ɵɵelement(27, "path", 15);
+        ɵɵelement(27, "path", 16);
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵnamespaceHTML();
-        ɵɵelementStart(28, "li", 16);
+        ɵɵelementStart(28, "li", 17);
         ɵɵelementStart(29, "a", 5);
         ɵɵnamespaceSVG();
         ɵɵelementStart(30, "svg", 6);
         ɵɵelementStart(31, "g");
         ɵɵelementStart(32, "g");
         ɵɵelementStart(33, "g");
-        ɵɵelement(34, "path", 17);
-        ɵɵelement(35, "path", 18);
-        ɵɵelement(36, "path", 19);
-        ɵɵelement(37, "path", 20);
+        ɵɵelement(34, "path", 18);
+        ɵɵelement(35, "path", 19);
+        ɵɵelement(36, "path", 20);
+        ɵɵelement(37, "path", 21);
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
@@ -1795,16 +1795,16 @@ Ng2ImageMapEditorDirective.ɵcmp = ɵɵdefineComponent({ type: Ng2ImageMapEditor
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵnamespaceHTML();
-        ɵɵelementStart(38, "li", 21);
-        ɵɵelementStart(39, "a", 22);
+        ɵɵelementStart(38, "li", 22);
+        ɵɵelementStart(39, "a", 23);
         ɵɵnamespaceSVG();
-        ɵɵelementStart(40, "svg", 23);
+        ɵɵelementStart(40, "svg", 24);
         ɵɵelementStart(41, "g");
         ɵɵelementStart(42, "g");
         ɵɵelementStart(43, "g");
-        ɵɵelement(44, "circle", 24);
-        ɵɵelement(45, "path", 25);
-        ɵɵelement(46, "path", 26);
+        ɵɵelement(44, "circle", 25);
+        ɵɵelement(45, "path", 26);
+        ɵɵelement(46, "path", 27);
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
@@ -1814,57 +1814,57 @@ Ng2ImageMapEditorDirective.ɵcmp = ɵɵdefineComponent({ type: Ng2ImageMapEditor
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵnamespaceHTML();
-        ɵɵelement(47, "div", 27);
-        ɵɵelement(48, "div", 28);
+        ɵɵelement(47, "div", 28);
+        ɵɵelement(48, "div", 29);
         ɵɵelementEnd();
-        ɵɵelementStart(49, "div", 29);
-        ɵɵelementStart(50, "div", 30);
-        ɵɵelement(51, "img", 31);
+        ɵɵelementStart(49, "div", 30);
+        ɵɵelementStart(50, "div", 31);
+        ɵɵelement(51, "img", 32);
         ɵɵnamespaceSVG();
-        ɵɵelement(52, "svg", 32);
+        ɵɵelement(52, "svg", 33);
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵnamespaceHTML();
-        ɵɵelementStart(53, "div", 33);
-        ɵɵelementStart(54, "form", 34);
+        ɵɵelementStart(53, "div", 34);
+        ɵɵelementStart(54, "form", 35);
         ɵɵelementStart(55, "h5");
         ɵɵtext(56, "Loading areas");
         ɵɵelementEnd();
-        ɵɵelement(57, "span", 35);
+        ɵɵelement(57, "span", 36);
         ɵɵelementStart(58, "p");
-        ɵɵelementStart(59, "label", 36);
+        ɵɵelementStart(59, "label", 37);
         ɵɵtext(60, "Enter your html code:");
         ɵɵelementEnd();
-        ɵɵelement(61, "textarea", 37);
+        ɵɵelement(61, "textarea", 38);
         ɵɵelementEnd();
-        ɵɵelementStart(62, "button", 38);
+        ɵɵelementStart(62, "button", 39);
         ɵɵtext(63, "Load");
         ɵɵelementEnd();
         ɵɵelementEnd();
         ɵɵelementEnd();
-        ɵɵelement(64, "div", 39);
-        ɵɵelementStart(65, "div", 40);
-        ɵɵelement(66, "span", 35);
-        ɵɵelementStart(67, "div", 41);
+        ɵɵelement(64, "div", 40);
+        ɵɵelementStart(65, "div", 41);
+        ɵɵelement(66, "span", 36);
+        ɵɵelementStart(67, "div", 42);
         ɵɵelementStart(68, "section");
         ɵɵelementStart(69, "h2");
         ɵɵtext(70);
         ɵɵelementEnd();
         ɵɵelementStart(71, "p");
-        ɵɵelementStart(72, "span", 42);
+        ɵɵelementStart(72, "span", 43);
         ɵɵtext(73, "ENTER");
         ɵɵelementEnd();
         ɵɵtext(74);
         ɵɵelementEnd();
         ɵɵelementStart(75, "p");
-        ɵɵelementStart(76, "span", 42);
+        ɵɵelementStart(76, "span", 43);
         ɵɵtext(77, "ESC");
         ɵɵelementEnd();
         ɵɵtext(78);
         ɵɵelementEnd();
         ɵɵelementStart(79, "p");
-        ɵɵelementStart(80, "span", 42);
+        ɵɵelementStart(80, "span", 43);
         ɵɵtext(81, "SHIFT");
         ɵɵelementEnd();
         ɵɵtext(82);
@@ -1875,43 +1875,43 @@ Ng2ImageMapEditorDirective.ɵcmp = ɵɵdefineComponent({ type: Ng2ImageMapEditor
         ɵɵtext(85);
         ɵɵelementEnd();
         ɵɵelementStart(86, "p");
-        ɵɵelementStart(87, "span", 42);
+        ɵɵelementStart(87, "span", 43);
         ɵɵtext(88, "DELETE");
         ɵɵelementEnd();
         ɵɵtext(89);
         ɵɵelementEnd();
         ɵɵelementStart(90, "p");
-        ɵɵelementStart(91, "span", 42);
+        ɵɵelementStart(91, "span", 43);
         ɵɵtext(92, "ESC");
         ɵɵelementEnd();
         ɵɵtext(93);
         ɵɵelementEnd();
         ɵɵelementStart(94, "p");
-        ɵɵelementStart(95, "span", 42);
+        ɵɵelementStart(95, "span", 43);
         ɵɵtext(96, "SHIFT");
         ɵɵelementEnd();
         ɵɵtext(97);
         ɵɵelementEnd();
         ɵɵelementStart(98, "p");
-        ɵɵelementStart(99, "span", 42);
+        ɵɵelementStart(99, "span", 43);
         ɵɵtext(100, "\u2191");
         ɵɵelementEnd();
         ɵɵtext(101);
         ɵɵelementEnd();
         ɵɵelementStart(102, "p");
-        ɵɵelementStart(103, "span", 42);
+        ɵɵelementStart(103, "span", 43);
         ɵɵtext(104, "\u2193");
         ɵɵelementEnd();
         ɵɵtext(105);
         ɵɵelementEnd();
         ɵɵelementStart(106, "p");
-        ɵɵelementStart(107, "span", 42);
+        ɵɵelementStart(107, "span", 43);
         ɵɵtext(108, "\u2190");
         ɵɵelementEnd();
         ɵɵtext(109);
         ɵɵelementEnd();
         ɵɵelementStart(110, "p");
-        ɵɵelementStart(111, "span", 42);
+        ɵɵelementStart(111, "span", 43);
         ɵɵtext(112, "\u2192");
         ɵɵelementEnd();
         ɵɵtext(113);
@@ -1936,7 +1936,7 @@ Ng2ImageMapEditorDirective.ɵcmp = ɵɵdefineComponent({ type: Ng2ImageMapEditor
         ɵɵadvance(1);
         ɵɵproperty("src", ctx.icons.polygon, ɵɵsanitizeUrl);
         ɵɵadvance(3);
-        ɵɵclassProp("btn-round-sm-default", ctx.isEditMode)("btn-round-sm-primary", ctx.isEditMode);
+        ɵɵclassProp("btn-round-sm-default", !ctx.isEditMode)("btn-round-sm-primary", ctx.isEditMode);
         ɵɵpropertyInterpolate("title", ctx.labels.edit);
         ɵɵadvance(6);
         ɵɵpropertyInterpolate("title", ctx.labels.clear);
@@ -1999,7 +1999,7 @@ Ng2ImageMapEditorDirective.ɵcmp = ɵɵdefineComponent({ type: Ng2ImageMapEditor
             </ul>
             <ul class="float-right">
                 <li class="btn" id="edit">
-                    <a [class.btn-round-sm-default]="isEditMode" title="{{labels.edit}}" [class.btn-round-sm-primary]="isEditMode" class="btn-round-sm-default" href="#">
+                    <a [class.btn-round-sm-default]="!isEditMode" title="{{labels.edit}}" [class.btn-round-sm-primary]="isEditMode" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <g>
                                 <g>
@@ -2016,8 +2016,9 @@ Ng2ImageMapEditorDirective.ɵcmp = ɵɵdefineComponent({ type: Ng2ImageMapEditor
                         </svg>
                      </a>
                 </li>
-                <li class="btn-round-sm-default" id="clear"><a class="btn-round-sm-default" href="#" title="{{labels.clear}}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <li class="btn-round-sm-default" id="clear">
+                    <a class="btn-round-sm-default" href="#" title="{{labels.clear}}">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <g>
                             <g>
                                 <g>
@@ -2039,8 +2040,10 @@ Ng2ImageMapEditorDirective.ɵcmp = ɵɵdefineComponent({ type: Ng2ImageMapEditor
                             </g>
                         </g>
                     </svg>
-                </a></li>
-                <li  id="show_help"><a class="btn-round-sm-default" href="#">
+                    </a>
+                </li>
+                <li  id="show_help">
+                    <a class="btn-round-sm-default" href="#">
                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
                          xml:space="preserve">
@@ -2059,7 +2062,8 @@ Ng2ImageMapEditorDirective.ɵcmp = ɵɵdefineComponent({ type: Ng2ImageMapEditor
                             </g>
                         </g>
                     </svg>
-                </a></li>
+                </a>
+                </li>
             </ul>
         </nav>
         <div id="coords"></div>
