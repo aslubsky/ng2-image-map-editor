@@ -4,6 +4,28 @@
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ng2-image-map-editor'] = {}, global.ng.core, global.ng.forms));
 }(this, (function (exports, i0, forms) { 'use strict';
 
+    function _interopNamespace(e) {
+        if (e && e.__esModule) return e;
+        var n = Object.create(null);
+        if (e) {
+            Object.keys(e).forEach(function (k) {
+                if (k !== 'default') {
+                    var d = Object.getOwnPropertyDescriptor(e, k);
+                    Object.defineProperty(n, k, d.get ? d : {
+                        enumerable: true,
+                        get: function () {
+                            return e[k];
+                        }
+                    });
+                }
+            });
+        }
+        n['default'] = e;
+        return Object.freeze(n);
+    }
+
+    var i0__namespace = /*#__PURE__*/_interopNamespace(i0);
+
     var Utils = /** @class */ (function () {
         function Utils() {
         }
@@ -134,11 +156,13 @@
         extendStatics = Object.setPrototypeOf ||
             ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
             function (d, b) { for (var p in b)
-                if (b.hasOwnProperty(p))
+                if (Object.prototype.hasOwnProperty.call(b, p))
                     d[p] = b[p]; };
         return extendStatics(d, b);
     };
     function __extends(d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -272,15 +296,19 @@
             return { value: op[0] ? op[1] : void 0, done: true };
         }
     }
-    function __createBinding(o, m, k, k2) {
+    var __createBinding = Object.create ? (function (o, m, k, k2) {
+        if (k2 === undefined)
+            k2 = k;
+        Object.defineProperty(o, k2, { enumerable: true, get: function () { return m[k]; } });
+    }) : (function (o, m, k, k2) {
         if (k2 === undefined)
             k2 = k;
         o[k2] = m[k];
-    }
-    function __exportStar(m, exports) {
+    });
+    function __exportStar(m, o) {
         for (var p in m)
-            if (p !== "default" && !exports.hasOwnProperty(p))
-                exports[p] = m[p];
+            if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p))
+                __createBinding(o, m, p);
     }
     function __values(o) {
         var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
@@ -320,11 +348,13 @@
         }
         return ar;
     }
+    /** @deprecated */
     function __spread() {
         for (var ar = [], i = 0; i < arguments.length; i++)
             ar = ar.concat(__read(arguments[i]));
         return ar;
     }
+    /** @deprecated */
     function __spreadArrays() {
         for (var s = 0, i = 0, il = arguments.length; i < il; i++)
             s += arguments[i].length;
@@ -333,7 +363,17 @@
                 r[k] = a[j];
         return r;
     }
-    ;
+    function __spreadArray(to, from, pack) {
+        if (pack || arguments.length === 2)
+            for (var i = 0, l = from.length, ar; i < l; i++) {
+                if (ar || !(i in from)) {
+                    if (!ar)
+                        ar = Array.prototype.slice.call(from, 0, i);
+                    ar[i] = from[i];
+                }
+            }
+        return to.concat(ar || from);
+    }
     function __await(v) {
         return this instanceof __await ? (this.v = v, this) : new __await(v);
     }
@@ -379,32 +419,40 @@
         return cooked;
     }
     ;
+    var __setModuleDefault = Object.create ? (function (o, v) {
+        Object.defineProperty(o, "default", { enumerable: true, value: v });
+    }) : function (o, v) {
+        o["default"] = v;
+    };
     function __importStar(mod) {
         if (mod && mod.__esModule)
             return mod;
         var result = {};
         if (mod != null)
             for (var k in mod)
-                if (Object.hasOwnProperty.call(mod, k))
-                    result[k] = mod[k];
-        result.default = mod;
+                if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k))
+                    __createBinding(result, mod, k);
+        __setModuleDefault(result, mod);
         return result;
     }
     function __importDefault(mod) {
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
-    function __classPrivateFieldGet(receiver, privateMap) {
-        if (!privateMap.has(receiver)) {
-            throw new TypeError("attempted to get private field on non-instance");
-        }
-        return privateMap.get(receiver);
+    function __classPrivateFieldGet(receiver, state, kind, f) {
+        if (kind === "a" && !f)
+            throw new TypeError("Private accessor was defined without a getter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
+            throw new TypeError("Cannot read private member from an object whose class did not declare it");
+        return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
     }
-    function __classPrivateFieldSet(receiver, privateMap, value) {
-        if (!privateMap.has(receiver)) {
-            throw new TypeError("attempted to set private field on non-instance");
-        }
-        privateMap.set(receiver, value);
-        return value;
+    function __classPrivateFieldSet(receiver, state, value, kind, f) {
+        if (kind === "m")
+            throw new TypeError("Private method is not writable");
+        if (kind === "a" && !f)
+            throw new TypeError("Private accessor was defined without a setter");
+        if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver))
+            throw new TypeError("Cannot write private member to an object whose class did not declare it");
+        return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
     }
 
     var Area = /** @class */ (function () {
@@ -2039,7 +2087,7 @@
         editing_mode_right: 'move a selected area to the right'
     };
     Ng2ImageMapEditorDirective.ɵfac = function Ng2ImageMapEditorDirective_Factory(t) { return new (t || Ng2ImageMapEditorDirective)(); };
-    Ng2ImageMapEditorDirective.ɵcmp = i0.ɵɵdefineComponent({ type: Ng2ImageMapEditorDirective, selectors: [["", "ng2-image-map-editor", ""]], inputs: { answers: "answers", mainImageSrc: ["src", "mainImageSrc"], mainImageWidth: ["width", "mainImageWidth"] }, outputs: { onAnswersUpdated: "onAnswersUpdated" }, features: [i0.ɵɵProvidersFeature([
+    Ng2ImageMapEditorDirective.ɵcmp = /*@__PURE__*/ i0__namespace.ɵɵdefineComponent({ type: Ng2ImageMapEditorDirective, selectors: [["", "ng2-image-map-editor", ""]], inputs: { answers: "answers", mainImageSrc: ["src", "mainImageSrc"], mainImageWidth: ["width", "mainImageWidth"] }, outputs: { onAnswersUpdated: "onAnswersUpdated" }, features: [i0__namespace.ɵɵProvidersFeature([
                 {
                     provide: forms.NG_VALUE_ACCESSOR,
                     useExisting: i0.forwardRef(function () { return Ng2ImageMapEditorDirective; }),
@@ -2050,250 +2098,250 @@
                     useExisting: i0.forwardRef(function () { return Ng2ImageMapEditorDirective; }),
                     multi: true
                 }
-            ]), i0.ɵɵNgOnChangesFeature], attrs: _c0, decls: 114, vars: 36, consts: [["id", "wrapper"], ["id", "header"], ["id", "nav", 1, "clearfix"], [1, "float-left"], ["id", "to_html"], ["href", "#", 1, "btn-round-sm-default", 3, "title"], ["xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 512 512"], ["d", "M305,148c11.046,0,20-8.954,20-20V90c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v38\n                                                    C285,139.046,293.954,148,305,148z"], ["d", "M492,352c11.046,0,20-8.954,20-20V102c0-5.304-2.107-10.392-5.858-14.142l-82-82C420.392,2.107,415.304,0,410,0H80\n                                                    C35.888,0,0,35.888,0,80v352c0,44.112,35.888,80,80,80h352c44.112,0,80-35.888,80-80c0-11.046-8.954-20-20-20\n                                                    c-11.046,0-20,8.954-20,20c0,22.056-17.944,40-40,40V312c0-11.046-8.954-20-20-20H100c-11.046,0-20,8.954-20,20v160\n                                                    c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40v118c0,33.084,26.916,60,60,60h201c33.084,0,60-26.916,60-60V40h0.716\n                                                    L472,110.284V332C472,343.046,480.954,352,492,352z M120,332h272v140H120V332z M361,158c0,11.028-8.972,20-20,20H140\n                                                    c-11.028,0-20-8.972-20-20V40h241V158z"], ["id", "rectangle", "href", "#"], [3, "src"], ["href", "#", "id", "circle"], ["href", "#", "id", "polygon"], [1, "float-right"], ["id", "edit", 1, "btn"], ["href", "#", 3, "title"], ["d", "M481.996,30.006C462.647,10.656,436.922,0,409.559,0c-27.363,0-53.089,10.656-72.438,30.005L50.826,316.301\n                                            c-2.436,2.436-4.201,5.46-5.125,8.779L0.733,486.637c-1.939,6.968,0.034,14.441,5.163,19.542c3.8,3.78,8.892,5.821,14.106,5.821\n                                            c1.822,0,3.66-0.25,5.463-0.762l161.557-45.891c6.816-1.936,12.1-7.335,13.888-14.192c1.788-6.857-0.186-14.148-5.189-19.167\n                                            L93.869,329.827L331.184,92.511l88.258,88.258L237.768,361.948c-7.821,7.8-7.838,20.463-0.038,28.284\n                                            c7.799,7.822,20.464,7.838,28.284,0.039l215.98-215.392C501.344,155.53,512,129.805,512,102.442\n                                            C512,75.079,501.344,49.354,481.996,30.006z M143.395,436.158L48.827,463.02l26.485-95.152L143.395,436.158z M453.73,146.575\n                                            l-5.965,5.949l-88.296-88.297l5.938-5.938C377.2,46.495,392.88,40,409.559,40c16.679,0,32.358,6.495,44.152,18.29\n                                            C465.505,70.083,472,85.763,472,102.442C472,119.121,465.505,134.801,453.73,146.575z"], ["id", "clear", 1, "btn-round-sm-default"], ["d", "M472,83H351V60c0-33.084-26.916-60-60-60h-70c-33.084,0-60,26.916-60,60v23H40c-11.046,0-20,8.954-20,20s8.954,20,20,20\n                                                h20.712l24.374,315.987c0.007,0.092,0.015,0.185,0.023,0.278c1.816,19.924,10.954,38.326,25.73,51.816\n                                                C125.615,504.571,144.771,512,164.778,512h182.444c41.667,0,75.917-31.032,79.669-72.183\n                                                c1.003-11.001-7.101-20.731-18.101-21.734c-11.011-1.003-20.731,7.101-21.734,18.101C385.195,456.603,368.07,472,347.222,472\n                                                H164.778c-20.777,0-37.875-15.571-39.823-36.242L100.831,123h310.338l-17.082,221.462c-0.849,11.013,7.39,20.629,18.403,21.479\n                                                c0.524,0.04,1.043,0.06,1.56,0.06c10.347,0,19.11-7.974,19.919-18.463L451.288,123H472c11.046,0,20-8.954,20-20\n                                                S483.046,83,472,83z M311,83H201V60c0-11.028,8.972-20,20-20h70c11.028,0,20,8.972,20,20V83z"], ["d", "M165.127,163.019c-11.035,0.482-19.59,9.818-19.108,20.854l10,228.933c0.469,10.738,9.322,19.128,19.966,19.128\n                                                c0.294,0,0.591-0.006,0.888-0.02c11.035-0.482,19.59-9.818,19.108-20.854l-10-228.934\n                                                C185.499,171.092,176.145,162.523,165.127,163.019z"], ["d", "M326.019,182.127l-10,228.934c-0.482,11.035,8.073,20.372,19.108,20.854c0.297,0.013,0.593,0.02,0.888,0.02\n                                                c10.643,0,19.497-8.39,19.966-19.128l10-228.933c0.482-11.035-8.073-20.372-19.108-20.854\n                                                C335.856,162.527,326.501,171.092,326.019,182.127z"], ["d", "M236,183v228.933c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V183c0-11.046-8.954-20-20-20S236,171.954,236,183z"], ["id", "show_help"], ["href", "#", 1, "btn-round-sm-default"], ["version", "1.1", "id", "Capa_1", "xmlns", "http://www.w3.org/2000/svg", "x", "0px", "y", "0px", "viewBox", "0 0 512 512", 0, "xml", "space", "preserve", 2, "enable-background", "new 0 0 512 512"], ["cx", "256", "cy", "127", "r", "20"], ["d", "M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256\n                                    s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512c46.813,0,92.618-12.758,132.461-36.893\n                                    c9.448-5.724,12.467-18.022,6.744-27.469c-5.723-9.448-18.021-12.467-27.468-6.744C334.144,461.244,295.506,472,256,472\n                                    c-119.103,0-216-96.897-216-216S136.897,40,256,40s216,96.897,216,216c0,42.589-12.665,84.044-36.627,119.884\n                                    c-6.139,9.182-3.672,21.603,5.511,27.742c9.183,6.138,21.603,3.673,27.742-5.51C497.001,355.674,512,306.53,512,256\n                                    C512,187.62,485.371,123.333,437.02,74.98z"], ["d", "M256,187c-11.046,0-20,8.954-20,20v178c0,11.046,8.954,20,20,20s20-8.954,20-20V207C276,195.954,267.046,187,256,187z"], ["id", "coords"], ["id", "debug"], ["id", "image_wrapper"], ["id", "image"], ["src", "", "alt", "#", "id", "img"], ["xmlns", "http://www.w3.org/2000/svg", "version", "1.2", "baseProfile", "tiny", "id", "svg"], ["id", "from_html_wrapper"], ["id", "from_html_form"], ["title", "close", 1, "close_button"], ["for", "code_input"], ["id", "code_input"], ["id", "load_code_button"], ["id", "overlay"], ["id", "help"], [1, "txt"], [1, "key"]], template: function Ng2ImageMapEditorDirective_Template(rf, ctx) {
+            ]), i0__namespace.ɵɵNgOnChangesFeature], attrs: _c0, decls: 114, vars: 36, consts: [["id", "wrapper"], ["id", "header"], ["id", "nav", 1, "clearfix"], [1, "float-left"], ["id", "to_html"], ["href", "#", 1, "btn-round-sm-default", 3, "title"], ["xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 512 512"], ["d", "M305,148c11.046,0,20-8.954,20-20V90c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v38\n                                                    C285,139.046,293.954,148,305,148z"], ["d", "M492,352c11.046,0,20-8.954,20-20V102c0-5.304-2.107-10.392-5.858-14.142l-82-82C420.392,2.107,415.304,0,410,0H80\n                                                    C35.888,0,0,35.888,0,80v352c0,44.112,35.888,80,80,80h352c44.112,0,80-35.888,80-80c0-11.046-8.954-20-20-20\n                                                    c-11.046,0-20,8.954-20,20c0,22.056-17.944,40-40,40V312c0-11.046-8.954-20-20-20H100c-11.046,0-20,8.954-20,20v160\n                                                    c-22.056,0-40-17.944-40-40V80c0-22.056,17.944-40,40-40v118c0,33.084,26.916,60,60,60h201c33.084,0,60-26.916,60-60V40h0.716\n                                                    L472,110.284V332C472,343.046,480.954,352,492,352z M120,332h272v140H120V332z M361,158c0,11.028-8.972,20-20,20H140\n                                                    c-11.028,0-20-8.972-20-20V40h241V158z"], ["id", "rectangle", "href", "#"], [3, "src"], ["href", "#", "id", "circle"], ["href", "#", "id", "polygon"], [1, "float-right"], ["id", "edit", 1, "btn"], ["href", "#", 3, "title"], ["d", "M481.996,30.006C462.647,10.656,436.922,0,409.559,0c-27.363,0-53.089,10.656-72.438,30.005L50.826,316.301\n                                            c-2.436,2.436-4.201,5.46-5.125,8.779L0.733,486.637c-1.939,6.968,0.034,14.441,5.163,19.542c3.8,3.78,8.892,5.821,14.106,5.821\n                                            c1.822,0,3.66-0.25,5.463-0.762l161.557-45.891c6.816-1.936,12.1-7.335,13.888-14.192c1.788-6.857-0.186-14.148-5.189-19.167\n                                            L93.869,329.827L331.184,92.511l88.258,88.258L237.768,361.948c-7.821,7.8-7.838,20.463-0.038,28.284\n                                            c7.799,7.822,20.464,7.838,28.284,0.039l215.98-215.392C501.344,155.53,512,129.805,512,102.442\n                                            C512,75.079,501.344,49.354,481.996,30.006z M143.395,436.158L48.827,463.02l26.485-95.152L143.395,436.158z M453.73,146.575\n                                            l-5.965,5.949l-88.296-88.297l5.938-5.938C377.2,46.495,392.88,40,409.559,40c16.679,0,32.358,6.495,44.152,18.29\n                                            C465.505,70.083,472,85.763,472,102.442C472,119.121,465.505,134.801,453.73,146.575z"], ["id", "clear", 1, "btn-round-sm-default"], ["d", "M472,83H351V60c0-33.084-26.916-60-60-60h-70c-33.084,0-60,26.916-60,60v23H40c-11.046,0-20,8.954-20,20s8.954,20,20,20\n                                                h20.712l24.374,315.987c0.007,0.092,0.015,0.185,0.023,0.278c1.816,19.924,10.954,38.326,25.73,51.816\n                                                C125.615,504.571,144.771,512,164.778,512h182.444c41.667,0,75.917-31.032,79.669-72.183\n                                                c1.003-11.001-7.101-20.731-18.101-21.734c-11.011-1.003-20.731,7.101-21.734,18.101C385.195,456.603,368.07,472,347.222,472\n                                                H164.778c-20.777,0-37.875-15.571-39.823-36.242L100.831,123h310.338l-17.082,221.462c-0.849,11.013,7.39,20.629,18.403,21.479\n                                                c0.524,0.04,1.043,0.06,1.56,0.06c10.347,0,19.11-7.974,19.919-18.463L451.288,123H472c11.046,0,20-8.954,20-20\n                                                S483.046,83,472,83z M311,83H201V60c0-11.028,8.972-20,20-20h70c11.028,0,20,8.972,20,20V83z"], ["d", "M165.127,163.019c-11.035,0.482-19.59,9.818-19.108,20.854l10,228.933c0.469,10.738,9.322,19.128,19.966,19.128\n                                                c0.294,0,0.591-0.006,0.888-0.02c11.035-0.482,19.59-9.818,19.108-20.854l-10-228.934\n                                                C185.499,171.092,176.145,162.523,165.127,163.019z"], ["d", "M326.019,182.127l-10,228.934c-0.482,11.035,8.073,20.372,19.108,20.854c0.297,0.013,0.593,0.02,0.888,0.02\n                                                c10.643,0,19.497-8.39,19.966-19.128l10-228.933c0.482-11.035-8.073-20.372-19.108-20.854\n                                                C335.856,162.527,326.501,171.092,326.019,182.127z"], ["d", "M236,183v228.933c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20V183c0-11.046-8.954-20-20-20S236,171.954,236,183z"], ["id", "show_help"], ["href", "#", 1, "btn-round-sm-default"], ["version", "1.1", "id", "Capa_1", "xmlns", "http://www.w3.org/2000/svg", "x", "0px", "y", "0px", "viewBox", "0 0 512 512", 0, "xml", "space", "preserve", 2, "enable-background", "new 0 0 512 512"], ["cx", "256", "cy", "127", "r", "20"], ["d", "M437.02,74.98C388.667,26.629,324.38,0,256,0S123.333,26.629,74.98,74.98C26.629,123.333,0,187.62,0,256\n                                    s26.629,132.667,74.98,181.02C123.333,485.371,187.62,512,256,512c46.813,0,92.618-12.758,132.461-36.893\n                                    c9.448-5.724,12.467-18.022,6.744-27.469c-5.723-9.448-18.021-12.467-27.468-6.744C334.144,461.244,295.506,472,256,472\n                                    c-119.103,0-216-96.897-216-216S136.897,40,256,40s216,96.897,216,216c0,42.589-12.665,84.044-36.627,119.884\n                                    c-6.139,9.182-3.672,21.603,5.511,27.742c9.183,6.138,21.603,3.673,27.742-5.51C497.001,355.674,512,306.53,512,256\n                                    C512,187.62,485.371,123.333,437.02,74.98z"], ["d", "M256,187c-11.046,0-20,8.954-20,20v178c0,11.046,8.954,20,20,20s20-8.954,20-20V207C276,195.954,267.046,187,256,187z"], ["id", "coords"], ["id", "debug"], ["id", "image_wrapper"], ["id", "image"], ["src", "", "alt", "#", "id", "img"], ["xmlns", "http://www.w3.org/2000/svg", "version", "1.2", "baseProfile", "tiny", "id", "svg"], ["id", "from_html_wrapper"], ["id", "from_html_form"], ["title", "close", 1, "close_button"], ["for", "code_input"], ["id", "code_input"], ["id", "load_code_button"], ["id", "overlay"], ["id", "help"], [1, "txt"], [1, "key"]], template: function Ng2ImageMapEditorDirective_Template(rf, ctx) {
             if (rf & 1) {
-                i0.ɵɵelementStart(0, "div", 0);
-                i0.ɵɵelementStart(1, "header", 1);
-                i0.ɵɵelementStart(2, "nav", 2);
-                i0.ɵɵelementStart(3, "ul", 3);
-                i0.ɵɵelementStart(4, "li", 4);
-                i0.ɵɵelementStart(5, "a", 5);
-                i0.ɵɵnamespaceSVG();
-                i0.ɵɵelementStart(6, "svg", 6);
-                i0.ɵɵelementStart(7, "g");
-                i0.ɵɵelementStart(8, "g");
-                i0.ɵɵelementStart(9, "g");
-                i0.ɵɵelement(10, "path", 7);
-                i0.ɵɵelement(11, "path", 8);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵnamespaceHTML();
-                i0.ɵɵelementStart(12, "li");
-                i0.ɵɵelementStart(13, "a", 9);
-                i0.ɵɵelement(14, "img", 10);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(15, "li");
-                i0.ɵɵelementStart(16, "a", 11);
-                i0.ɵɵelement(17, "img", 10);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(18, "li");
-                i0.ɵɵelementStart(19, "a", 12);
-                i0.ɵɵelement(20, "img", 10);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(21, "ul", 13);
-                i0.ɵɵelementStart(22, "li", 14);
-                i0.ɵɵelementStart(23, "a", 15);
-                i0.ɵɵnamespaceSVG();
-                i0.ɵɵelementStart(24, "svg", 6);
-                i0.ɵɵelementStart(25, "g");
-                i0.ɵɵelementStart(26, "g");
-                i0.ɵɵelement(27, "path", 16);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵnamespaceHTML();
-                i0.ɵɵelementStart(28, "li", 17);
-                i0.ɵɵelementStart(29, "a", 5);
-                i0.ɵɵnamespaceSVG();
-                i0.ɵɵelementStart(30, "svg", 6);
-                i0.ɵɵelementStart(31, "g");
-                i0.ɵɵelementStart(32, "g");
-                i0.ɵɵelementStart(33, "g");
-                i0.ɵɵelement(34, "path", 18);
-                i0.ɵɵelement(35, "path", 19);
-                i0.ɵɵelement(36, "path", 20);
-                i0.ɵɵelement(37, "path", 21);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵnamespaceHTML();
-                i0.ɵɵelementStart(38, "li", 22);
-                i0.ɵɵelementStart(39, "a", 23);
-                i0.ɵɵnamespaceSVG();
-                i0.ɵɵelementStart(40, "svg", 24);
-                i0.ɵɵelementStart(41, "g");
-                i0.ɵɵelementStart(42, "g");
-                i0.ɵɵelementStart(43, "g");
-                i0.ɵɵelement(44, "circle", 25);
-                i0.ɵɵelement(45, "path", 26);
-                i0.ɵɵelement(46, "path", 27);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵnamespaceHTML();
-                i0.ɵɵelement(47, "div", 28);
-                i0.ɵɵelement(48, "div", 29);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(49, "div", 30);
-                i0.ɵɵelementStart(50, "div", 31);
-                i0.ɵɵelement(51, "img", 32);
-                i0.ɵɵnamespaceSVG();
-                i0.ɵɵelement(52, "svg", 33);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵnamespaceHTML();
-                i0.ɵɵelementStart(53, "div", 34);
-                i0.ɵɵelementStart(54, "form", 35);
-                i0.ɵɵelementStart(55, "h5");
-                i0.ɵɵtext(56, "Loading areas");
-                i0.ɵɵelementEnd();
-                i0.ɵɵelement(57, "span", 36);
-                i0.ɵɵelementStart(58, "p");
-                i0.ɵɵelementStart(59, "label", 37);
-                i0.ɵɵtext(60, "Enter your html code:");
-                i0.ɵɵelementEnd();
-                i0.ɵɵelement(61, "textarea", 38);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(62, "button", 39);
-                i0.ɵɵtext(63, "Load");
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelement(64, "div", 40);
-                i0.ɵɵelementStart(65, "div", 41);
-                i0.ɵɵelement(66, "span", 36);
-                i0.ɵɵelementStart(67, "div", 42);
-                i0.ɵɵelementStart(68, "section");
-                i0.ɵɵelementStart(69, "h2");
-                i0.ɵɵtext(70);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(71, "p");
-                i0.ɵɵelementStart(72, "span", 43);
-                i0.ɵɵtext(73, "ENTER");
-                i0.ɵɵelementEnd();
-                i0.ɵɵtext(74);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(75, "p");
-                i0.ɵɵelementStart(76, "span", 43);
-                i0.ɵɵtext(77, "ESC");
-                i0.ɵɵelementEnd();
-                i0.ɵɵtext(78);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(79, "p");
-                i0.ɵɵelementStart(80, "span", 43);
-                i0.ɵɵtext(81, "SHIFT");
-                i0.ɵɵelementEnd();
-                i0.ɵɵtext(82);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(83, "section");
-                i0.ɵɵelementStart(84, "h2");
-                i0.ɵɵtext(85);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(86, "p");
-                i0.ɵɵelementStart(87, "span", 43);
-                i0.ɵɵtext(88, "DELETE");
-                i0.ɵɵelementEnd();
-                i0.ɵɵtext(89);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(90, "p");
-                i0.ɵɵelementStart(91, "span", 43);
-                i0.ɵɵtext(92, "ESC");
-                i0.ɵɵelementEnd();
-                i0.ɵɵtext(93);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(94, "p");
-                i0.ɵɵelementStart(95, "span", 43);
-                i0.ɵɵtext(96, "SHIFT");
-                i0.ɵɵelementEnd();
-                i0.ɵɵtext(97);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(98, "p");
-                i0.ɵɵelementStart(99, "span", 43);
-                i0.ɵɵtext(100, "\u2191");
-                i0.ɵɵelementEnd();
-                i0.ɵɵtext(101);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(102, "p");
-                i0.ɵɵelementStart(103, "span", 43);
-                i0.ɵɵtext(104, "\u2193");
-                i0.ɵɵelementEnd();
-                i0.ɵɵtext(105);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(106, "p");
-                i0.ɵɵelementStart(107, "span", 43);
-                i0.ɵɵtext(108, "\u2190");
-                i0.ɵɵelementEnd();
-                i0.ɵɵtext(109);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementStart(110, "p");
-                i0.ɵɵelementStart(111, "span", 43);
-                i0.ɵɵtext(112, "\u2192");
-                i0.ɵɵelementEnd();
-                i0.ɵɵtext(113);
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
-                i0.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(0, "div", 0);
+                i0__namespace.ɵɵelementStart(1, "header", 1);
+                i0__namespace.ɵɵelementStart(2, "nav", 2);
+                i0__namespace.ɵɵelementStart(3, "ul", 3);
+                i0__namespace.ɵɵelementStart(4, "li", 4);
+                i0__namespace.ɵɵelementStart(5, "a", 5);
+                i0__namespace.ɵɵnamespaceSVG();
+                i0__namespace.ɵɵelementStart(6, "svg", 6);
+                i0__namespace.ɵɵelementStart(7, "g");
+                i0__namespace.ɵɵelementStart(8, "g");
+                i0__namespace.ɵɵelementStart(9, "g");
+                i0__namespace.ɵɵelement(10, "path", 7);
+                i0__namespace.ɵɵelement(11, "path", 8);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵnamespaceHTML();
+                i0__namespace.ɵɵelementStart(12, "li");
+                i0__namespace.ɵɵelementStart(13, "a", 9);
+                i0__namespace.ɵɵelement(14, "img", 10);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(15, "li");
+                i0__namespace.ɵɵelementStart(16, "a", 11);
+                i0__namespace.ɵɵelement(17, "img", 10);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(18, "li");
+                i0__namespace.ɵɵelementStart(19, "a", 12);
+                i0__namespace.ɵɵelement(20, "img", 10);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(21, "ul", 13);
+                i0__namespace.ɵɵelementStart(22, "li", 14);
+                i0__namespace.ɵɵelementStart(23, "a", 15);
+                i0__namespace.ɵɵnamespaceSVG();
+                i0__namespace.ɵɵelementStart(24, "svg", 6);
+                i0__namespace.ɵɵelementStart(25, "g");
+                i0__namespace.ɵɵelementStart(26, "g");
+                i0__namespace.ɵɵelement(27, "path", 16);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵnamespaceHTML();
+                i0__namespace.ɵɵelementStart(28, "li", 17);
+                i0__namespace.ɵɵelementStart(29, "a", 5);
+                i0__namespace.ɵɵnamespaceSVG();
+                i0__namespace.ɵɵelementStart(30, "svg", 6);
+                i0__namespace.ɵɵelementStart(31, "g");
+                i0__namespace.ɵɵelementStart(32, "g");
+                i0__namespace.ɵɵelementStart(33, "g");
+                i0__namespace.ɵɵelement(34, "path", 18);
+                i0__namespace.ɵɵelement(35, "path", 19);
+                i0__namespace.ɵɵelement(36, "path", 20);
+                i0__namespace.ɵɵelement(37, "path", 21);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵnamespaceHTML();
+                i0__namespace.ɵɵelementStart(38, "li", 22);
+                i0__namespace.ɵɵelementStart(39, "a", 23);
+                i0__namespace.ɵɵnamespaceSVG();
+                i0__namespace.ɵɵelementStart(40, "svg", 24);
+                i0__namespace.ɵɵelementStart(41, "g");
+                i0__namespace.ɵɵelementStart(42, "g");
+                i0__namespace.ɵɵelementStart(43, "g");
+                i0__namespace.ɵɵelement(44, "circle", 25);
+                i0__namespace.ɵɵelement(45, "path", 26);
+                i0__namespace.ɵɵelement(46, "path", 27);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵnamespaceHTML();
+                i0__namespace.ɵɵelement(47, "div", 28);
+                i0__namespace.ɵɵelement(48, "div", 29);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(49, "div", 30);
+                i0__namespace.ɵɵelementStart(50, "div", 31);
+                i0__namespace.ɵɵelement(51, "img", 32);
+                i0__namespace.ɵɵnamespaceSVG();
+                i0__namespace.ɵɵelement(52, "svg", 33);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵnamespaceHTML();
+                i0__namespace.ɵɵelementStart(53, "div", 34);
+                i0__namespace.ɵɵelementStart(54, "form", 35);
+                i0__namespace.ɵɵelementStart(55, "h5");
+                i0__namespace.ɵɵtext(56, "Loading areas");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelement(57, "span", 36);
+                i0__namespace.ɵɵelementStart(58, "p");
+                i0__namespace.ɵɵelementStart(59, "label", 37);
+                i0__namespace.ɵɵtext(60, "Enter your html code:");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelement(61, "textarea", 38);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(62, "button", 39);
+                i0__namespace.ɵɵtext(63, "Load");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelement(64, "div", 40);
+                i0__namespace.ɵɵelementStart(65, "div", 41);
+                i0__namespace.ɵɵelement(66, "span", 36);
+                i0__namespace.ɵɵelementStart(67, "div", 42);
+                i0__namespace.ɵɵelementStart(68, "section");
+                i0__namespace.ɵɵelementStart(69, "h2");
+                i0__namespace.ɵɵtext(70);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(71, "p");
+                i0__namespace.ɵɵelementStart(72, "span", 43);
+                i0__namespace.ɵɵtext(73, "ENTER");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵtext(74);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(75, "p");
+                i0__namespace.ɵɵelementStart(76, "span", 43);
+                i0__namespace.ɵɵtext(77, "ESC");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵtext(78);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(79, "p");
+                i0__namespace.ɵɵelementStart(80, "span", 43);
+                i0__namespace.ɵɵtext(81, "SHIFT");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵtext(82);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(83, "section");
+                i0__namespace.ɵɵelementStart(84, "h2");
+                i0__namespace.ɵɵtext(85);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(86, "p");
+                i0__namespace.ɵɵelementStart(87, "span", 43);
+                i0__namespace.ɵɵtext(88, "DELETE");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵtext(89);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(90, "p");
+                i0__namespace.ɵɵelementStart(91, "span", 43);
+                i0__namespace.ɵɵtext(92, "ESC");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵtext(93);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(94, "p");
+                i0__namespace.ɵɵelementStart(95, "span", 43);
+                i0__namespace.ɵɵtext(96, "SHIFT");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵtext(97);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(98, "p");
+                i0__namespace.ɵɵelementStart(99, "span", 43);
+                i0__namespace.ɵɵtext(100, "\u2191");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵtext(101);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(102, "p");
+                i0__namespace.ɵɵelementStart(103, "span", 43);
+                i0__namespace.ɵɵtext(104, "\u2193");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵtext(105);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(106, "p");
+                i0__namespace.ɵɵelementStart(107, "span", 43);
+                i0__namespace.ɵɵtext(108, "\u2190");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵtext(109);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementStart(110, "p");
+                i0__namespace.ɵɵelementStart(111, "span", 43);
+                i0__namespace.ɵɵtext(112, "\u2192");
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵtext(113);
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
+                i0__namespace.ɵɵelementEnd();
             }
             if (rf & 2) {
-                i0.ɵɵadvance(5);
-                i0.ɵɵclassProp("btn-round-sm-primary", !ctx.valid);
-                i0.ɵɵpropertyInterpolate("title", ctx.labels.save_answers);
-                i0.ɵɵadvance(8);
-                i0.ɵɵclassProp("btn-round-sm-default", ctx.currentType != "rectangle")("btn-round-sm-primary", ctx.currentType == "rectangle");
-                i0.ɵɵadvance(1);
-                i0.ɵɵproperty("src", ctx.icons.rectangle, i0.ɵɵsanitizeUrl);
-                i0.ɵɵadvance(2);
-                i0.ɵɵclassProp("btn-round-sm-default", ctx.currentType != "circle")("btn-round-sm-primary", ctx.currentType == "circle");
-                i0.ɵɵadvance(1);
-                i0.ɵɵproperty("src", ctx.icons.circle, i0.ɵɵsanitizeUrl);
-                i0.ɵɵadvance(2);
-                i0.ɵɵclassProp("btn-round-sm-default", ctx.currentType != "polygon")("btn-round-sm-primary", ctx.currentType == "polygon");
-                i0.ɵɵadvance(1);
-                i0.ɵɵproperty("src", ctx.icons.polygon, i0.ɵɵsanitizeUrl);
-                i0.ɵɵadvance(3);
-                i0.ɵɵclassProp("btn-round-sm-default", !ctx.isEditMode)("btn-round-sm-primary", ctx.isEditMode);
-                i0.ɵɵpropertyInterpolate("title", ctx.labels.edit);
-                i0.ɵɵadvance(6);
-                i0.ɵɵpropertyInterpolate("title", ctx.labels.clear);
-                i0.ɵɵadvance(41);
-                i0.ɵɵtextInterpolate(ctx.labels.drawing_mode);
-                i0.ɵɵadvance(4);
-                i0.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.drawing_mode_enter, "");
-                i0.ɵɵadvance(4);
-                i0.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.drawing_mode_esc, "");
-                i0.ɵɵadvance(4);
-                i0.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.drawing_mode_shift, "");
-                i0.ɵɵadvance(3);
-                i0.ɵɵtextInterpolate(ctx.labels.editing_mode);
-                i0.ɵɵadvance(4);
-                i0.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_delete, "");
-                i0.ɵɵadvance(4);
-                i0.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_esc, "");
-                i0.ɵɵadvance(4);
-                i0.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_shift, "");
-                i0.ɵɵadvance(4);
-                i0.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_up, "");
-                i0.ɵɵadvance(4);
-                i0.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_down, "");
-                i0.ɵɵadvance(4);
-                i0.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_left, "");
-                i0.ɵɵadvance(4);
-                i0.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_right, "");
+                i0__namespace.ɵɵadvance(5);
+                i0__namespace.ɵɵclassProp("btn-round-sm-primary", !ctx.valid);
+                i0__namespace.ɵɵpropertyInterpolate("title", ctx.labels.save_answers);
+                i0__namespace.ɵɵadvance(8);
+                i0__namespace.ɵɵclassProp("btn-round-sm-default", ctx.currentType != "rectangle")("btn-round-sm-primary", ctx.currentType == "rectangle");
+                i0__namespace.ɵɵadvance(1);
+                i0__namespace.ɵɵproperty("src", ctx.icons.rectangle, i0__namespace.ɵɵsanitizeUrl);
+                i0__namespace.ɵɵadvance(2);
+                i0__namespace.ɵɵclassProp("btn-round-sm-default", ctx.currentType != "circle")("btn-round-sm-primary", ctx.currentType == "circle");
+                i0__namespace.ɵɵadvance(1);
+                i0__namespace.ɵɵproperty("src", ctx.icons.circle, i0__namespace.ɵɵsanitizeUrl);
+                i0__namespace.ɵɵadvance(2);
+                i0__namespace.ɵɵclassProp("btn-round-sm-default", ctx.currentType != "polygon")("btn-round-sm-primary", ctx.currentType == "polygon");
+                i0__namespace.ɵɵadvance(1);
+                i0__namespace.ɵɵproperty("src", ctx.icons.polygon, i0__namespace.ɵɵsanitizeUrl);
+                i0__namespace.ɵɵadvance(3);
+                i0__namespace.ɵɵclassProp("btn-round-sm-default", !ctx.isEditMode)("btn-round-sm-primary", ctx.isEditMode);
+                i0__namespace.ɵɵpropertyInterpolate("title", ctx.labels.edit);
+                i0__namespace.ɵɵadvance(6);
+                i0__namespace.ɵɵpropertyInterpolate("title", ctx.labels.clear);
+                i0__namespace.ɵɵadvance(41);
+                i0__namespace.ɵɵtextInterpolate(ctx.labels.drawing_mode);
+                i0__namespace.ɵɵadvance(4);
+                i0__namespace.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.drawing_mode_enter, "");
+                i0__namespace.ɵɵadvance(4);
+                i0__namespace.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.drawing_mode_esc, "");
+                i0__namespace.ɵɵadvance(4);
+                i0__namespace.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.drawing_mode_shift, "");
+                i0__namespace.ɵɵadvance(3);
+                i0__namespace.ɵɵtextInterpolate(ctx.labels.editing_mode);
+                i0__namespace.ɵɵadvance(4);
+                i0__namespace.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_delete, "");
+                i0__namespace.ɵɵadvance(4);
+                i0__namespace.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_esc, "");
+                i0__namespace.ɵɵadvance(4);
+                i0__namespace.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_shift, "");
+                i0__namespace.ɵɵadvance(4);
+                i0__namespace.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_up, "");
+                i0__namespace.ɵɵadvance(4);
+                i0__namespace.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_down, "");
+                i0__namespace.ɵɵadvance(4);
+                i0__namespace.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_left, "");
+                i0__namespace.ɵɵadvance(4);
+                i0__namespace.ɵɵtextInterpolate1(" \u2014 ", ctx.labels.editing_mode_right, "");
             }
         }, encapsulation: 2 });
-    /*@__PURE__*/ (function () {
-        i0.ɵsetClassMetadata(Ng2ImageMapEditorDirective, [{
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(Ng2ImageMapEditorDirective, [{
                 type: i0.Component,
                 args: [{
                         selector: '[ng2-image-map-editor]',
@@ -2330,11 +2378,11 @@
         }
         return Ng2ImageMapEditorModule;
     }());
-    Ng2ImageMapEditorModule.ɵmod = i0.ɵɵdefineNgModule({ type: Ng2ImageMapEditorModule });
-    Ng2ImageMapEditorModule.ɵinj = i0.ɵɵdefineInjector({ factory: function Ng2ImageMapEditorModule_Factory(t) { return new (t || Ng2ImageMapEditorModule)(); }, imports: [[]] });
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(Ng2ImageMapEditorModule, { declarations: [Ng2ImageMapEditorDirective], exports: [Ng2ImageMapEditorDirective] }); })();
-    /*@__PURE__*/ (function () {
-        i0.ɵsetClassMetadata(Ng2ImageMapEditorModule, [{
+    Ng2ImageMapEditorModule.ɵfac = function Ng2ImageMapEditorModule_Factory(t) { return new (t || Ng2ImageMapEditorModule)(); };
+    Ng2ImageMapEditorModule.ɵmod = /*@__PURE__*/ i0__namespace.ɵɵdefineNgModule({ type: Ng2ImageMapEditorModule });
+    Ng2ImageMapEditorModule.ɵinj = /*@__PURE__*/ i0__namespace.ɵɵdefineInjector({ imports: [[]] });
+    (function () {
+        (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(Ng2ImageMapEditorModule, [{
                 type: i0.NgModule,
                 args: [{
                         imports: [],
@@ -2347,6 +2395,7 @@
                     }]
             }], null, null);
     })();
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0__namespace.ɵɵsetNgModuleScope(Ng2ImageMapEditorModule, { declarations: [Ng2ImageMapEditorDirective], exports: [Ng2ImageMapEditorDirective] }); })();
 
     /**
      * Generated bundle index. Do not edit.
